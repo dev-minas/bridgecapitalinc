@@ -209,12 +209,22 @@ p.sub_title {
     background-color: #b2d1e3;
 }
 
+/*.form_left > .form_element > .form_element_checkbox, .form_element_label {
+    display: inline-block!important;
+    width: auto!important;
+    float: left!important;
+}*/
+
 .form_element {
     display: inline-block;
     width: 30%;
     padding: 0.7% 2%; margin: 0;
     text-align: left;
 }
+
+
+
+
 .form_element label {
     float: left; width: 100%;
     padding: 0 10px 0 0;
@@ -601,5 +611,135 @@ hr {
 .tab img {
     margin-left: 49px;
 }
+
+.info-block input[type=checkbox ]{
+    height: 18px;
+    width: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #848994;
+}
+
+.info-block label {
+    padding: 0 10px 0 0;
+    font-size: 17px;
+    color: #848994;
+}
+
+.info-block-inner {
+    padding-top: 50px;
+}
+
+.info-block-inner-left {
+    float: left;
+}
+
+.info-block-inner-right {
+    float: right;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.info-block-inner-title p {
+    font-size: 21px;
+    color: #848994;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #848994;
+    margin-bottom: 15px;
+}
+
+.info-checkbox {
+    margin-bottom: 5px;
+    text-align: left!important;
+}
+
+.info-checkbox input[type=checkbox],.info-radio input[type=radio] {
+    height: 18px;
+    width: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #848994;
+}
+
+.info-checkbox label, .info-radio {
+    vertical-align: top;
+
+}
+
+#add_btn {
+    width: 50%!important;
+}
+
+#add_btn input[type=text] {
+    border-radius: 18px;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#add_btn input[type=text]:hover {
+    background-color: #0066a1;
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: normal;
+}
+
+.declarations {
+    margin-right: 120px;
+}
+
+#declarations_list {
+    width: 71%!important;
+    margin-bottom: 2%!important;
+    text-align: left!important;
+}
+
+#declarations-txt {
+    float: left!important;
+}
+
+#declarations-select {
+    float: left!important;
+    width: 40%!important;
+}
+
+.information-left {
+    float: left;
+}
+
+.information-right {
+    float: right;
+}
+
+.secondary-title span {
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.secondary-title a {
+    font-size: 14px;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 @import url("resp.css");

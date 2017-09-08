@@ -52,3 +52,20 @@ $(document).ready(function () {
 
 
 });
+
+
+$(document).ready(function(){
+
+    $('.repeat').css('display','none');
+
+    $('.repeat').hide();
+
+    $("#btnadd").click(function(){
+        $(".repeat").append("<b>Appended text</b>");
+    });
+
+
+
+});
+
+//<table> <tbody> <tr> <td>Company Name</td> <td>$0</td> <td>remove</td> </tr> </tbody> </table>

@@ -138,6 +138,9 @@ get_header(); ?>
         <div id="tab3" class="tab hidden">
             <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
             <h1>Current Address Information</h1>
+
+
+
             <form method="post">
                 <div class="form_left">
                     <div class="form_element">
@@ -209,76 +212,449 @@ get_header(); ?>
 
         <div id="tab4" class="tab hidden">
             <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
-            <h1>Current Address Information</h1>
+            <h1>Current Employer Information</h1>
+            <div class="repeat" style="display: none;">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>Company Name</td>
+                        <td>$0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
             <form method="post">
                 <div class="form_left">
-                    <div class="form_element">
-                        <label for="name">Street</label>
-                        <input name="Street" value="" />
-                    </div>
-                    <div class="form_element">
-                        <label for="email">Do you own or rent?</label>
+                    <div class="form_element ">
+                        <label for="email">Employment Type</label>
                         <select name="Own_or_Rent">
                             <option value="" selected="selected" disabled="">Select One</option>
-                            <option>Own</option>
-                            <option>Rent</option>
+                            <option>Active Military Duty</option>
+                            <option>Employed</option>
+                            <option>Self Employed</option>
+                            <option>Retired</option>
+                            <option>Other/Unemployed</option>
                         </select>
                     </div>
+                    <div class="form_element ">
+                        <label for="email">Branch</label>
+                        <select name="Own_or_Rent">
+                           <!-- <option value="" selected="selected" disabled="">Select One</option>-->
+                            <option>Air Force</option>
+                            <option>Army</option>
+                            <option>Marines</option>
+                            <option>Navy</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form_element ">
+                        <label for="name">Rank</label>
+                        <input name="Street" value="" />
+                    </div>
+                    <div class="form_element ">
+                        <label for="name">Business Phone</label>
+                        <input name="Street" value="" />
+                    </div>
+                    <div class="form_element ">
+                        <label for="name">Time Period</label>
+                        <input name="Street" value="" />
+                    </div>
+                    <div class="form_element ">
+                        <label for="name">Company Street</label>
+                        <input placeholder="optional" name="Street" value="" />
+                    </div>
+                    <div class="form_element ">
+                        <label for="name">Years in same field</label>
+                        <input placeholder="optional" name="Street" value="" />
+                    </div>
                     <div class="form_element">
-                        <label for="price">Zip / State</label>
-                        <input class="half_width half_width_margin" name="Zip" />
+                        <label for="price">Company Zip / State</label>
+                        <input placeholder="optional" class="half_width half_width_margin" name="Zip" />
                         <select class="half_width" name="State">
                             <option value="" selected="selected" disabled="">State</option>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
                     </div>
                     <div class="form_element">
-                        <label for="message">What is your monthly rent?</label>
-                        <input name="Rent" />
+                        <label for="price">Total Income</label>
+                        <input placeholder="$Pretax" class="half_width half_width_margin" name="Zip" />
+                        <select class="half_width" name="State">
+                            <option selected="selected">Monthly</option>
+                            <option>Annual</option>
+                        </select>
                     </div>
-                    <div class="form_element">
-                        <label for="message">City</label>
-                        <input name="City" />
-                    </div>
-                    <div class="form_element">
-                        <label for="message">Time at Current Address</label>
-                        <input class="half_width half_width_margin" name="Years" />
-                        <input class="half_width" name="Months" />
-                    </div>
-
-                    <div class="form_element">
-                    </div>
-                    <div class="form_element">
-                        <label>Mailing Address Different</label>
-                        <input type="radio" name="Mailing Address Different" value="Yes" />
-                        <span>Yes</span>
-                        <input type="radio" name="Mailing Address Different" value="No" />
-                        <span>No</span>
+                    <div class="form_element ">
+                        <label for="name">Company City</label>
+                        <input placeholder="optional" name="Street" value="" />
                     </div>
 
-                    <div class="form_element full_width gray">
-                        Does Co-Borrower have a different current address?
-                    </div>
-
-                    <div class="form_element full_width">
-                        <label>Mailing Address Different</label>
-                        <input type="radio" name="Mailing Address Different" value="Yes" />
-                        <span>Yes</span>
-                        <input type="radio" name="Mailing Address Different" value="No" />
-                        <span>No</span>
-                    </div>
-
-                    <div class="form_element full_width blue">
-                        Changing the Co-Borrower current address will require you to provide the Co-Borrower current address information on the next page.
+                    <div class="form_element full_width " id="add_btn">
+                        <label> &nbsp; </label>
+                        <input type="text" #id="btnadd" value="Add a Current Employer" style="text-align: center;cursor: pointer;" />
                     </div>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
                         <input data-index="5" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
+
                 </div>
+
             </form>
         </div>
 
+        <div id="tab5" class="tab hidden">
+            <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <h1>You're halfway to the finish line.</h1>
+            <p>What does your other income look like?</p>
+
+            <div>
+                <h3>Do you receive any other type of income?</h3>
+                <p>such as dividends, alimony, social security or retirement</p>
+            </div>
+
+            <form method="post">
+                <div class="form_left">
+
+                    <div class="form_element full_width" id="add_btn">
+                        <label> &nbsp; </label>
+                        <input type="text" #id="btn_add" value="Add a Current Employer" style="text-align: center;cursor: pointer;" />
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="6" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div id="tab6" class="tab hidden">
+            <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <h1>You're nearly to the finish line.</h1>
+            <div class=" full_width gray">
+                We just have a few questions the government requires us to ask.
+            </div>
+
+            <form method="post">
+                <div class="form_left">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="info-block">
+                        <input class="form_element_checkbox" type="checkbox" name="Borrower" />
+                        <label class="form_element_label"> I do not wish to furnish this information </label>
+                    </div>
+
+
+                    <div class="info-block-inner">
+                        <div class="info-block-inner-left">
+                            <div class="info-block-inner-title">
+                                <p>What is your race?</p>
+                            </div>
+                            <div class="info-block-inner-left">
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">American Indian or Alaska Native</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">Asian</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">Black or African American</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">Native Hawaiian or Other Pacific Islander</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">White</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">Not Applicable</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-block-inner-right">
+                            <div class="info-block-inner-right-top">
+                                <div class="info-block-inner-title">
+                                    <p>What is your ethnicity?</p>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="ethnicity">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="ethnicity">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="ethnicity">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                            </div>
+                            <div class="info-block-inner-right-bottom">
+                                <div class="info-block-inner-title">
+                                    <p>What is your gender?</p>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="gender">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="gender">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="gender">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-both"></div>
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="7" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+        <div id="tab7" class="tab hidden">
+            <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <h1>You're nearly to the finish line.</h1>
+            <div class=" full_width gray">
+                We just have a few questions the government requires us to ask.
+            </div>
+
+            <form method="post">
+                <div class="form_left">
+
+                    <h3>Declarations</h3>
+
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>a. Are there any outstanding judgments against you?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>b. Have you been declared bankrupt within the past 7 years?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>c. Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width">
+                        <label>d. Are you a party to a lawsuit?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>e. Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer in title in lieu of foreclosure, or judgment?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>f. Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>g. Are you obligated to pay alimony, child support, or separate maintenance?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>h. Is any part of the down payment borrowed?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>i. Are you a co-maker or endorser on a note?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>j. Are you a U.S. Citizen?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>k. Are you a permanent Resident Alien?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>l. Do you intend to occupy the property as your Primary Residence?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>m. Have you had an ownership interest in a property in the last three years?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>n. What type of property did you own?</label>
+                        <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
+                        <select name="Own_or_Rent" id="declarations-select">
+                            <option value="" selected="selected" disabled="">Select One</option>
+                            <option>Primary Residence</option>
+                            <option>Second Home</option>
+                            <option>Investment Property</option>
+                        </select>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>o. How did you hold title to the home?</label>
+                        <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
+                        <select name="Own_or_Rent" id="declarations-select">
+                            <option value="" selected="selected" disabled="">Select One</option>
+                            <option>Solely by yourself</option>
+                            <option>Jointly with your spouse</option>
+                            <option>Jointly with another person</option>
+                        </select>
+                    </div>
+
+
+
+
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="8" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+        <div id="tab8" class="tab hidden">
+            <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <h1>You're minutes away from your 3 FREE Credit Scores</h1>
+            <div class=" full_width gray">
+                You're minutes away from your 3 FREE Credit Scores
+            </div>
+
+            <form method="post">
+                <div class="form_left">
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="9" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+
+                </div>
+
+            </form>
+
+            <form method="post">
+                <div class="form_left">
+
+
+                    <div class="information-block">
+                        <div class="information-left">
+                            <div class="info-block-inner-title">
+                                <p>Personal Information</p>
+                            </div>
+                            <div  class="secondary-title">
+                                <span>Borrower</span>
+                                <a href="#">edit</a>
+                            </div>
+                            <div>
+                                <span>Name</span>
+                                <span>dxdxdx ffgcfcfc</span>
+                            </div>
+                        </div>
+                        <div class="information-right">
+                            <div class="info-block-inner-title">
+                                <p>Employment Information</p>
+                            </div>
+                        </div>
+                        <div class="clear-both"></div>
+                    </div>
+
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="9" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+
+                </div>
+
+            </form>
+
+
+        </div>
+
     </div>
+
+
+
+
+
+
+
 
 <?php get_footer(); ?>
