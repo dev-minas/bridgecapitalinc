@@ -5,7 +5,6 @@ if (!in_array($_SERVER['REMOTE_ADDR'], array('::1','127.0.0.1','178.160.145.229'
     exit();
 }
 
-
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
  * wp-blog-header.php which does and tells WordPress to load the theme.
