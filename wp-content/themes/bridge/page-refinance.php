@@ -251,8 +251,12 @@ get_header(); ?>
                         <input placeholder="name" name="Street" value="" />
                     </div>
                     
-                    <div class="form_element ">
+                    <div class="form_element rank">
                         <label for="name">Rank</label>
+                        <input name="Street" value="" />
+                    </div>
+                    <div class="form_element position hidden">
+                        <label for="name">Position</label>
                         <input name="Street" value="" />
                     </div>
                     <div class="form_element ">
@@ -273,14 +277,14 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label for="price">Company Zip / State</label>
-                        <input placeholder="optional" class="half_width half_width_margin" name="Zip" />
+                        <input placeholder="optional" class="half_width half_width_margin mr5" name="Zip" />
                         <select class="half_width" name="State">
                             <option value="" selected="selected" disabled="">State</option>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
                     </div>
                     <div class="form_element">
                         <label for="price">Total Income</label>
-                        <input placeholder="$Pretax" class="half_width half_width_margin" name="Zip" />
+                        <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
                         <select class="half_width" name="State">
                             <option selected="selected">Monthly</option>
                             <option>Annual</option>
@@ -336,8 +340,12 @@ get_header(); ?>
                         <input placeholder="name" name="Street" value="" />
                     </div>
 
-                    <div class="form_element ">
+                    <div class="form_element rank">
                         <label for="name">Rank</label>
+                        <input name="Street" value="" />
+                    </div>
+                    <div class="form_element position hidden">
+                        <label for="name">Position</label>
                         <input name="Street" value="" />
                     </div>
                     <div class="form_element ">
@@ -358,14 +366,14 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label for="price">Company Zip / State</label>
-                        <input placeholder="optional" class="half_width half_width_margin" name="Zip" />
+                        <input placeholder="optional" class="half_width half_width_margin mr5" name="Zip" />
                         <select class="half_width" name="State">
                             <option value="" selected="selected" disabled="">State</option>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
                     </div>
                     <div class="form_element">
                         <label for="price">Total Income</label>
-                        <input placeholder="$Pretax" class="half_width half_width_margin" name="Zip" />
+                        <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
                         <select class="half_width" name="State">
                             <option selected="selected">Monthly</option>
                             <option>Annual</option>
@@ -378,7 +386,7 @@ get_header(); ?>
 
                     <div class="form_element full_width " id="add_btn">
                         <label> &nbsp; </label>
-                        <input type="text" #id="btnadd" value="Add a Current Employer" style="text-align: center;cursor: pointer;" />
+                        <input type="text" value="Add a Current Employer" style="text-align: center;cursor: pointer;" />
                     </div>
 
                     <div class="form_element full_width">

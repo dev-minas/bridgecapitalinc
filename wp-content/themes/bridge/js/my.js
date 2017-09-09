@@ -53,14 +53,30 @@ $(document).ready(function () {
 
         if (this.value == 'Active Military Duty') {
 
-            $(this).parent().parent().find(".company_name").first().addClass("hidden")
-            $(this).nextAll(".branch").first().removeClass("hidden");
+            $(this).parents().find(".company_name").first().addClass("hidden");
+            $(this).parents().find(".branch").first().removeClass("hidden");
+
+
+            $(this).parents().find(".position").first().addClass("hidden");
+            $(this).parents().find(".rank").first().removeClass("hidden");
         }
-        if (this.value == 'Employed') {
+
+        else {
+            $(this).parents().find(".branch").first().addClass("hidden");
+            $(this).parents().find(".company_name").first().removeClass("hidden");
+
+            $(this).parents().find(".rank").first().addClass("hidden");
+            $(this).parents().find(".position").first().removeClass("hidden");
+        }
+        /*if (this.value == 'Employed') {
             $(this).nextAll(".company_name").first().removeClass("hidden");
             $(this).nextAll(".branch").first().addClass("hidden");
         }
+*/
+    });
 
+    $("#btnadd").click(function(){
+        $("#repeat").append("<strong>Lorem ipsum.</strong>");
     });
 
 });
