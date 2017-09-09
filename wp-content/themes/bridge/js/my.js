@@ -49,23 +49,25 @@ $(document).ready(function () {
         });
     });
 
+    $('.employment_type').change(function() {
 
+        if (this.value == 'Active Military Duty') {
 
-});
+            $(this).parent().parent().find(".company_name").first().addClass("hidden")
+            $(this).nextAll(".branch").first().removeClass("hidden");
+        }
+        if (this.value == 'Employed') {
+            $(this).nextAll(".company_name").first().removeClass("hidden");
+            $(this).nextAll(".branch").first().addClass("hidden");
+        }
 
-
-$(document).ready(function(){
-
-    $('.repeat').css('display','none');
-
-    $('.repeat').hide();
-
-    $("#btnadd").click(function(){
-        $(".repeat").append("<b>Appended text</b>");
     });
 
-
-
 });
 
-//<table> <tbody> <tr> <td>Company Name</td> <td>$0</td> <td>remove</td> </tr> </tbody> </table>
+/*$(".box").click(function() {
+ $(this).nextAll(".box-data").first().css("display", "block");
+ });*/
+
+
+

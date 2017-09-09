@@ -732,6 +732,83 @@ hr {
 
 }
 
+.fill-form-list {
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+.fill-form-inner label {
+    margin-right: 30px;
+    width: 22%;
+    padding: 0 10px 0 0;
+    font-size: 17px;
+    color: #848994;
+    display: inline-block;
+    text-align: right;
+}
+
+.fill-form-inner input, .fill-form-inner select {
+    width: 30%;
+    height: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 2%;
+    moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #848994;
+    display: table-cell;
+}
+
+.information-txt {
+    padding-left: 20%;
+}
+
+.fill-form-checkbox {
+    width: 62%;
+    margin: 0 auto;
+    display: table;
+}
+
+.fill-form-checkbox label {
+    display: table-cell;
+}
+
+.fill-form-checkbox input {
+    display: table-cell;
+    margin-right: 30px;
+}
+
+.fill-form-inner a {
+    font-size: 16px;
+    color: #208ddc;
+    text-decoration: none!important;
+}
+
+.econsent-terms-txt {
+    overflow-y: scroll;
+    height: 300px;
+    text-align: justify;
+    padding: 15px;
+    margin: 2% 0 5% 0;
+    border: 1px solid #ccc;
+}
+
+.econsent-terms-checkbox {
+    display: table;
+}
+
+.econsent-terms-checkbox label {
+    display: table-cell;
+
+}
+
+.econsent-terms-checkbox input {
+    display: table-cell;
+    margin-right: 20px;
+}
+
 
 
 
