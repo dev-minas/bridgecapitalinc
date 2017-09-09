@@ -50,10 +50,16 @@
         </div>
 
         <div class="team_block">
-            <div class="team_img"><img src="<?php bloginfo('template_url'); ?>/img/Vahe.jpg" /></div>
+            <div class="team_img"><img src="<?php bloginfo('template_url'); ?>/img/Frank.jpg" /></div>
             <div class="team_name">Frank<br/><span>Chander</span></div>
             <div class="team_bio">
-                Vahe Hayrapetian has been in the mortgage industry in 2007.  He started his career as a Loan Office at GMAC Mortgage. Vahe’s hard work, dedication and high ethics helped him to be named as one of GMAC's top 10 mortgage originators for multiple years. His success awarded him the position of Associate District Manager at the Pasadena branch. When GMAC exited retail mortgage channel in 2008, Vahe moved to Countrywide as Sales Manager. Countrywide was the largest originator of single-family mortgages in the country before merging with Bank of America. After the financial meltdown of 2008/09, Vahe continued his career at Skyline Home Loans. Being a visionary and an entrepreneur, he has always worked towards creating an independent mortgage firm.  In January 2017, Vahe Hayrapetian and his business partner Spartak Hovakimyan have lunched Bridge Capital Home Loans.
+                NMLS # 561090
+                <br /><br />
+                Growing up in L.A I spent my youth with my dad at his construction sites. I have always been fascinated with homes and developments so in 2010 I started practicing real estate. In 2012 I transitioned to the home lending world and have not looked back. With vast experience in both worlds you can feel confident that I know what it takes to get the job done. Whether you are a first time home buyer or an experienced investor, I can help you with all your lending needs.
+                <br /><br />
+                Giving Back
+                <br /><br />
+                In 2015 I started the Homes for Trees Project. The plan was simple, plant more trees!!!! With every transaction I close, I donate a tree to the city of Glendale under my clients names. You will receive a certificate along with the coordinates to the tree that has been planted for you and your family. The idea was for the tree to grow as your family grows. In 2016 I took on the role of one of the board of directors for Glendale Beautiful. I have since given up my seat on the board but still work very close with them. If you are interested in donating a tree or donating your time please reach out to me.
             </div>
         </div>
 
