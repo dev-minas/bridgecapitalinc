@@ -52,27 +52,128 @@ $(document).ready(function () {
     $('.employment_type').change(function() {
 
         if (this.value == 'Active Military Duty') {
-
-            $(this).parents().find(".company_name").first().addClass("hidden");
+            $(this).parents().find(".rank").first().removeClass("hidden");
+            $(this).parents().find(".time-period").first().removeClass("hidden");
+            $(this).parents().find(".years-in-same-field").first().removeClass("hidden");
+            $(this).parents().find(".total-income").first().removeClass("hidden");
             $(this).parents().find(".branch").first().removeClass("hidden");
-
+            $(this).parents().find(".business-phone").first().removeClass("hidden");
+            $(this).parents().find(".company-street").first().removeClass("hidden");
+            $(this).parents().find(".company-zip-state").first().removeClass("hidden");
+            $(this).parents().find(".company-city").first().removeClass("hidden");
 
             $(this).parents().find(".position").first().addClass("hidden");
-            $(this).parents().find(".rank").first().removeClass("hidden");
+            $(this).parents().find(".company-name").first().addClass("hidden");
+            $(this).parents().find(".type-of-business").first().addClass("hidden");
         }
 
-        else {
+
+        if (this.value == 'Employed') {
+
+            $(this).parents().find(".position").first().removeClass("hidden");
+            $(this).parents().find(".type-of-business").first().removeClass("hidden");
+            $(this).parents().find(".rank").first().addClass("hidden");
+            $(this).parents().find(".branch").first().addClass("hidden");
+            $(this).parents().find(".company-name").first().removeClass("hidden");
+
+
+            $(this).parents().find(".time-period").first().removeClass("hidden");
+            $(this).parents().find(".years-in-same-field").first().removeClass("hidden");
+            $(this).parents().find(".total-income").first().removeClass("hidden");
+            $(this).parents().find(".business-phone").first().removeClass("hidden");
+            $(this).parents().find(".company-street").first().removeClass("hidden");
+            $(this).parents().find(".company-zip-state").first().removeClass("hidden");
+            $(this).parents().find(".company-city").first().removeClass("hidden");
+            $(this).parents().find(".retirement-date").first().addClass("hidden");
+        }
+
+        if (this.value == 'Self Employed') {
+            $(this).parents().find(".position").first().removeClass("hidden");
+            $(this).parents().find(".type-of-business").first().removeClass("hidden");
+            $(this).parents().find(".rank").first().addClass("hidden");
+            $(this).parents().find(".branch").first().addClass("hidden");
+            $(this).parents().find(".company-name").first().removeClass("hidden");
+
+
+            $(this).parents().find(".time-period").first().removeClass("hidden");
+            $(this).parents().find(".years-in-same-field").first().removeClass("hidden");
+            $(this).parents().find(".total-income").first().removeClass("hidden");
+            $(this).parents().find(".business-phone").first().removeClass("hidden");
+            $(this).parents().find(".company-street").first().removeClass("hidden");
+            $(this).parents().find(".company-zip-state").first().removeClass("hidden");
+            $(this).parents().find(".company-city").first().removeClass("hidden");
+            $(this).parents().find(".retirement-date").first().addClass("hidden");
+
+
+        }
+
+        if (this.value == 'Retired') {
+            $(this).parents().find(".retirement-date").first().removeClass("hidden");
+            $(this).parents().find(".rank").first().addClass("hidden");
+            $(this).parents().find(".time-period").first().addClass("hidden");
+            $(this).parents().find(".years-in-same-field").first().addClass("hidden");
+            $(this).parents().find(".total-income").first().addClass("hidden");
+            $(this).parents().find(".branch").first().addClass("hidden");
+            $(this).parents().find(".business-phone").first().addClass("hidden");
+            $(this).parents().find(".company-street").first().addClass("hidden");
+            $(this).parents().find(".company-zip-state").first().addClass("hidden");
+            $(this).parents().find(".company-city").first().addClass("hidden");
+            $(this).parents().find(".position").first().addClass("hidden");
+            $(this).parents().find(".type-of-business").first().addClass("hidden");
+            $(this).parents().find(".company-name").first().addClass("hidden");
+        }
+
+        if (this.value == 'Other/Unemployed') {
+            $(this).parents().find(".retirement-date").first().addClass("hidden");
+            $(this).parents().find(".rank").first().addClass("hidden");
+            $(this).parents().find(".time-period").first().addClass("hidden");
+            $(this).parents().find(".years-in-same-field").first().addClass("hidden");
+            $(this).parents().find(".total-income").first().addClass("hidden");
+            $(this).parents().find(".branch").first().addClass("hidden");
+            $(this).parents().find(".business-phone").first().addClass("hidden");
+            $(this).parents().find(".company-street").first().addClass("hidden");
+            $(this).parents().find(".company-zip-state").first().addClass("hidden");
+            $(this).parents().find(".company-city").first().addClass("hidden");
+            $(this).parents().find(".position").first().addClass("hidden");
+            $(this).parents().find(".type-of-business").first().addClass("hidden");
+            $(this).parents().find(".company-name").first().addClass("hidden");
+        }
+
+
+
+
+       /* else {
             $(this).parents().find(".branch").first().addClass("hidden");
             $(this).parents().find(".company_name").first().removeClass("hidden");
 
             $(this).parents().find(".rank").first().addClass("hidden");
             $(this).parents().find(".position").first().removeClass("hidden");
+
+            $(this).parents().find(".type-of-business").first().removeClass("hidden");
+        }*/
+
+
+      /*  if (this.value == 'Retired') {
+            $(this).parents().find(".retirement-date").first().removeClass("hidden");
+
+            $(this).parents().find(".retirement-date").first().nextAll().addClass("hidden");
+        }*/
+
+      /*  else {
+            $(this).parents().find(".retirement-date").first().addClass("hidden");
         }
+*/
+
         /*if (this.value == 'Employed') {
             $(this).nextAll(".company_name").first().removeClass("hidden");
             $(this).nextAll(".branch").first().addClass("hidden");
         }
+
 */
+
+        // if (this.value == 'Employed') {
+        //
+        // }
     });
 
     $("#btnadd").click(function(){
@@ -81,9 +182,7 @@ $(document).ready(function () {
 
 });
 
-/*$(".box").click(function() {
- $(this).nextAll(".box-data").first().css("display", "block");
- });*/
+
 
 
 
