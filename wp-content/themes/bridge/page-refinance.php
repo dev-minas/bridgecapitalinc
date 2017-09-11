@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab hidden">
+            <div id="tab1" class="tab">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -291,6 +291,14 @@ get_header(); ?>
                                 <input placeholder="optional" name="Street" value="" />
                             </div>
                             <div class="form_element total-income">
+                                <label for="price">Total Income</label>
+                                <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
+                                <select class="half_width" name="State">
+                                    <option selected="selected">Monthly</option>
+                                    <option>Annual</option>
+                                </select>
+                            </div>
+                            <div class="form_element total-income" style="visibility: hidden">
                                 <label for="price">Total Income</label>
                                 <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
                                 <select class="half_width" name="State">
@@ -689,7 +697,7 @@ get_header(); ?>
 
             </div>
 
-            <div id="tab10" class="tab ">
+            <div id="tab10" class="tab hidden">
 
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <!--<h1>You're minutes away from your 3 FREE Credit Scores.</h1>-->
