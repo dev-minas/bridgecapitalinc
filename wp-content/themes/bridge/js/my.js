@@ -60,6 +60,19 @@ $(document).ready(function () {
 
     });
 
+    $(".main_form").submit(function (event) {
+
+        event.preventDefault();
+
+        $.ajax( {
+            type: "POST",
+            url: '/form_submit.php',
+            data: $(".main_form").serialize(),
+            success: function( response ) {
+                console.log( response );
+            }
+        } );
+    });
 });
 
 function emp_type_change(obj) {
