@@ -832,6 +832,14 @@ hr {
      margin: 0 auto;
 }
 
+#tab4_save_btn {
+    width: 50%!important;
+}
+
+#tab4_save_btn input[type=submit]{
+    width: 94%!important;
+}
+
 
 
 
