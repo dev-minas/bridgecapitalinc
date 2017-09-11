@@ -171,6 +171,16 @@ p.sub_title {
 .bg3 h2, .bg3 p, .bg3 {
     color: #f5f6f8;
 }
+.bg3 ul {
+    list-style-type: none;
+    list-style-position: disc;
+}
+.bg3 ul li:before {
+    content: "•";
+    padding-right: 10px;
+    color: white;
+}
+
 .bg4 {
 	background-image: url('img/bg_home.jpg');
 	background-repeat: no-repeat;

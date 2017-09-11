@@ -6,7 +6,7 @@ get_header(); ?>
 
     <div class="bg_home_2 bg_form">
 
-        <form method="post">
+        <form method="post" class="main_form">
 
             <div id="tab1" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
@@ -204,7 +204,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab4" class="tab">
+            <div id="tab4" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Current Employer Information</h1>
                 <div id="repeat">
@@ -689,7 +689,8 @@ get_header(); ?>
 
             </div>
 
-            <div id="tab10" class="tab hidden">
+            <div id="tab10" class="tab ">
+
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <!--<h1>You're minutes away from your 3 FREE Credit Scores.</h1>-->
                 <div class=" full_width gray">
@@ -771,7 +772,7 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input disabled="disabled" data-index="11" class="continue" type="submit" name="submit" value="CONTINUE" />
+                        <input type="submit" name="submit" value="CONTINUE" />
                     </div>
 
                 </div>
@@ -866,7 +867,6 @@ get_header(); ?>
             </div>
 
         </div>
-
     </div>
 
 <?php get_footer(); ?>
