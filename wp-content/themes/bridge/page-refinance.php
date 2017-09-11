@@ -58,150 +58,150 @@ get_header(); ?>
             <div id="tab2" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Property Information</h1>
-                    <div class="form_left">
-                        <div class="form_element">
-                            <label>Street</label>
-                            <input name="Street" value="" />
-                        </div>
-                        <div class="form_element">
-                            <label>Estimated Value</label>
-                            <input name="gray" value="" />
-                        </div>
-                        <div class="form_element">
-                            <label>Zip / State</label>
-                            <input class="half_width half_width_margin" name="Zip" />
-                            <select class="half_width" name="State">
-                                <option value="" selected="selected" disabled="">State</option>
-                                <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option>
-                            </select>
-                        </div>
-                        <div class="form_element">
-                            <label>Loan Amount</label>
-                            <input name="Loan Amount" />
-                        </div>
-                        <div class="form_element">
-                            <label>City</label>
-                            <input name="City" />
-                        </div>
-                        <div class="form_element">
-                            <label>Orig Purchase Price</label>
-                            <input name="Orig Purchase Price" />
-                        </div>
-
-                        <div class="form_element">
-                            <label>Occupancy Type</label>
-                            <select name="Occupancy Type">
-                                <option value="" disabled="">Select One</option>
-                                <option>Primary Residence</option>
-                                <option>Investment Property</option>
-                                <option>Second Home</option>
-                            </select>
-                        </div>
-                        <div class="form_element">
-                            <label>Orig Purchase Date</label>
-                            <input name="Orig Purchase Date" />
-                        </div>
-
-                        <div class="form_element">
-                            <label>Property Type</label>
-                            <select name="Property Type">
-                                <option value="" disabled="">Select One</option>
-                                <option>Single Family</option>
-                                <option>Condo</option>
-                                <option>PUD</option>
-                                <option>Manufactured/Double-wide</option>
-                                <option>Manufactured/Single-wide</option>
-                                <option>Coop</option>
-                                <option>Modular</option>
-                                <option>Townhouse/Rowhouse</option>
-                            </select>
-                        </div>
-                        <div class="form_element">
-                        </div>
-
-                        <div class="form_element">
-                            <label>Number of Stories</label>
-                            <input name="Number of Stories" />
-                        </div>
-                        <div class="form_element">
-                        </div>
-
-                        <div class="form_element full_width">
-                            <label> &nbsp; </label>
-                            <input data-index="3" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
-                        </div>
+                <div class="form_left">
+                    <div class="form_element">
+                        <label>Street</label>
+                        <input name="Street" value="" />
                     </div>
+                    <div class="form_element">
+                        <label>Estimated Value</label>
+                        <input name="gray" value="" />
+                    </div>
+                    <div class="form_element">
+                        <label>Zip / State</label>
+                        <input class="half_width half_width_margin" name="Zip" />
+                        <select class="half_width" name="State">
+                            <option value="" selected="selected" disabled="">State</option>
+                            <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option>
+                        </select>
+                    </div>
+                    <div class="form_element">
+                        <label>Loan Amount</label>
+                        <input name="Loan Amount" />
+                    </div>
+                    <div class="form_element">
+                        <label>City</label>
+                        <input name="City" />
+                    </div>
+                    <div class="form_element">
+                        <label>Orig Purchase Price</label>
+                        <input name="Orig Purchase Price" />
+                    </div>
+
+                    <div class="form_element">
+                        <label>Occupancy Type</label>
+                        <select name="Occupancy Type">
+                            <option value="" disabled="">Select One</option>
+                            <option>Primary Residence</option>
+                            <option>Investment Property</option>
+                            <option>Second Home</option>
+                        </select>
+                    </div>
+                    <div class="form_element">
+                        <label>Orig Purchase Date</label>
+                        <input name="Orig Purchase Date" />
+                    </div>
+
+                    <div class="form_element">
+                        <label>Property Type</label>
+                        <select name="Property Type">
+                            <option value="" disabled="">Select One</option>
+                            <option>Single Family</option>
+                            <option>Condo</option>
+                            <option>PUD</option>
+                            <option>Manufactured/Double-wide</option>
+                            <option>Manufactured/Single-wide</option>
+                            <option>Coop</option>
+                            <option>Modular</option>
+                            <option>Townhouse/Rowhouse</option>
+                        </select>
+                    </div>
+                    <div class="form_element">
+                    </div>
+
+                    <div class="form_element">
+                        <label>Number of Stories</label>
+                        <input name="Number of Stories" />
+                    </div>
+                    <div class="form_element">
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="3" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+                </div>
             </div>
 
             <div id="tab3" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Current Address Information</h1>
-                
-                    <div class="form_left">
-                        <div class="form_element">
-                            <label for="name">Street</label>
-                            <input name="Street" value="" />
-                        </div>
-                        <div class="form_element">
-                            <label for="email">Do you own or rent?</label>
-                            <select name="Own_or_Rent">
-                                <option value="" selected="selected" disabled="">Select One</option>
-                                <option>Own</option>
-                                <option>Rent</option>
-                            </select>
-                        </div>
-                        <div class="form_element">
-                            <label for="price">Zip / State</label>
-                            <input class="half_width half_width_margin" name="Zip" />
-                            <select class="half_width" name="State">
-                                <option value="" selected="selected" disabled="">State</option>
-                                <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
-                        </div>
-                        <div class="form_element">
-                            <label for="message">What is your monthly rent?</label>
-                            <input name="Rent" />
-                        </div>
-                        <div class="form_element">
-                            <label for="message">City</label>
-                            <input name="City" />
-                        </div>
-                        <div class="form_element">
-                            <label for="message">Time at Current Address</label>
-                            <input class="half_width half_width_margin" name="Years" placeholder="Years" />
-                            <input class="half_width" name="Months" placeholder="Months" />
-                        </div>
 
-                        <div class="form_element">
-                        </div>
-                        <div class="form_element">
-                            <label>Mailing Address Different</label>
-                            <input type="radio" name="Mailing Address Different" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Mailing Address Different" value="No" />
-                            <span>No</span>
-                        </div>
-
-                        <div class="form_element full_width gray">
-                            Does Co-Borrower have a different current address?
-                        </div>
-
-                        <div class="form_element full_width">
-                            <label>Mailing Address Different</label>
-                            <input type="radio" name="Mailing Address Different" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Mailing Address Different" value="No" />
-                            <span>No</span>
-                        </div>
-
-                        <div class="form_element full_width blue">
-                            Changing the Co-Borrower current address will require you to provide the Co-Borrower current address information on the next page.
-                        </div>
-
-                        <div class="form_element full_width">
-                            <label> &nbsp; </label>
-                            <input data-index="4" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
-                        </div>
+                <div class="form_left">
+                    <div class="form_element">
+                        <label for="name">Street</label>
+                        <input name="Street" value="" />
                     </div>
+                    <div class="form_element">
+                        <label for="email">Do you own or rent?</label>
+                        <select name="Own_or_Rent">
+                            <option value="" selected="selected" disabled="">Select One</option>
+                            <option>Own</option>
+                            <option>Rent</option>
+                        </select>
+                    </div>
+                    <div class="form_element">
+                        <label for="price">Zip / State</label>
+                        <input class="half_width half_width_margin" name="Zip" />
+                        <select class="half_width" name="State">
+                            <option value="" selected="selected" disabled="">State</option>
+                            <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
+                    </div>
+                    <div class="form_element">
+                        <label for="message">What is your monthly rent?</label>
+                        <input name="Rent" />
+                    </div>
+                    <div class="form_element">
+                        <label for="message">City</label>
+                        <input name="City" />
+                    </div>
+                    <div class="form_element">
+                        <label for="message">Time at Current Address</label>
+                        <input class="half_width half_width_margin" name="Years" placeholder="Years" />
+                        <input class="half_width" name="Months" placeholder="Months" />
+                    </div>
+
+                    <div class="form_element">
+                    </div>
+                    <div class="form_element">
+                        <label>Mailing Address Different</label>
+                        <input type="radio" name="Mailing Address Different" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Mailing Address Different" value="No" />
+                        <span>No</span>
+                    </div>
+
+                    <div class="form_element full_width gray">
+                        Does Co-Borrower have a different current address?
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label>Mailing Address Different</label>
+                        <input type="radio" name="Mailing Address Different" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Mailing Address Different" value="No" />
+                        <span>No</span>
+                    </div>
+
+                    <div class="form_element full_width blue">
+                        Changing the Co-Borrower current address will require you to provide the Co-Borrower current address information on the next page.
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="4" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+                </div>
             </div>
 
             <div id="tab4" class="tab">
@@ -306,7 +306,7 @@ get_header(); ?>
                     <label> &nbsp; </label>
                     <input type="text" id="btnadd" value="Add a Current Employer" style="text-align: center; cursor: pointer;" />
                 </div>
-                <div class="form_element full_width">
+                <div class="form_element full_width" id="tab4_save_btn">
                     <label> &nbsp; </label>
                     <input data-index="5" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                 </div>
@@ -322,20 +322,20 @@ get_header(); ?>
                     <h3>Do you receive any other type of income?</h3>
                     <p>such as dividends, alimony, social security or retirement</p>
                 </div>
-                
-                    <div class="form_left">
 
-                        <div class="form_element full_width" id="add_btn">
-                            <label> &nbsp; </label>
-                            <input type="text" #id="btn_add" value="Add a Current Employer" style="text-align: center;cursor: pointer;" />
-                        </div>
+                <div class="form_left">
 
-                        <div class="form_element full_width">
-                            <label> &nbsp; </label>
-                            <input data-index="6" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
-                        </div>
+                    <div class="form_element full_width" id="add_btn">
+                        <label> &nbsp; </label>
+                        <input type="text" #id="btn_add" value="Add a Current Employer" style="text-align: center;cursor: pointer;" />
                     </div>
-                
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="6" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+                </div>
+
             </div>
 
             <div id="tab6" class="tab hidden">
@@ -344,106 +344,106 @@ get_header(); ?>
                 <div class=" full_width gray">
                     We just have a few questions the government requires us to ask.
                 </div>
-                
-                    <div class="form_left">
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <div class="info-block">
-                            <input class="form_element_checkbox" type="checkbox" name="Borrower" />
-                            <label class="form_element_label"> I do not wish to furnish this information </label>
-                        </div>
 
-
-                        <div class="info-block-inner">
-                            <div class="info-block-inner-left">
-                                <div class="info-block-inner-title">
-                                    <p>What is your race?</p>
-                                </div>
-                                <div class="info-block-inner-left">
-                                    <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">I do not wish to furnish this information</label>
-                                    </div>
-                                    <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">American Indian or Alaska Native</label>
-                                    </div>
-                                    <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Asian</label>
-                                    </div>
-                                    <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Black or African American</label>
-                                    </div>
-                                    <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Native Hawaiian or Other Pacific Islander</label>
-                                    </div>
-                                    <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">White</label>
-                                    </div>
-                                    <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Not Applicable</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="info-block-inner-right">
-                                <div class="info-block-inner-right-top">
-                                    <div class="info-block-inner-title">
-                                        <p>What is your ethnicity?</p>
-                                    </div>
-                                    <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">I do not wish to furnish this information</label>
-                                    </div>
-                                    <div class="info-radio">
-                                        <input type="radio" name="ethnicity">
-                                        <label for="">I do not wish to furnish this information</label>
-                                    </div>
-                                    <div class="info-radio">
-                                        <input type="radio" name="ethnicity">
-                                        <label for="">I do not wish to furnish this information</label>
-                                    </div>
-                                    <div class="info-radio">
-                                        <input type="radio" name="ethnicity">
-                                        <label for="">I do not wish to furnish this information</label>
-                                    </div>
-                                </div>
-                                <div class="info-block-inner-right-bottom">
-                                    <div class="info-block-inner-title">
-                                        <p>What is your gender?</p>
-                                    </div>
-                                    <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">I do not wish to furnish this information</label>
-                                    </div>
-                                    <div class="info-radio">
-                                        <input type="radio" name="gender">
-                                        <label for="">I do not wish to furnish this information</label>
-                                    </div>
-                                    <div class="info-radio">
-                                        <input type="radio" name="gender">
-                                        <label for="">I do not wish to furnish this information</label>
-                                    </div>
-                                    <div class="info-radio">
-                                        <input type="radio" name="gender">
-                                        <label for="">I do not wish to furnish this information</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clear-both"></div>
-                        </div>
-
-                        <div class="form_element full_width">
-                            <label> &nbsp; </label>
-                            <input data-index="7" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
-                        </div>
-
+                <div class="form_left">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <div class="info-block">
+                        <input class="form_element_checkbox" type="checkbox" name="Borrower" />
+                        <label class="form_element_label"> I do not wish to furnish this information </label>
                     </div>
-                
+
+
+                    <div class="info-block-inner">
+                        <div class="info-block-inner-left">
+                            <div class="info-block-inner-title">
+                                <p>What is your race?</p>
+                            </div>
+                            <div class="info-block-inner-left">
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">American Indian or Alaska Native</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">Asian</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">Black or African American</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">Native Hawaiian or Other Pacific Islander</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">White</label>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">Not Applicable</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-block-inner-right">
+                            <div class="info-block-inner-right-top">
+                                <div class="info-block-inner-title">
+                                    <p>What is your ethnicity?</p>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="ethnicity">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="ethnicity">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="ethnicity">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                            </div>
+                            <div class="info-block-inner-right-bottom">
+                                <div class="info-block-inner-title">
+                                    <p>What is your gender?</p>
+                                </div>
+                                <div class="info-checkbox">
+                                    <input type="checkbox">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="gender">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="gender">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                                <div class="info-radio">
+                                    <input type="radio" name="gender">
+                                    <label for="">I do not wish to furnish this information</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear-both"></div>
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="7" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+
+                </div>
+
             </div>
 
             <div id="tab7" class="tab hidden">
@@ -452,147 +452,143 @@ get_header(); ?>
                 <div class=" full_width gray">
                     We just have a few questions the government requires us to ask.
                 </div>
-                
-                    <div class="form_left">
 
-                        <h3>Declarations</h3>
+                <div class="form_left">
 
-                        <div class="form_element full_width" id="declarations_list">
-                            <label>a. Are there any outstanding judgments against you?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width" id="declarations_list">
-                            <label>b. Have you been declared bankrupt within the past 7 years?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width" id="declarations_list">
-                            <label>c. Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width">
-                            <label>d. Are you a party to a lawsuit?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width" id="declarations_list">
-                            <label>e. Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer in title in lieu of foreclosure, or judgment?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width" id="declarations_list">
-                            <label>f. Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width" id="declarations_list">
-                            <label>g. Are you obligated to pay alimony, child support, or separate maintenance?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width" id="declarations_list">
-                            <label>h. Is any part of the down payment borrowed?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width" id="declarations_list">
-                            <label>i. Are you a co-maker or endorser on a note?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width"  id="declarations_list">
-                            <label>j. Are you a U.S. Citizen?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width"  id="declarations_list">
-                            <label>k. Are you a permanent Resident Alien?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width"  id="declarations_list">
-                            <label>l. Do you intend to occupy the property as your Primary Residence?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width"  id="declarations_list">
-                            <label>m. Have you had an ownership interest in a property in the last three years?</label>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
-                            <input type="radio" name="Declarations" value="Yes" />
-                            <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
-                            <span>No</span>
-                        </div>
-                        <div class="form_element full_width"  id="declarations_list">
-                            <label>n. What type of property did you own?</label>
-                            <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
-                            <select name="Own_or_Rent" id="declarations-select">
-                                <option value="" selected="selected" disabled="">Select One</option>
-                                <option>Primary Residence</option>
-                                <option>Second Home</option>
-                                <option>Investment Property</option>
-                            </select>
-                        </div>
-                        <div class="form_element full_width"  id="declarations_list">
-                            <label>o. How did you hold title to the home?</label>
-                            <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
-                            <select name="Own_or_Rent" id="declarations-select">
-                                <option value="" selected="selected" disabled="">Select One</option>
-                                <option>Solely by yourself</option>
-                                <option>Jointly with your spouse</option>
-                                <option>Jointly with another person</option>
-                            </select>
-                        </div>
+                    <h3>Declarations</h3>
 
-
-
-
-
-                        <div class="form_element full_width">
-                            <label> &nbsp; </label>
-                            <input data-index="8" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
-                        </div>
-
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>a. Are there any outstanding judgments against you?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
                     </div>
-                
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>b. Have you been declared bankrupt within the past 7 years?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>c. Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>d. Are you a party to a lawsuit?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>e. Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer in title in lieu of foreclosure, or judgment?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>f. Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>g. Are you obligated to pay alimony, child support, or separate maintenance?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>h. Is any part of the down payment borrowed?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>i. Are you a co-maker or endorser on a note?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>j. Are you a U.S. Citizen?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>k. Are you a permanent Resident Alien?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>l. Do you intend to occupy the property as your Primary Residence?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>m. Have you had an ownership interest in a property in the last three years?</label>
+                        <span class="declarations">dxdxdx ffgcfcfc</span>
+                        <input type="radio" name="Declarations" value="Yes" />
+                        <span>Yes</span>
+                        <input type="radio" name="Declarations" value="No" />
+                        <span>No</span>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>n. What type of property did you own?</label>
+                        <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
+                        <select name="Own_or_Rent" id="declarations-select">
+                            <option value="" selected="selected" disabled="">Select One</option>
+                            <option>Primary Residence</option>
+                            <option>Second Home</option>
+                            <option>Investment Property</option>
+                        </select>
+                    </div>
+                    <div class="form_element full_width"  id="declarations_list">
+                        <label>o. How did you hold title to the home?</label>
+                        <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
+                        <select name="Own_or_Rent" id="declarations-select">
+                            <option value="" selected="selected" disabled="">Select One</option>
+                            <option>Solely by yourself</option>
+                            <option>Jointly with your spouse</option>
+                            <option>Jointly with another person</option>
+                        </select>
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="8" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+
+                </div>
+
             </div>
 
             <div id="tab8" class="tab hidden">
@@ -601,42 +597,42 @@ get_header(); ?>
                 <div class=" full_width gray">
                     With these last tidbits of info we'll give you your FREE credit scores.
                 </div>
-                
-                    <div class="form_left">
-                        <div class="full_width gray">
-                            <strong>My Credit Information</strong>
+
+                <div class="form_left">
+                    <div class="full_width gray">
+                        <strong>My Credit Information</strong>
+                    </div>
+
+                    <div class="fill-form-list">
+                        <span class="gray information-txt">dxdxdx ffgcfcfc</span>
+                        <div class="fill-form-inner">
+                            <label for="">Social Security #</label>
+                            <input type="text">
                         </div>
-
-                        <div class="fill-form-list">
-                            <span class="gray information-txt">dxdxdx ffgcfcfc</span>
-                            <div class="fill-form-inner">
-                                <label for="">Social Security #</label>
-                                <input type="text">
-                            </div>
-                            <div class="fill-form-inner">
-                                <label for="">Confirm Social Security #</label>
-                                <input type="password">
-                            </div>
-                            <div class="fill-form-inner">
-                                <label for="">Birthday</label>
-                                <input type="text">
-                            </div>
-
+                        <div class="fill-form-inner">
+                            <label for="">Confirm Social Security #</label>
+                            <input type="password">
                         </div>
-
-                        <div class="info-checkbox fill-form-checkbox">
-                            <input type="checkbox">
-                            <label for="">
-                                I / We (dxdxdx ffgcfcfc) authorize lender or its designated representatives to obtain a credit report from the national credit reporting agencies in connection with my/our home loan application.
-                            </label>
-                        </div>
-
-                        <div class="form_element full_width">
-                            <label> &nbsp; </label>
-                            <input data-index="9" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <div class="fill-form-inner">
+                            <label for="">Birthday</label>
+                            <input type="text">
                         </div>
 
                     </div>
+
+                    <div class="info-checkbox fill-form-checkbox">
+                        <input type="checkbox">
+                        <label for="">
+                            I / We (dxdxdx ffgcfcfc) authorize lender or its designated representatives to obtain a credit report from the national credit reporting agencies in connection with my/our home loan application.
+                        </label>
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="9" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+
+                </div>
 
             </div>
 
@@ -646,50 +642,50 @@ get_header(); ?>
                 <div class=" full_width gray">
                     You can do this by either creating a new account or signing in.
                 </div>
-                    <div class="form_left">
+                <div class="form_left">
 
-                        <div class="fill-form-list">
-                            <div class="fill-form-inner">
-                                <label for="">Email</label>
-                                <input type="text">
-                            </div>
-                            <div class="fill-form-inner">
-                                <label for="">New Password</label>
-                                <input type="password">
-                            </div>
-                            <div class="fill-form-inner">
-                                <label for="">Confirm Password</label>
-                                <input type="text">
-                            </div>
-                            <div class="fill-form-inner">
-                                <label for="">Confirm Password</label>
-                                <select name="">
-                                    <option value="" selected="selected" disabled="">Select One</option>
-                                    <option>What is your favorite hobby?</option>
-                                    <option>What was your favorite teacher</option>
-                                    <option>what is the name of your favorite pet?</option>
-                                    <option>In what year was your mother born?</option>
-                                    <option>What is the name of the model of your first car?</option>
-                                </select>
-                            </div>
-
-                            <div class="fill-form-inner">
-                                <label for="">Security Answer</label>
-                                <input type="text">
-                            </div>
-
-                        </div>
-                        
-                        <div class="form_element full_width">
-                            <label> &nbsp; </label>
-                            <input data-index="10" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    <div class="fill-form-list">
+                        <div class="fill-form-inner">
+                            <label for="">Email</label>
+                            <input type="text">
                         </div>
                         <div class="fill-form-inner">
-                            <a href="#">Already have an account? Sign In</a>
+                            <label for="">New Password</label>
+                            <input type="password">
+                        </div>
+                        <div class="fill-form-inner">
+                            <label for="">Confirm Password</label>
+                            <input type="text">
+                        </div>
+                        <div class="fill-form-inner">
+                            <label for="">Confirm Password</label>
+                            <select name="">
+                                <option value="" selected="selected" disabled="">Select One</option>
+                                <option>What is your favorite hobby?</option>
+                                <option>What was your favorite teacher</option>
+                                <option>what is the name of your favorite pet?</option>
+                                <option>In what year was your mother born?</option>
+                                <option>What is the name of the model of your first car?</option>
+                            </select>
+                        </div>
+
+                        <div class="fill-form-inner">
+                            <label for="">Security Answer</label>
+                            <input type="text">
                         </div>
 
                     </div>
-               
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="10" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+                    <div class="fill-form-inner">
+                        <a href="#">Already have an account? Sign In</a>
+                    </div>
+
+                </div>
+
 
             </div>
 

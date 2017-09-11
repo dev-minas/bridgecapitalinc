@@ -827,6 +827,11 @@ hr {
     /*width: 50%;*/
 }
 
+ #tab4_save_btn, #add_btn {
+    display: block!important;
+     margin: 0 auto;
+}
+
 
 
 

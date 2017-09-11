@@ -54,9 +54,10 @@ $(document).ready(function () {
 
     $("#btnadd").click(function(){
 
-        $("#repeat").append("<strong>Lorem ipsum.</strong>");
-        
+        //$("#repeat").append("<strong>Lorem ipsum.</strong>");
+        $("#tab4_form").children().hide();
         $("#tab4_form").append($("#cei_toclone").html());
+
     });
 
 });
