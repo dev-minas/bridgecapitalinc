@@ -857,7 +857,9 @@ hr {
     border: 4px solid #aaa;
     border-radius: 28px;
     float: left;
-    position: relative;
+    position: absolute;
+    left: -12px;
+    bottom: 16px;
 }
 
 .ql-icon:after {
@@ -877,7 +879,7 @@ li {
     list-style-type: none;
 }
 
-.ql_numb {
+/*.ql_numb {
     width: 82px;
     height: 82px;
     background-color: #0066a1;
@@ -888,7 +890,7 @@ li {
     font-size: 38px;
     line-height: 82px;
     float: left;
-    /*margin-left: -31px;*/
+    !*margin-left: -31px;*!
 }
 
 .ql_txt_title {
@@ -940,16 +942,70 @@ li {
 
 .ql_first_list {
     margin-top: 152px;
-}
-
-.ql_numb_first {
-    /*margin-top: 3px;*/
-}
-
-
-
+}*/
 
 /*qualification---end*/
+
+/*ql*/
+.ql-list {
+    position: relative;
+    margin-bottom: 92px;
+}
+
+.ql-list:after, .ql-list:before {
+    position: absolute;
+    top: 127px;
+    left: 40px;
+    border-left: 4px solid #aaa;
+    content: "";
+    height: 100%;
+}
+
+.ql-circle {
+    width: 82px;
+    height: 82px;
+    background-color: #0066a1;
+    border-radius: 100%;
+    font-weight: bold;
+    color: #fff;
+    font-size: 38px;
+    line-height: 82px;
+    float: left;
+    display: block;
+    margin-top: 40px;
+}
+
+.ql-txt-block {
+    padding-left: 95px;
+    display: table;
+}
+
+.ql-txt-block-title {
+    font-size: 32px;
+    display: block;
+    text-align: left;
+    color: #0066a1;
+    font-weight: bold;
+}
+
+.ql-txt-block-sec-title {
+    font-size: 19px;
+    display: block;
+    text-align: left;
+}
+
+.ql-list:first-of-type {
+    padding-bottom: 139px;
+}
+
+.ql-list:last-of-type:before {
+    display: none;
+}
+
+.ql-list-last:after {
+    display: none;
+}
+
 
 
 
