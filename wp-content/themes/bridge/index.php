@@ -44,7 +44,7 @@
     <div class="bg_home_2 bg3">
         <h2>Qualification Process</h2>
         <p><?=get_post(33)->post_content?></p>
-        <a href="#" class="btn_qp">LEARN MORE</a>
+        <a href="/qualification" class="btn_qp">LEARN MORE</a>
     </div>
 
     <a class="scrl_menu" name="buyingahome"></a>
