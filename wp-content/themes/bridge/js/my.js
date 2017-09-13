@@ -54,10 +54,25 @@ $(document).ready(function () {
 
     $("#btnadd").click(function(){
 
-        $("#repeat").append("<strong>Lorem ipsum.</strong>");
+        //$("#repeat").append("<strong>Lorem ipsum.</strong>");
         $("#tab4_form").children().hide();
         $("#tab4_form").append($("#cei_toclone").html());
 
+    });
+
+    $(".company-name-input").keyup(function() {
+
+        $(".emp_name").text( this.value );
+    });
+
+    $(".total_income_input").keyup(function() {
+
+        $(".income_numb").text( this.value );
+    });
+
+    $(".branch_select").change(function() {
+
+        $(".emp_name").text( this.value );
     });
 
     $(".main_form").submit(function (event) {

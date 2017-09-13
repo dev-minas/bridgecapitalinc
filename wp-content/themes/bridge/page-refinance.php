@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab">
+            <div id="tab1" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -204,15 +204,15 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab4" class="tab hidden">
+            <div id="tab4" class="tab">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Current Employer Information</h1>
                 <div id="repeat">
                     <table>
                         <tbody>
                         <tr>
-                            <td>Company Name</td>
-                            <td>$0</td>
+                            <td class="emp_name">Company Name</td>
+                            <td class="income_numb">$0</td>
                         </tr>
                         </tbody>
                     </table>
@@ -238,7 +238,7 @@ get_header(); ?>
                             </div>
                             <div class="form_element branch hidden">
                                 <label for="email">Branch</label>
-                                <select name="Own_or_Rent">
+                                <select name="Own_or_Rent" class="branch_select">
                                     <!-- <option value="" selected="selected" disabled="">Select One</option>-->
                                     <option>Air Force</option>
                                     <option>Army</option>
@@ -249,7 +249,7 @@ get_header(); ?>
                             </div>
                             <div class="form_element company-name">
                                 <label for="name">Company Name</label>
-                                <input placeholder="name" name="Street" value="" />
+                                <input class="company-name-input" placeholder="name" name="Company Name" value="" />
                             </div>
                             <div class="form_element rank hidden">
                                 <label for="name">Rank</label>
@@ -292,7 +292,7 @@ get_header(); ?>
                             </div>
                             <div class="form_element total-income">
                                 <label for="price">Total Income</label>
-                                <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
+                                <input placeholder="$Pretax" class="half_width half_width_margin mr5 total_income_input" name="Zip" />
                                 <select class="half_width" name="State">
                                     <option selected="selected">Monthly</option>
                                     <option>Annual</option>
