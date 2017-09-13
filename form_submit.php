@@ -2,6 +2,7 @@
 
 echo "<pre>"; print_r($_POST); exit();
 
+$to = "info@bridgecapitalinc.com";
 $to = "armen.musaelyan@gmail.com";
 $from = "form@bridgecapitalinc.com";
 $domain = "bridgecapitalinc.com";
