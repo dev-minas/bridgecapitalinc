@@ -285,9 +285,9 @@ p.sub_title {
 }
 
 .bg_home_f {
-    float: left; width: 60%;
+    float: left; width: 100%;
     text-align: center;
-    padding: 2% 20% 4% 20%;
+    /*padding: 2% 20% 4% 20%;*/
     color: #9fa4af;
 	background-image: url('img/bg_footer.png');
 	background-repeat: no-repeat;
@@ -295,6 +295,12 @@ p.sub_title {
 	background-size: 22%;
 	background-color: #282c30;
 }
+
+.bg_home_f_inner {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .bg_home_f_q {
     float: left; width: 27%;
     font-size: 12px; color: #9fa4af;
@@ -941,142 +947,5 @@ li {
 .bg3 ul {
     padding-left: 0!important;
 }
-
-
-@media only screen and ( max-width: 1280px) {
-    .ql-txt-block-title {
-        font-size: 25px;
-    }
-
-    .ql-txt-block-sec-title {
-        font-size: 18px;
-    }
-}
-
-@media only screen and ( max-width: 1040px) {
-    .ql-txt-block-title {
-        font-size: 22px;
-    }
-
-    .ql-txt-block-sec-title {
-        font-size: 17px;
-    }
-}
-
-@media only screen and ( max-width: 965px) {
-    .ql_content {
-        float: none;
-        width: auto;
-        padding: 5%;
-    }
-
-    .bg_contact h1 {
-        font-size: 32px;
-    }
-}
-
-@media only screen and ( max-width: 650px) {
-    .ql-icon {
-        left: -22px;
-        padding: 2% 1%;
-        border-radius: 14px;
-    }
-
-    .ql-icon img {
-        width: 70%;
-    }
-
-    .ql-list:first-of-type {
-        padding-bottom: 100px;
-    }
-
-    .ql-list {
-        margin-bottom: 51px;
-    }
-
-    .ql-list:after, .ql-list:before {
-        left: 20px;
-        top: 86px;
-    }
-
-    .ql-circle {
-        width: 41px;
-        height: 41px;
-        font-size: 20px;
-        line-height: 41px;
-    }
-
-    .ql-txt-block-title {
-        font-size: 20px;
-    }
-
-    .ql-txt-block-sec-title {
-        font-size: 16px;
-    }
-
-    .bg_contact h1 {
-        font-size: 22px;
-    }
-
-    .div_mob_menu {
-        margin: 3% 0% 0 0;
-    }
-
-    .div_logo {
-        margin: 2.5% 0 2.5% 0%;
-    }
-}
-
-@media only screen and ( max-width: 570px) {
-    .ql_content_ul {
-        padding-left: 15px;
-    }
-
-    .ql-list:after, .ql-list:before {
-        left: 20px;
-        top: 86px;
-    }
-
-    .ql-icon {
-        left: -19px;
-    }
-
-    .ql-txt-block {
-        padding-left: 30px;
-    }
-
-    .div_logo a svg {
-        width: 200px;
-    }
-
-    .div_mob_menu {
-        font-size: 16px;
-    }
-
-    .bg_contact h1 {
-        font-size: 18px;
-    }
-}
-
-@media only screen and ( max-width: 380px) {
-    .bg_contact h1 {
-        font-size: 16px;
-    }
-
-    .div_logo a svg {
-        width: 150px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
 
 @import url("resp.css");
