@@ -1,4 +1,15 @@
 
+@media only screen and ( max-width: 1280px) {
+    .ql-txt-block-title {
+        font-size: 25px;
+    }
+
+    .ql-txt-block-sec-title {
+        font-size: 18px;
+    }
+}
+
+
 @media only screen and ( max-width: 990px) {
 
 }
@@ -103,7 +114,6 @@
     .bg_home_f {
         font-size: 12px;
     }
-
 
     .bg_inner_left {
         display: none;

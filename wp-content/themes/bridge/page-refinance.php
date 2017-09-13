@@ -212,7 +212,7 @@ get_header(); ?>
                         <tbody>
                         <tr>
                             <td class="emp_name">Company Name</td>
-                            <td>$0</td>
+                            <td class="income_numb">$0</td>
                         </tr>
                         </tbody>
                     </table>
@@ -292,7 +292,7 @@ get_header(); ?>
                             </div>
                             <div class="form_element total-income">
                                 <label for="price">Total Income</label>
-                                <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
+                                <input placeholder="$Pretax" class="half_width half_width_margin mr5 total_income_input" name="Zip" />
                                 <select class="half_width" name="State">
                                     <option selected="selected">Monthly</option>
                                     <option>Annual</option>

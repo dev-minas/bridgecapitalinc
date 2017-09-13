@@ -65,6 +65,11 @@ $(document).ready(function () {
         $(".emp_name").text( this.value );
     });
 
+    $(".total_income_input").keyup(function() {
+
+        $(".income_numb").text( this.value );
+    });
+
     $(".branch_select").change(function() {
 
         $(".emp_name").text( this.value );
