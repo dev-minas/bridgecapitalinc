@@ -32,16 +32,19 @@ get_header(); ?>
             </form>
         </div>
         <div class="contact_right">
-            <img src="<?php bloginfo('template_url'); ?>/img/c_icon_location.png" />
+            <!--<img src="<?php /*bloginfo('template_url'); */?>/img/c_icon_location.png" />-->
+            <i class="inl fa fa-map-marker cont_icons_map" aria-hidden="true"></i>
             <span>
                 221 E. Glenoaks Blvd. Suite 225A <br />
                 Glendale CA 91207
             </span>
             <br /><br />
-            <img src="<?php bloginfo('template_url'); ?>/img/c_icon_phone.png" />
+            <!--<img src="<?php /*bloginfo('template_url'); */?>/img/c_icon_phone.png" />-->
+            <i class="inl fa fa-phone cont_icons_phone" aria-hidden="true"></i>
             <span>818.616.7900</span>
             <br /><br />
-            <img src="<?php bloginfo('template_url'); ?>/img/c_icon_mail.png" />
+           <!-- <img src="<?php /*bloginfo('template_url'); */?>/img/c_icon_mail.png" />-->
+            <i class="inl fa fa-envelope cont_icons_env" aria-hidden="true"></i>
             <span>Info@bridgecapitalinc.com</span>
             <br /><br />
             <hr /><br />

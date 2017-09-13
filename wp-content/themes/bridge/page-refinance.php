@@ -599,8 +599,8 @@ get_header(); ?>
 
             </div>
 
-            <div id="tab8" class="tab hidden">
-                <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <!--<div id="tab8" class="tab hidden">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/form2.png" />
                 <h1>You're minutes away from your 3 FREE Credit Scores.</h1>
                 <div class=" full_width gray">
                     With these last tidbits of info we'll give you your FREE credit scores.
@@ -642,10 +642,10 @@ get_header(); ?>
 
                 </div>
 
-            </div>
+            </div>-->
 
-            <div id="tab9" class="tab hidden">
-                <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <!--<div id="tab9" class="tab hidden">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/form2.png" />
                 <h1>You're minutes away from your 3 FREE Credit Scores.</h1>
                 <div class=" full_width gray">
                     You can do this by either creating a new account or signing in.
@@ -695,9 +695,9 @@ get_header(); ?>
                 </div>
 
 
-            </div>
+            </div>-->
 
-            <div id="tab10" class="tab hidden">
+            <div id="tab8" class="tab hidden">
 
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <!--<h1>You're minutes away from your 3 FREE Credit Scores.</h1>-->

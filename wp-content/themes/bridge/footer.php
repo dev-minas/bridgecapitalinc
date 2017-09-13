@@ -19,9 +19,8 @@
         </div>
         <div class="bg_home_f_q">
             <h3>Business hours</h3>
-            Monday – Friday: 10 am to 8 pm <br />
-            Saturday: 9am to 17 pm <br />
-            Sunday: day off <br />
+            Monday – Friday: 9 am to 5 pm <br />
+            Saturday, Sunday: Closed <br />
             <a href=""><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
             <a href=""><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
             <a href=""><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>

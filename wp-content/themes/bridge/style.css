@@ -545,7 +545,7 @@ a.separator, a.separator:visited, a.separator:hover {
 .contact_right {
     display: inline-block;
     width: 37%;
-    margin: 7% 0 0 5%;
+    margin: 8% 0 0 5%;
     text-align: left;
     font-size: 16px;
     vertical-align: top;
@@ -565,7 +565,8 @@ hr {
     width: 94%;
 }
 .contact_left .form_element input[type=submit] {
-    width: 40%;
+    width: 30%;
+    margin-right: 8px;
 }
 .contact_left .form_element input:hover[type=submit] {
     color: #eee;
@@ -947,5 +948,37 @@ li {
 .bg3 ul {
     padding-left: 0!important;
 }
+
+.our_vision {
+    text-align: center;
+}
+
+.cont_icons_map {
+    color: #71757f;
+    font-size: 30px!important;
+    position: relative;
+    top: -18px;
+    right: 10px;
+}
+
+.cont_icons_phone {
+    font-size: 28px!important;
+    position: relative;
+    top: 2px;
+    right: 10px;
+    color: #71757f;
+}
+
+.cont_icons_env {
+    position: relative;
+    top: 1px;
+    right: 10px;
+    font-size: 20px!important;
+    color: #71757f;
+}
+
+
+
+
 
 @import url("resp.css");

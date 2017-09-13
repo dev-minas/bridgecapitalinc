@@ -14,7 +14,7 @@
     </div>
 
     <a class="scrl_menu" name="vision"></a>
-    <div class="bg_home_2 bg2">
+    <div class="bg_home_2 bg2 our_vision">
         <h2>Our Vision</h2>
         <p><?=get_post(23)->post_content?></p>
     </div>
