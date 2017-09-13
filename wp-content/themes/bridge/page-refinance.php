@@ -212,7 +212,7 @@ get_header(); ?>
                         <tbody>
                         <tr>
                             <td class="emp_name">Company Name</td>
-                            <td class="income_numb">$0</td>
+                            <td>$<span class="income_numb">0</span></td>
                         </tr>
                         </tbody>
                     </table>

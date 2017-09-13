@@ -4,11 +4,11 @@
 
 get_header(); ?>
 
-    <div class="bg_home_2 bg_contact">
+    <div class="bg_home_2 bg_contact ql_content">
         <h1>THE LOAN PROCESS</h1>
     </div>
-    <div class="bg_home_2">
-        <ul>
+    <div class="bg_home_2 ql_content">
+        <ul class="ql_content_ul">
             <li class="ql-list">
                 <span class="ql-icon">
                 <img src="<?php bloginfo('template_url'); ?>/img/Process.png" alt="">
@@ -16,8 +16,6 @@ get_header(); ?>
                 <span class="ql-small-circle"></span>
                 <span class="clear-both"></span>
             </li>
-            
-            
             
             <!--ql-->
             <li class="ql-list">
