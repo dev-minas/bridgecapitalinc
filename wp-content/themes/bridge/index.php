@@ -60,4 +60,6 @@
         <img src="<?php bloginfo('template_url'); ?>/img/banner.png" />
     </div>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+
 <?php get_footer(); ?>
