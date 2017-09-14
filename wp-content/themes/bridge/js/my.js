@@ -26,11 +26,12 @@ $(document).ready(function () {
 
 
     $(".team_block").mouseover(function () {
-        $(".team_name").animate({ 'marginTop': '-55px' }, 100);
         $(this).find(".team_name").animate({ 'marginTop': '-100px' }, 200);
-
-        $(".team_position").addClass("hidden");
         $(this).find(".team_position").removeClass("hidden");
+    });
+    $(".team_block").mouseout(function () {
+        $(this).find(".team_name").animate({ 'marginTop': '-55px' }, 200);
+        $(this).find(".team_position").addClass("hidden");
     });
 
     $(".team_block").click(function () {
