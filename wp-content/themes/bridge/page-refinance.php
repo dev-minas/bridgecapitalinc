@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab hidden">
+            <div id="tab1" class="tab">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -204,7 +204,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab4" class="tab">
+            <div id="tab4" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Current Employer Information</h1>
                 <div id="repeat">
