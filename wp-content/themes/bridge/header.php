@@ -24,7 +24,7 @@
 
     <div class="div_logo">
         <a href="<?=get_option( 'siteurl' )?>">
-            <img src="<?php bloginfo('template_url'); ?>/img/LogoBC.svg" alt="" width="300px">
+            <img src="<?php bloginfo('template_url'); ?>/img/LogoBC.svg" alt="" width="250px">
         </a>
     </div>
 
