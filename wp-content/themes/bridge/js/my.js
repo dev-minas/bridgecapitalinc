@@ -24,6 +24,15 @@ $(document).ready(function () {
         $("#tab" + index).show();
     });
 
+
+    $(".team_block").mouseover(function () {
+        $(".team_name").animate({ 'marginTop': '-55px' }, 100);
+        $(this).find(".team_name").animate({ 'marginTop': '-100px' }, 200);
+
+        $(".team_position").addClass("hidden");
+        $(this).find(".team_position").removeClass("hidden");
+    });
+
     $(".team_block").click(function () {
 
         $(".bg_team_bio").show();

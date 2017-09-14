@@ -434,7 +434,7 @@ a.separator, a.separator:visited, a.separator:hover {
     cursor: pointer;
 }
 .team_img:hover {
-    opacity: 0.6;
+    opacity: 0.4;
 }
 .team_img img {
     width: 100%;
@@ -451,6 +451,15 @@ a.separator, a.separator:visited, a.separator:hover {
     letter-spacing: 1px;
     line-height: normal;
     text-transform: uppercase;
+    pointer-events: none;
+}
+.team_position {
+    position: absolute; z-index: 99;
+    margin: -45px 0 0 13px;
+    font-size: 18px;
+    line-height: 1;
+    text-align: left;
+    pointer-events: none;
 }
 .team_name span {
     font-family: 'Lato', sans-serif;
