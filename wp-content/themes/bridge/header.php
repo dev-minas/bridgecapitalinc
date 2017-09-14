@@ -45,7 +45,7 @@
         <a href="/#buyingahome" class="close">Buying a Home</a>
         <a href="/refinance">Refinancing Your Home</a>
         <a href="/team"<?=( $post->post_name == 'team' ? ' class="active"' : '')?>>The TEAM</a>
-        <a href="">For Realtors</a>
+        <a href="/realtors">For Realtors</a>
         <a href="/careers">Careers</a>
         <a href="/contact">Contact Us</a>
     </div>

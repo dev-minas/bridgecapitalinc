@@ -464,6 +464,8 @@ a.separator, a.separator:visited, a.separator:hover {
 }
 .team_bio_cont h2 {
     color: #46494e;
+    line-height: 1.2;
+    margin: 2% 0 2% 0;
 }
 .team_bio_cont h2 span {
     font-weight: normal;
@@ -917,6 +919,7 @@ li {
 .ql-txt-block {
     padding-left: 95px;
     display: table;
+    padding-top: 28px;
 }
 
 .ql-txt-block-title {
