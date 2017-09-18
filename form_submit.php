@@ -1,6 +1,6 @@
 <?php
 
-echo "<pre>"; print_r($_POST); exit();
+// echo "<pre>"; print_r($_POST); exit();
 
 $to = "info@bridgecapitalinc.com";
 $to = "armen.musaelyan@gmail.com";
@@ -30,6 +30,6 @@ $headers .= "Return-Path: <" . $from . ">\r\n";
 $headers .= "Message-ID: <" . time() . rand(1, 1000) . "@" . $domain . ">\r\n";
 
 if (@mail($to, $subject, $message, $headers))
-    echo "sussecc";
+    echo "success";
 else
     echo "fail";

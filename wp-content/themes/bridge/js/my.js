@@ -15,16 +15,6 @@ $(document).ready(function () {
     }
     $('.mcalc').mortgagecalc(params);
 
-    $(".continue").click(function (event) {
-        event.preventDefault();
-
-        var index = $(this).data('index');
-
-        $(".tab").hide();
-        $("#tab" + index).show();
-    });
-
-
     $(".team_block").mouseover(function () {
         $(this).find(".team_name").animate({ 'marginTop': '-100px' }, 200);
         $(this).find(".team_position").removeClass("hidden");
@@ -89,16 +79,74 @@ $(document).ready(function () {
 
         event.preventDefault();
 
+        $(".submit").val('Processing');
+
         $.ajax( {
             type: "POST",
             url: '/form_submit.php',
             data: $(".main_form").serialize(),
             success: function( response ) {
-                console.log( response );
+                alert(response);
+                $(".submit").val('Submit');
             }
-        } );
+        });
+
+    });
+
+    $(".continue").click(function (event) {
+
+        event.preventDefault();
+
+        if (validate_req($(this))) {
+
+            var index = $(this).data('index');
+
+            $(".tab").hide();
+            $("#tab" + index).show();
+        }
     });
 });
+
+function validate_req(obj) {
+    var ret = true;
+    var req_elem = obj.parent().parent().find(".req");
+
+    req_elem.each(function() {
+
+        var elem = $(this);
+
+        if(elem.val() == '') {
+
+            ret = false;
+            blink_input(elem);
+            // elem.css('border-color', 'red');
+        }
+    });
+
+    return ret;
+}
+
+function blink_input (obj) {
+    var cnt = 0;
+    var timer = setInterval(function () {
+
+        cnt++;
+        if (cnt == 6) {
+
+            clearInterval(timer);
+        }
+        else {
+            if(cnt % 2 == 1) {
+                obj.css('border-color', 'red');
+                obj.css('background-color', '#fdd');
+            }
+            else {
+                obj.css('border-color', 'grey');
+                obj.css('background-color', '#fff');
+            }
+        }
+    }, 500);
+}
 
 function emp_type_change(obj) {
 
@@ -186,20 +234,5 @@ function emp_type_change(obj) {
     }
 }
 
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Chrome, Safari and Opera
-    document.documentElement.scrollTop = 0; // For IE and Firefox
-}
 
 
