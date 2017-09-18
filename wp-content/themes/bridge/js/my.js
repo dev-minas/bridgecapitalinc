@@ -105,6 +105,11 @@ $(document).ready(function () {
             $("#tab" + index).show();
         }
     });
+
+    $(".req").focus(function() {
+        $(this).css('border-color', '#ccc');
+        $(this).css('background-color', '#fff');
+    });
 });
 
 function validate_req(obj) {
@@ -141,11 +146,11 @@ function blink_input (obj) {
                 obj.css('background-color', '#fdd');
             }
             else {
-                obj.css('border-color', 'grey');
+                obj.css('border-color', '#ccc');
                 obj.css('background-color', '#fff');
             }
         }
-    }, 500);
+    }, 300);
 }
 
 function emp_type_change(obj) {
