@@ -15,11 +15,11 @@ get_header(); ?>
                 <div class="form_left">
                     <div class="form_element">
                         <label>First Name</label>
-                        <input name="FirstName" value="" />
+                        <input name="FirstName" class="req" />
                     </div>
                     <div class="form_element">
                         <label>Email</label>
-                        <input name="Email" />
+                        <input name="Email" class="req" />
                     </div>
                     <div class="form_element">
                         <label>Middle Name</label>

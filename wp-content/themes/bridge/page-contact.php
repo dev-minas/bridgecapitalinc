@@ -8,26 +8,26 @@ get_header(); ?>
         <h1>CONTACT US</h1>
 
         <div class="contact_left">
-            <form method="post">
+            <form method="post" class="main_form">
                 <div class="form_element">
                     <label for="name">Your Name*</label>
-                    <input type="text" name="name" value="" />
+                    <input type="text" name="Name" value="" />
                 </div>
                 <div class="form_element">
                     <label for="email">Your Email*</label>
-                    <input type="text" name="email" value="" />
+                    <input type="text" name="Email" value="" />
                 </div>
                 <div class="form_element">
                     <label for="price">Subject</label>
-                    <input type="text" name="price" value="" />
+                    <input type="text" name="Subject" value="" />
                 </div>
                 <div class="form_element">
                     <label for="message">Yout Message</label>
-                    <textarea rows="7" name="message"></textarea>
+                    <textarea rows="7" name="Message"></textarea>
                 </div>
                 <div class="form_element">
                     <label> &nbsp; </label>
-                    <input type="submit" name="submit" value="Submit" />
+                    <input class="submit" type="submit" name="submit" value="Submit" />
                 </div>
             </form>
         </div>
