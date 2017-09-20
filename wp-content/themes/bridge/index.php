@@ -2,7 +2,7 @@
 
     <div class="bg_home_2 bg1">
         <h1>Welcome</h1>
-        <p class="sub_title">We look forward to putting our <br> mortgage services to work for you!</p>
+        <p class="sub_title secondary_title">We look forward to putting our <br> mortgage services to work for you!</p>
         <a class="btn btn_applay" href="/refinance-or-purchase">Applay now</a>
         <a class="btn btn_loan" href="#">Find a loan officer</a>
     </div>
