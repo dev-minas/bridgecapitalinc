@@ -4,7 +4,7 @@
 
 get_header(); ?>
 
-    <div class="bg_home_2 bg_contact">
+    <div class="bg_home_2 bg_contact bg_contact_small">
         <h1>CONTACT US</h1>
 
         <div class="contact_left">
