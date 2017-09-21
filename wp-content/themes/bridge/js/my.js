@@ -65,9 +65,14 @@ $(document).ready(function () {
     $("#btnadd").click(function(){
 
         //$("#repeat").append("<strong>Lorem ipsum.</strong>");
-        $("#tab5_form").children().hide();
-        $("#tab5_form").append($("#cei_toclone").html());
+        $("#tab6_form").children().hide();
+        $("#tab6_form").append($("#cei_toclone").html());
 
+    });
+
+    $("#cb_name").change(function() {
+
+        $('.cb_name').text($(this).val());
     });
 
     $(".company-name-input").keyup(function() {
@@ -113,6 +118,9 @@ $(document).ready(function () {
 
             if (index == 2 && !$("#co_borrower").is(':checked')) {
                 index = 3;
+            }
+            if (index == 5 && !$("#co_borrower").is(':checked')) {
+                index = 6;
             }
 
             $(".tab").hide();

@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab hidden">
+            <div id="tab1" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -62,7 +62,7 @@ get_header(); ?>
                 <div class="form_left">
                     <div class="form_element">
                         <label>First Name</label>
-                        <input name="CB First Name" class="req" />
+                        <input name="CB First Name" id="cb_name" class="req" />
                     </div>
                     <div class="form_element">
                         <label>Email</label>
@@ -179,7 +179,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab4" class="tab ">
+            <div id="tab4" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Current Address Information</h1>
 
@@ -207,7 +207,7 @@ get_header(); ?>
                     </div>
 
                     <div class="form_element full_width hidden my_mailing_address">
-                        <label for="price">Zip / State</label>
+                        <label>Zip / State</label>
                         <input class="half_width half_width_margin" name="Zip" />
                         <select class="half_width" name="Mailing State">
                             <option value="" selected="selected" disabled="">State</option>
@@ -220,14 +220,12 @@ get_header(); ?>
                     </div>
 
                     <div class="form_element full_width">
-                        <label>Co-Borrower Mailing Address Different</label>
-                        <input type="radio" name="Mailing Address Different" value="Yes" class="cb_diff_maddress" />
+                        <label>Does <b class="cb_name"></b> have a different current address?</label>
+                        <input type="radio" name="CB Mailing Address Different" id="cb_ma_diff" value="Yes" />
                         <span>Yes</span>
-                        <input type="radio" name="Mailing Address Different" value="No" class="cb_diff_maddress" />
+                        <input type="radio" name="CB Mailing Address Different" id="cb_ma_diff" value="No" />
                         <span>No</span>
                     </div>
-
-
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
@@ -237,6 +235,80 @@ get_header(); ?>
             </div>
 
             <div id="tab5" class="tab hidden">
+                <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+                <h1><b class="cb_name"></b> Current Address Information</h1>
+
+                <div class="form_left">
+
+                    <div class="form_element">
+                        <label for="name">Street</label>
+                        <input name="CB Street" value="" />
+                    </div>
+                    <div class="form_element">
+                        <label for="email">Do you own or rent?</label>
+                        <select name="CB Own_or_Rent">
+                            <option value="" selected="selected" disabled="">Select One</option>
+                            <option>Own</option>
+                            <option>Rent</option>
+                        </select>
+                    </div>
+                    <div class="form_element">
+                        <label>Zip / State</label>
+                        <input class="half_width half_width_margin" name="CB Zip" />
+                        <select class="half_width" name="CB State">
+                            <option value="" selected="selected" disabled="">State</option>
+                            <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
+                    </div>
+                    <div class="form_element">
+                        <label for="message">What is your monthly rent?</label>
+                        <input name="CB Rent" />
+                    </div>
+                    <div class="form_element">
+                        <label for="message">City</label>
+                        <input name="CB City" />
+                    </div>
+                    <div class="form_element">
+                        <label for="message">Time at Current Address</label>
+                        <input class="half_width half_width_margin" name="Years" placeholder="CB Years" />
+                        <input class="half_width" name="Months" placeholder="CB Months" />
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label>Mailing Address Different</label>
+                        <input type="radio" name="Different Mailing Address" value="Yes" class="diff_maddress" />
+                        <span>Yes</span>
+                        <input type="radio" name="Different Mailing Address" value="No" class="diff_maddress" />
+                        <span>No</span>
+                    </div>
+
+                    <h3 class="my_mailing_address hidden"><b class="cb_name"></b> Mailing Address</h3>
+
+                    <div class="form_element full_width hidden my_mailing_address">
+                        <label for="name">Street</label>
+                        <input name="CB Mailing Street" value="" />
+                    </div>
+
+                    <div class="form_element full_width hidden my_mailing_address">
+                        <label>Zip / State</label>
+                        <input class="half_width half_width_margin" name="CB Zip" />
+                        <select class="half_width" name="Mailing State">
+                            <option value="" selected="selected" disabled="">State</option>
+                            <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
+                    </div>
+
+                    <div class="form_element full_width hidden my_mailing_address">
+                        <label for="message">City</label>
+                        <input name="Mailing City" />
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="6" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab6" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form3.png" />
                 <h1>Current Employer Information</h1>
                 <div id="repeat">
@@ -250,7 +322,7 @@ get_header(); ?>
                     </table>
                 </div>
 
-                <div id="tab5_form">
+                <div id="tab6_form">
                     <div>
                         <div class="form_left">
                             <div class="form_element">
@@ -308,7 +380,7 @@ get_header(); ?>
                                 <input name="Street" value="" />
                             </div>
                             <div class="form_element company-zip-state">
-                                <label for="price">Company Zip / State</label>
+                                <label>Company Zip / State</label>
                                 <input placeholder="optional" class="half_width half_width_margin mr5" name="Zip" />
                                 <select class="half_width" name="State">
                                     <option value="" selected="selected" disabled="">State</option>
@@ -323,7 +395,7 @@ get_header(); ?>
                                 <input placeholder="optional" name="Street" value="" />
                             </div>
                             <div class="form_element total-income">
-                                <label for="price">Total Income</label>
+                                <label>Total Income</label>
                                 <input placeholder="$Pretax" class="half_width half_width_margin mr5 total_income_input" name="Zip" />
                                 <select class="half_width" name="State">
                                     <option selected="selected">Monthly</option>
@@ -331,7 +403,7 @@ get_header(); ?>
                                 </select>
                             </div>
                             <div class="form_element total-income" style="visibility: hidden">
-                                <label for="price">Total Income</label>
+                                <label>Total Income</label>
                                 <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
                                 <select class="half_width" name="State">
                                     <option selected="selected">Monthly</option>
@@ -348,12 +420,12 @@ get_header(); ?>
                 </div>
                 <div class="form_element full_width" id="tab4_save_btn">
                     <label> &nbsp; </label>
-                    <input data-index="6" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    <input data-index="7" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                 </div>
 
             </div>
 
-            <div id="tab6" class="tab hidden">
+            <div id="tab7" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form4.png" />
                 <h1>You're halfway to the finish line.</h1>
                 <p>What does your other income look like?</p>
@@ -372,13 +444,13 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="7" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="8" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
 
             </div>
 
-            <div id="tab7" class="tab hidden">
+            <div id="tab8" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form4.png" />
                 <h1>You're nearly to the finish line.</h1>
                 <div class=" full_width gray">
@@ -479,14 +551,14 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="8" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="9" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
 
                 </div>
 
             </div>
 
-            <div id="tab8" class="tab hidden">
+            <div id="tab9" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
                 <h1>You're nearly to the finish line.</h1>
                 <div class=" full_width gray">
@@ -624,7 +696,7 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="9" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="10" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
 
                 </div>
@@ -729,7 +801,7 @@ get_header(); ?>
 
             </div>-->
 
-            <div id="tab9" class="tab hidden">
+            <div id="tab10" class="tab hidden">
 
                 <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
                 <!--<h1>You're minutes away from your 3 FREE Credit Scores.</h1>-->
@@ -881,7 +953,7 @@ get_header(); ?>
                     <input name="Street" value="" />
                 </div>
                 <div class="form_element company-zip-state">
-                    <label for="price">Company Zip / State</label>
+                    <label>Company Zip / State</label>
                     <input placeholder="optional" class="half_width half_width_margin mr5" name="Zip" />
                     <select class="half_width" name="State">
                         <option value="" selected="selected" disabled="">State</option>
@@ -896,7 +968,7 @@ get_header(); ?>
                     <input placeholder="optional" name="Street" value="" />
                 </div>
                 <div class="form_element total-income">
-                    <label for="price">Total Income</label>
+                    <label>Total Income</label>
                     <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
                     <select class="half_width" name="State">
                         <option selected="selected">Monthly</option>
