@@ -55,8 +55,8 @@ $(document).ready(function () {
     $("#btnadd").click(function(){
 
         //$("#repeat").append("<strong>Lorem ipsum.</strong>");
-        $("#tab4_form").children().hide();
-        $("#tab4_form").append($("#cei_toclone").html());
+        $("#tab5_form").children().hide();
+        $("#tab5_form").append($("#cei_toclone").html());
 
     });
 
@@ -101,8 +101,13 @@ $(document).ready(function () {
 
             var index = $(this).data('index');
 
+            if (index == 2 && !$("#co_borrower").is(':checked')) {
+                index = 3;
+            }
+
             $(".tab").hide();
             $("#tab" + index).show();
+            $("#tab" + index + " h1")[0].scrollIntoView();
         }
     });
 
@@ -115,7 +120,7 @@ $(document).ready(function () {
 function validate_req(obj) {
     var ret = true;
     var req_elem = obj.parent().parent().find(".req");
-
+    var form_div;
     req_elem.each(function() {
 
         var elem = $(this);
@@ -124,6 +129,10 @@ function validate_req(obj) {
 
             ret = false;
             blink_input(elem);
+            form_div = elem.parent().parent();
+        }
+        if (!ret) {
+            form_div[0].scrollIntoView();
         }
     });
 
@@ -135,7 +144,7 @@ function blink_input (obj) {
     var timer = setInterval(function () {
 
         cnt++;
-        if (cnt == 6) {
+        if (cnt == 4) {
 
             clearInterval(timer);
         }
