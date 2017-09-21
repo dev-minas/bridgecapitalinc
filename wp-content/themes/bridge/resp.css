@@ -348,15 +348,23 @@
     }
 
     .bg_home_2 h1 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .bg_reforpur a.a_ref {
-        background-size: 25%;
+        background-size: 20%;
     }
 
     .bg_reforpur a.a_pur {
-        background-size: 30%;
+        background-size: 25%;
+    }
+
+    .bg_reforpur {
+        padding: 5% 20%;
+    }
+
+    .div_mmenu a, .div_mmenu a:visited, .div_mmenu a:hover {
+        padding-bottom: 5px;
     }
 }
 
@@ -381,15 +389,19 @@
         font-size: 17px;
     }
 
-    .bg_reforpur a.a_ref {
-        background-size: 25%;
-    }
-
     .bg_reforpur a, .bg_reforpur a:visited, .bg_reforpur a:hover {
         font-size: 16px;
     }
 
+    .bg_reforpur a.a_ref {
+        background-size: 18%;
+    }
+
     .bg_reforpur a.a_pur {
-        background-size: 28%;
+        background-size: 22%;
+    }
+
+    .bg_reforpur a, .bg_reforpur a:visited, .bg_reforpur a:hover {
+        font-size: 14px;
     }
 }
