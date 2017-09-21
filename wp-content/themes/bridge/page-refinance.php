@@ -221,9 +221,9 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label>Does <b class="cb_name"></b> have a different current address?</label>
-                        <input type="radio" name="CB Mailing Address Different" id="cb_ma_diff" value="Yes" />
+                        <input type="radio" name="CB Mailing Address Different" class="cb_ma_diff" value="Yes" />
                         <span>Yes</span>
-                        <input type="radio" name="CB Mailing Address Different" id="cb_ma_diff" value="No" />
+                        <input type="radio" name="CB Mailing Address Different" class="cb_ma_diff" value="No" />
                         <span>No</span>
                     </div>
 
@@ -246,12 +246,14 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label for="email">Do you own or rent?</label>
-                        <select name="CB Own_or_Rent">
+                        <select name="CB Own_or_Rent" class="cb_own_or_rent">
                             <option value="" selected="selected" disabled="">Select One</option>
                             <option>Own</option>
                             <option>Rent</option>
+                            <option>Rent Free</option>
                         </select>
                     </div>
+
                     <div class="form_element">
                         <label>Zip / State</label>
                         <input class="half_width half_width_margin" name="CB Zip" />
@@ -259,6 +261,14 @@ get_header(); ?>
                             <option value="" selected="selected" disabled="">State</option>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
                     </div>
+
+                    <div class="form_element cb_monthly_rent_place">
+                    </div>
+                    <div class="form_element hidden cb_monthly_rent">
+                        <label>What is your monthly rent?</label>
+                        <input name="CB Monthly Rent" value="" />
+                    </div>
+
                     <div class="form_element">
                         <label for="message">What is your monthly rent?</label>
                         <input name="CB Rent" />
@@ -269,34 +279,35 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label for="message">Time at Current Address</label>
-                        <input class="half_width half_width_margin" name="Years" placeholder="CB Years" />
-                        <input class="half_width" name="Months" placeholder="CB Months" />
+                        <input class="half_width half_width_margin" name="CB Years" />
+                        <input class="half_width" name="CB Months" />
                     </div>
 
                     <div class="form_element full_width">
                         <label>Mailing Address Different</label>
-                        <input type="radio" name="Different Mailing Address" value="Yes" class="diff_maddress" />
+                        <input type="radio" name="Different Mailing Address" value="Yes" class="cb_diff_maddress" />
                         <span>Yes</span>
-                        <input type="radio" name="Different Mailing Address" value="No" class="diff_maddress" />
+                        <input type="radio" name="Different Mailing Address" value="No" class="cb_diff_maddress" />
                         <span>No</span>
                     </div>
 
-                    <h3 class="my_mailing_address hidden"><b class="cb_name"></b> Mailing Address</h3>
+                    <h3 class="cb_mailing_address hidden"><b class="cb_name"></b> Mailing Address</h3>
 
-                    <div class="form_element full_width hidden my_mailing_address">
+                    <div class="form_element full_width hidden cb_mailing_address">
                         <label for="name">Street</label>
                         <input name="CB Mailing Street" value="" />
                     </div>
 
-                    <div class="form_element full_width hidden my_mailing_address">
+                    <div class="form_element full_width hidden cb_mailing_address">
                         <label>Zip / State</label>
                         <input class="half_width half_width_margin" name="CB Zip" />
-                        <select class="half_width" name="Mailing State">
+                        <select class="half_width" name="CB Mailing State">
                             <option value="" selected="selected" disabled="">State</option>
-                            <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
+                            <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option>
+                        </select>
                     </div>
 
-                    <div class="form_element full_width hidden my_mailing_address">
+                    <div class="form_element full_width hidden cb_mailing_address">
                         <label for="message">City</label>
                         <input name="Mailing City" />
                     </div>
@@ -311,11 +322,12 @@ get_header(); ?>
             <div id="tab6" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form3.png" />
                 <h1>Current Employer Information</h1>
+
                 <div id="repeat">
                     <table>
-                        <tbody>
+                        <tbody class="cei_rows_conteiner">
                         <tr>
-                            <td class="emp_name">Company Name</td>
+                            <td><span class="emp_name">Company Name</span></td>
                             <td>$<span class="income_numb">0</span></td>
                         </tr>
                         </tbody>
@@ -323,93 +335,83 @@ get_header(); ?>
                 </div>
 
                 <div id="tab6_form">
-                    <div>
-                        <div class="form_left">
-                            <div class="form_element">
-                                <label for="email">Employment Type</label>
-                                <select class="employment_type" name="Employment Type">
-                                    <option value="" selected="selected" disabled="">Select One</option>
-                                    <option>Active Military Duty</option>
-                                    <option>Employed</option>
-                                    <option>Self Employed</option>
-                                    <option>Retired</option>
-                                    <option>Other/Unemployed</option>
-                                </select>
-                            </div>
-                            <div class="form_element retirement-date hidden">
-                                <label for="name">Retirement Date</label>
-                                <input name="Street" value="" />
-                            </div>
-                            <div class="form_element branch hidden">
-                                <label for="email">Branch</label>
-                                <select name="Own_or_Rent" class="branch_select">
-                                    <!-- <option value="" selected="selected" disabled="">Select One</option>-->
-                                    <option>Air Force</option>
-                                    <option>Army</option>
-                                    <option>Marines</option>
-                                    <option>Navy</option>
-                                    <option>Other</option>
-                                </select>
-                            </div>
-                            <div class="form_element company-name">
-                                <label for="name">Company Name</label>
-                                <input class="company-name-input" placeholder="name" name="Company Name" value="" />
-                            </div>
-                            <div class="form_element rank hidden">
-                                <label for="name">Rank</label>
-                                <input name="Street" value="" />
-                            </div>
-                            <div class="form_element position">
-                                <label for="name">Position</label>
-                                <input name="Street" value="" />
-                            </div>
-                            <div class="form_element business-phone">
-                                <label for="name">Business Phone</label>
-                                <input name="Street" value="" />
-                            </div>
-                            <div class="form_element type-of-business">
-                                <label for="name">Type of business</label>
-                                <input name="Street" value="" />
-                            </div>
-                            <div class="form_element company-street">
-                                <label for="name">Company Street</label>
-                                <input placeholder="optional" name="Street" value="" />
-                            </div>
-                            <div class="form_element time-period">
-                                <label for="name">Time Period</label>
-                                <input name="Street" value="" />
-                            </div>
-                            <div class="form_element company-zip-state">
-                                <label>Company Zip / State</label>
-                                <input placeholder="optional" class="half_width half_width_margin mr5" name="Zip" />
-                                <select class="half_width" name="State">
-                                    <option value="" selected="selected" disabled="">State</option>
-                                    <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
-                            </div>
-                            <div class="form_element years-in-same-field">
-                                <label for="name">Years in same field</label>
-                                <input placeholder="optional" name="Street" value="" />
-                            </div>
-                            <div class="form_element company-city">
-                                <label for="name">Company City</label>
-                                <input placeholder="optional" name="Street" value="" />
-                            </div>
-                            <div class="form_element total-income">
-                                <label>Total Income</label>
-                                <input placeholder="$Pretax" class="half_width half_width_margin mr5 total_income_input" name="Zip" />
-                                <select class="half_width" name="State">
-                                    <option selected="selected">Monthly</option>
-                                    <option>Annual</option>
-                                </select>
-                            </div>
-                            <div class="form_element total-income" style="visibility: hidden">
-                                <label>Total Income</label>
-                                <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
-                                <select class="half_width" name="State">
-                                    <option selected="selected">Monthly</option>
-                                    <option>Annual</option>
-                                </select>
-                            </div>
+                    <div class="form_left">
+                        <div class="form_element">
+                            <label for="email">Employment Type</label>
+                            <select class="employment_type" name="Employment Type[]">
+                                <option selected="selected" disabled="">Select One</option>
+                                <option>Active Military Duty</option>
+                                <option>Employed</option>
+                                <option>Self Employed</option>
+                                <option>Retired</option>
+                                <option>Other/Unemployed</option>
+                            </select>
+                        </div>
+                        <div class="form_element retirement-date hidden">
+                            <label for="name">Retirement Date</label>
+                            <input name="Em Retirement Date[]" />
+                        </div>
+                        <div class="form_element branch hidden">
+                            <label for="email">Branch</label>
+                            <select name="Em Branch[]" class="branch_select">
+                                <option>Air Force</option>
+                                <option>Army</option>
+                                <option>Marines</option>
+                                <option>Navy</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form_element company-name">
+                            <label for="name">Company Name</label>
+                            <input name="Em Company Name[]" class="company_name_input" />
+                        </div>
+                        <div class="form_element rank hidden">
+                            <label for="name">Rank</label>
+                            <input name="Em Rank[]" />
+                        </div>
+                        <div class="form_element position">
+                            <label for="name">Position</label>
+                            <input name="Em Position[]" />
+                        </div>
+                        <div class="form_element business-phone">
+                            <label for="name">Business Phone</label>
+                            <input name="Em Business Phone[]" />
+                        </div>
+                        <div class="form_element type-of-business">
+                            <label for="name">Type of business</label>
+                            <input name="Em Type of business[]" />
+                        </div>
+                        <div class="form_element company-street">
+                            <label for="name">Company Street</label>
+                            <input name="Em Company Street[]" />
+                        </div>
+                        <div class="form_element time-period">
+                            <label for="name">Time Period</label>
+                            <input name="Em Time Period[]" />
+                        </div>
+                        <div class="form_element company-zip-state">
+                            <label>Company Zip / State</label>
+                            <input class="half_width half_width_margin mr5" name="Em Zip[]" />
+                            <select class="half_width" name="Em State[]">
+                                <option value="" selected="selected" disabled="">State</option>
+                                <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option>
+                            </select>
+                        </div>
+                        <div class="form_element years-in-same-field">
+                            <label for="name">Years in same field</label>
+                            <input placeholder="optional" name="Em Years in same field[]" value="" />
+                        </div>
+                        <div class="form_element company-city">
+                            <label for="name">Company City</label>
+                            <input name="Em Company City[]" />
+                        </div>
+                        <div class="form_element total-income">
+                            <label>Total Income</label>
+                            <input name="Em Total Income[]" class="half_width half_width_margin mr5 total_income_input" />
+                            <select class="half_width" name="Total Income Type[]">
+                                <option selected="selected">Monthly</option>
+                                <option>Annual</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -895,89 +897,86 @@ get_header(); ?>
 
     </div>
 
+
     <div id="cei_toclone" class="hidden">
-        <div>
-            <div class="form_left">
-                <div class="form_element">
-                    <label for="email">Employment Type</label>
-                    <select class="employment_type" name="Employment Type">
-                        <option value="" selected="selected" disabled="">Select One</option>
-                        <option>Active Military Duty</option>
-                        <option>Employed</option>
-                        <option>Self Employed</option>
-                        <option>Retired</option>
-                        <option>Other/Unemployed</option>
-                    </select>
-                </div>
-                <div class="form_element retirement-date hidden">
-                    <label for="name">Retirement Date</label>
-                    <input name="Street" value="" />
-                </div>
-                <div class="form_element branch hidden">
-                    <label for="email">Branch</label>
-                    <select name="Own_or_Rent">
-                        <!-- <option value="" selected="selected" disabled="">Select One</option>-->
-                        <option>Air Force</option>
-                        <option>Army</option>
-                        <option>Marines</option>
-                        <option>Navy</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div class="form_element company-name">
-                    <label for="name">Company Name</label>
-                    <input placeholder="name" name="Street" value="" />
-                </div>
-                <div class="form_element rank hidden">
-                    <label for="name">Rank</label>
-                    <input name="Street" value="" />
-                </div>
-                <div class="form_element position">
-                    <label for="name">Position</label>
-                    <input name="Street" value="" />
-                </div>
-                <div class="form_element business-phone">
-                    <label for="name">Business Phone</label>
-                    <input name="Street" value="" />
-                </div>
-                <div class="form_element type-of-business">
-                    <label for="name">Type of business</label>
-                    <input name="Street" value="" />
-                </div>
-                <div class="form_element company-street">
-                    <label for="name">Company Street</label>
-                    <input placeholder="optional" name="Street" value="" />
-                </div>
-                <div class="form_element time-period">
-                    <label for="name">Time Period</label>
-                    <input name="Street" value="" />
-                </div>
-                <div class="form_element company-zip-state">
-                    <label>Company Zip / State</label>
-                    <input placeholder="optional" class="half_width half_width_margin mr5" name="Zip" />
-                    <select class="half_width" name="State">
-                        <option value="" selected="selected" disabled="">State</option>
-                        <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
-                </div>
-                <div class="form_element years-in-same-field">
-                    <label for="name">Years in same field</label>
-                    <input placeholder="optional" name="Street" value="" />
-                </div>
-                <div class="form_element company-city">
-                    <label for="name">Company City</label>
-                    <input placeholder="optional" name="Street" value="" />
-                </div>
-                <div class="form_element total-income">
-                    <label>Total Income</label>
-                    <input placeholder="$Pretax" class="half_width half_width_margin mr5" name="Zip" />
-                    <select class="half_width" name="State">
-                        <option selected="selected">Monthly</option>
-                        <option>Annual</option>
-                    </select>
-                </div>
-
+        <div class="form_left">
+            <div class="form_element">
+                <label for="email">Employment Type</label>
+                <select class="employment_type" name="Employment Type[]">
+                    <option selected="selected" disabled="">Select One</option>
+                    <option>Active Military Duty</option>
+                    <option>Employed</option>
+                    <option>Self Employed</option>
+                    <option>Retired</option>
+                    <option>Other/Unemployed</option>
+                </select>
             </div>
-
+            <div class="form_element retirement-date hidden">
+                <label for="name">Retirement Date</label>
+                <input name="Em Retirement Date[]" />
+            </div>
+            <div class="form_element branch hidden">
+                <label for="email">Branch</label>
+                <select name="Em Branch[]" class="branch_select">
+                    <option>Air Force</option>
+                    <option>Army</option>
+                    <option>Marines</option>
+                    <option>Navy</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form_element company-name">
+                <label for="name">Company Name</label>
+                <input name="Em Company Name[]" class="company_name_input" />
+            </div>
+            <div class="form_element rank hidden">
+                <label for="name">Rank</label>
+                <input name="Em Rank[]" />
+            </div>
+            <div class="form_element position">
+                <label for="name">Position</label>
+                <input name="Em Position[]" />
+            </div>
+            <div class="form_element business-phone">
+                <label for="name">Business Phone</label>
+                <input name="Em Business Phone[]" />
+            </div>
+            <div class="form_element type-of-business">
+                <label for="name">Type of business</label>
+                <input name="Em Type of business[]" />
+            </div>
+            <div class="form_element company-street">
+                <label for="name">Company Street</label>
+                <input name="Em Company Street[]" />
+            </div>
+            <div class="form_element time-period">
+                <label for="name">Time Period</label>
+                <input name="Em Time Period[]" />
+            </div>
+            <div class="form_element company-zip-state">
+                <label>Company Zip / State</label>
+                <input class="half_width half_width_margin mr5" name="Em Zip[]" />
+                <select class="half_width" name="Em State[]">
+                    <option value="" selected="selected" disabled="">State</option>
+                    <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option>
+                </select>
+            </div>
+            <div class="form_element years-in-same-field">
+                <label for="name">Years in same field</label>
+                <input placeholder="optional" name="Em Years in same field[]" value="" />
+            </div>
+            <div class="form_element company-city">
+                <label for="name">Company City</label>
+                <input name="Em Company City[]" />
+            </div>
+            <div class="form_element total-income">
+                <label>Total Income</label>
+                <input name="Em Total Income[]" class="half_width half_width_margin mr5 total_income_input" />
+                <select class="half_width" name="Total Income Type[]">
+                    <option selected="selected">Monthly</option>
+                    <option>Annual</option>
+                </select>
+            </div>
         </div>
     </div>
 
