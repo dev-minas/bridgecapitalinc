@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab">
+            <div id="tab1" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -19,7 +19,7 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label>Email</label>
-                        <input name="My Email" class="req" />
+                        <input name="My Email" />
                     </div>
                     <div class="form_element">
                         <label>Middle Name</label>
@@ -99,7 +99,7 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label>Estimated Value</label>
-                        <input name="gray" value="" />
+                        <input name="Estimated Value" value="" />
                     </div>
                     <div class="form_element">
                         <label>Zip / State</label>
@@ -138,7 +138,7 @@ get_header(); ?>
 
                     <div class="form_element">
                         <label>Property Type</label>
-                        <select name="Property Type">
+                        <select name="Property Type" class="property_type">
                             <option value="" disabled="">Select One</option>
                             <option>Single Family</option>
                             <option>Condo</option>
@@ -153,12 +153,18 @@ get_header(); ?>
                     <div class="form_element">
                     </div>
 
-                    <div class="form_element hidden">
-                        <label>Number of Stories</label>
-                        <input name="Number of Stories" />
+                    <div class="form_element number_of_units">
+                        <label>Number of Units</label>
+                        <select name="Number of Units">
+                            <option value="" disabled="">Select One</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
                     </div>
 
-                    <div class="form_element hidden">
+                    <div class="form_element hidden number_of_stories">
                         <label>Number of Stories</label>
                         <input name="Number of Stories" />
                     </div>
@@ -173,52 +179,42 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab4" class="tab hidden">
+            <div id="tab4" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Current Address Information</h1>
 
                 <div class="form_left">
-                    <div class="form_element">
+
+                    <div class="form_element full_width">
+                        <label for="message">Time at Current Address</label>
+                        <input class="half_width half_width_margin" name="Years at Current Address" placeholder="Years" />
+                        <input class="half_width" name="Months at Current Address" placeholder="Months" />
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label>Mailing Address Different</label>
+                        <input type="radio" name="Different Mailing Address" value="Yes" class="diff_maddress" />
+                        <span>Yes</span>
+                        <input type="radio" name="Different Mailing Address" value="No" />
+                        <span>No</span>
+                    </div>
+
+                    <div class="form_element full_width hidden mailing_street">
                         <label for="name">Street</label>
-                        <input name="Street" value="" />
+                        <input name="Mailing Street" value="" />
                     </div>
-                    <div class="form_element">
-                        <label for="email">Do you own or rent?</label>
-                        <select name="Own_or_Rent">
-                            <option value="" selected="selected" disabled="">Select One</option>
-                            <option>Own</option>
-                            <option>Rent</option>
-                        </select>
-                    </div>
-                    <div class="form_element">
+
+                    <div class="form_element full_width hidden mailing_zip_state">
                         <label for="price">Zip / State</label>
                         <input class="half_width half_width_margin" name="Zip" />
-                        <select class="half_width" name="State">
+                        <select class="half_width" name="Mailing State">
                             <option value="" selected="selected" disabled="">State</option>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
                     </div>
-                    <div class="form_element">
-                        <label for="message">What is your monthly rent?</label>
-                        <input name="Rent" />
-                    </div>
-                    <div class="form_element">
-                        <label for="message">City</label>
-                        <input name="City" />
-                    </div>
-                    <div class="form_element">
-                        <label for="message">Time at Current Address</label>
-                        <input class="half_width half_width_margin" name="Years" placeholder="Years" />
-                        <input class="half_width" name="Months" placeholder="Months" />
-                    </div>
 
-                    <div class="form_element">
-                    </div>
-                    <div class="form_element">
-                        <label>Mailing Address Different</label>
-                        <input type="radio" name="Mailing Address Different" value="Yes" />
-                        <span>Yes</span>
-                        <input type="radio" name="Mailing Address Different" value="No" />
-                        <span>No</span>
+                    <div class="form_element full_width hidden mailing_city">
+                        <label for="message">City</label>
+                        <input name="Mailing City" />
                     </div>
 
                     <div class="form_element full_width gray">
@@ -233,9 +229,7 @@ get_header(); ?>
                         <span>No</span>
                     </div>
 
-                    <div class="form_element full_width blue">
-                        Changing the Co-Borrower current address will require you to provide the Co-Borrower current address information on the next page.
-                    </div>
+
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>

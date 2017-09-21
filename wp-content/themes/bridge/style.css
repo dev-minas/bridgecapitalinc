@@ -255,15 +255,24 @@ p.sub_title {
     box-sizing:content-box;
     color: #848994;
 }
+.form_element.full_width input, .form_element.full_width select, .form_element.full_width textarea {
+    width: 47%;
+}
 .form_element textarea {
     height: auto;
 }
 .form_element input.half_width, .form_element select.half_width, .form_element textarea.half_width {
     width: 42%;
 }
+.form_element.full_width input.half_width, .form_element.full_width select.half_width, .form_element.full_width textarea.half_width {
+    width: 21%;
+}
 
 .form_element .half_width_margin {
     margin-right: 3%;
+}
+.form_element.full_width .half_width_margin {
+    margin-right: 1%;
 }
 
 .form_element input[type=button], .form_element input[type=submit] {

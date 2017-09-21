@@ -19,6 +19,7 @@ $(document).ready(function () {
         $(this).find(".team_name").animate({ 'marginTop': '-100px' }, 200);
         $(this).find(".team_position").removeClass("hidden");
     });
+
     $(".team_block").mouseout(function () {
         $(this).find(".team_name").animate({ 'marginTop': '-55px' }, 200);
         $(this).find(".team_position").addClass("hidden");
@@ -50,6 +51,15 @@ $(document).ready(function () {
     $('.employment_type').live('change', function() {
 
         emp_type_change($(this));
+    });
+
+    $('.property_type').live('change', function() {
+
+        property_type_change($(this));
+    });
+
+    $('.diff_maddress').click(function() {
+        diff_maddress_click($(this));
     });
 
     $("#btnadd").click(function(){
@@ -247,5 +257,27 @@ function emp_type_change(obj) {
     }
 }
 
+function property_type_change(obj) {
 
+    if (obj.val() == 'Single Family' || obj.val() == 'Townhouse/Rowhouse') {
+
+        obj.parent().parent().find(".number_of_units").removeClass("hidden");
+        obj.parent().parent().find(".number_of_stories").addClass("hidden");
+    }
+    if (obj.val() == 'Condo') {
+
+        obj.parent().parent().find(".number_of_stories").removeClass("hidden");
+        obj.parent().parent().find(".number_of_units").addClass("hidden");
+    }
+    if (obj.val() != 'Single Family' && obj.val() != 'Townhouse/Rowhouse' && obj.val() != 'Condo' ) {
+
+        obj.parent().parent().find(".number_of_stories").addClass("hidden");
+        obj.parent().parent().find(".number_of_units").addClass("hidden");
+    }
+}
+
+function diff_maddress_click(obj) {
+    obj.parent().parent().find(".number_of_units").removeClass("hidden");
+    obj.parent().parent().find(".number_of_stories").addClass("hidden");
+}
 
