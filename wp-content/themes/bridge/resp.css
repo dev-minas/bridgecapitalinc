@@ -114,6 +114,14 @@
     .mcalc > h2 {
         font-size: 22px;
     }
+
+    .div_mob_menu {
+        margin: 3% 0 0 0;
+    }
+
+    .div_logo {
+        margin: 2.5% 0 2.5% 0;
+    }
 }
 
 @media only screen and ( max-width: 650px) {
@@ -231,6 +239,23 @@
 
     .bg_home_2 p.secondary_title {
         text-align: center;
+    }
+
+    .bg_home_2 {
+        padding: 5% 10%;
+    }
+
+    .div_logo a {
+        display: inline-block;
+        width: 70%;
+    }
+
+    .div_logo a img {
+        max-width: 100%;
+    }
+
+    .menu_hide {
+        display: none;
     }
 }
 

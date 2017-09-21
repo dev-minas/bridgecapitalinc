@@ -30,7 +30,7 @@
 
 
     <div class="div_mob_menu">
-        MENU <img src="<?php bloginfo('template_url'); ?>/img/menu.png" id="mob_img" /></a>
+        <span class="menu_hide">MENU</span> <img src="<?php bloginfo('template_url'); ?>/img/menu.png" id="mob_img" /></a>
     </div>
 
     <div class="div_mmenu">
