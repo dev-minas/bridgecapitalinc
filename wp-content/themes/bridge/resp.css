@@ -173,7 +173,8 @@
     }
 
     .ql-icon img {
-        width: 70%;
+        padding: 8px;
+        box-sizing: border-box;
     }
 
     .ql-list:first-of-type {
@@ -364,7 +365,7 @@
     }
 
     .div_mmenu a, .div_mmenu a:visited, .div_mmenu a:hover {
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
 }
 

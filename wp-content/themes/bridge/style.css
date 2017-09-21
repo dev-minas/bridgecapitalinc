@@ -500,7 +500,7 @@ a.separator, a.separator:visited, a.separator:hover {
     color: #fff;
 }
 .bg_reforpur h1 {
-    font-size: 42px;
+    font-size: 40px;
     color: #0066a1;
     letter-spacing: normal;
     font-family: 'Lato', sans-serif;
@@ -516,7 +516,7 @@ a.separator, a.separator:visited, a.separator:hover {
     font-size: 26px; color: #71757f;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
-    margin: 15% 1%;
+    margin: 70px 1% 35px;
     padding: 1% 9% 22% 9%;
 }
 .bg_reforpur a:hover {
@@ -527,6 +527,7 @@ a.separator, a.separator:visited, a.separator:hover {
     background-image: url('img/refin.png');
     background-repeat: no-repeat;
     background-position: center 80%;
+    background-size: 25%;
 }
 .bg_reforpur a.a_ref:hover {
     background-image: url('img/refin_act.png');
@@ -536,6 +537,7 @@ a.separator, a.separator:visited, a.separator:hover {
     background-image: url('img/purch.png');
     background-repeat: no-repeat;
     background-position: center 80%;
+    background-size: 32%;
 }
 .bg_reforpur a.a_pur:hover {
     background-image: url('img/purch_act.png');
