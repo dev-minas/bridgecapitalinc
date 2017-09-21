@@ -147,6 +147,22 @@
     .contact_right img {
         margin: 2px 5px 0 0;
     }
+
+    .bg_home_2 h1 {
+        font-size: 30px;
+    }
+
+    .bg_reforpur a, .bg_reforpur a:visited, .bg_reforpur a:hover {
+        font-size: 18px;
+    }
+
+    .bg_reforpur a.a_ref  {
+        background-size: 30%;
+    }
+
+    .bg_reforpur a.a_pur {
+        background-size: 37%;
+    }
 }
 
 @media only screen and ( max-width: 650px) {
@@ -330,6 +346,18 @@
     .contact_right span {
         font-size: 15px;
     }
+
+    .bg_home_2 h1 {
+        font-size: 25px;
+    }
+
+    .bg_reforpur a.a_ref {
+        background-size: 25%;
+    }
+
+    .bg_reforpur a.a_pur {
+        background-size: 30%;
+    }
 }
 
 @media only screen and ( max-width: 380px) {
@@ -347,5 +375,21 @@
 
     .contact_right img {
         margin: 2px 0 0 0;
+    }
+
+    .bg_home_2 h1 {
+        font-size: 17px;
+    }
+
+    .bg_reforpur a.a_ref {
+        background-size: 25%;
+    }
+
+    .bg_reforpur a, .bg_reforpur a:visited, .bg_reforpur a:hover {
+        font-size: 16px;
+    }
+
+    .bg_reforpur a.a_pur {
+        background-size: 28%;
     }
 }
