@@ -15,27 +15,27 @@ get_header(); ?>
                 <div class="form_left">
                     <div class="form_element">
                         <label>First Name</label>
-                        <input name="FirstName" class="req" />
+                        <input name="My First Name" class="req" />
                     </div>
                     <div class="form_element">
                         <label>Email</label>
-                        <input name="Email" class="req" />
+                        <input name="My Email" class="req" />
                     </div>
                     <div class="form_element">
                         <label>Middle Name</label>
-                        <input name="MiddleName" />
+                        <input name="My Middle Name" />
                     </div>
                     <div class="form_element">
                         <label>Phone</label>
-                        <input name="Phone" />
+                        <input name="My Phone" />
                     </div>
                     <div class="form_element">
                         <label>Last Name</label>
-                        <input name="LastName" />
+                        <input name="My Last Name" class="req" />
                     </div>
                     <div class="form_element">
                         <label>Marital Status</label>
-                        <select name="Marital Status">
+                        <select name="My Marital Status">
                             <option value="">Select One<option>
                             <option>Married</option>
                             <option>Separated</option>
@@ -43,8 +43,8 @@ get_header(); ?>
                         </select>
                     </div>
                     <div class="form_element full_width">
-                        <label> Add a Co-Borrower? </label>
-                        <input type="checkbox" name="Borrower" />
+                        <label>Add a Co-Borrower? </label>
+                        <input type="checkbox" name="Co-Borrower" id="co_borrower" value="Yes" />
                     </div>
 
                     <div class="form_element full_width">
@@ -56,6 +56,40 @@ get_header(); ?>
             </div>
 
             <div id="tab2" class="tab hidden">
+                <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
+                <h1>Co-Borrower Information</h1>
+
+                <div class="form_left">
+                    <div class="form_element">
+                        <label>First Name</label>
+                        <input name="CB First Name" class="req" />
+                    </div>
+                    <div class="form_element">
+                        <label>Email</label>
+                        <input name="CB Email" class="req" />
+                    </div>
+                    <div class="form_element">
+                        <label>Middle Name</label>
+                        <input name="CB Middle Name" />
+                    </div>
+                    <div class="form_element">
+                        <label>Phone</label>
+                        <input name="CB Phone" />
+                    </div>
+                    <div class="form_element">
+                        <label>Last Name</label>
+                        <input name="CB Last Name" />
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="3" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="tab3" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Property Information</h1>
                 <div class="form_left">
@@ -119,21 +153,27 @@ get_header(); ?>
                     <div class="form_element">
                     </div>
 
-                    <div class="form_element">
+                    <div class="form_element hidden">
                         <label>Number of Stories</label>
                         <input name="Number of Stories" />
                     </div>
+
+                    <div class="form_element hidden">
+                        <label>Number of Stories</label>
+                        <input name="Number of Stories" />
+                    </div>
+
                     <div class="form_element">
                     </div>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="3" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="4" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
             </div>
 
-            <div id="tab3" class="tab hidden">
+            <div id="tab4" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Current Address Information</h1>
 
@@ -199,13 +239,13 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="4" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="5" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
             </div>
 
-            <div id="tab4" class="tab hidden">
-                <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <div id="tab5" class="tab hidden">
+                <img src="<?php bloginfo('template_url'); ?>/img/form3.png" />
                 <h1>Current Employer Information</h1>
                 <div id="repeat">
                     <table>
@@ -218,7 +258,7 @@ get_header(); ?>
                     </table>
                 </div>
 
-                <div id="tab4_form">
+                <div id="tab5_form">
                     <div>
                         <div class="form_left">
                             <div class="form_element">
@@ -316,13 +356,13 @@ get_header(); ?>
                 </div>
                 <div class="form_element full_width" id="tab4_save_btn">
                     <label> &nbsp; </label>
-                    <input data-index="5" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    <input data-index="6" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                 </div>
 
             </div>
 
-            <div id="tab5" class="tab hidden">
-                <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <div id="tab6" class="tab hidden">
+                <img src="<?php bloginfo('template_url'); ?>/img/form4.png" />
                 <h1>You're halfway to the finish line.</h1>
                 <p>What does your other income look like?</p>
 
@@ -340,14 +380,14 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="6" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="7" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
 
             </div>
 
-            <div id="tab6" class="tab hidden">
-                <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <div id="tab7" class="tab hidden">
+                <img src="<?php bloginfo('template_url'); ?>/img/form4.png" />
                 <h1>You're nearly to the finish line.</h1>
                 <div class=" full_width gray">
                     We just have a few questions the government requires us to ask.
@@ -447,15 +487,15 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="7" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="8" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
 
                 </div>
 
             </div>
 
-            <div id="tab7" class="tab hidden">
-                <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+            <div id="tab8" class="tab hidden">
+                <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
                 <h1>You're nearly to the finish line.</h1>
                 <div class=" full_width gray">
                     We just have a few questions the government requires us to ask.
@@ -592,7 +632,7 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="8" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="9" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
 
                 </div>
@@ -697,9 +737,9 @@ get_header(); ?>
 
             </div>-->
 
-            <div id="tab8" class="tab hidden">
+            <div id="tab9" class="tab hidden">
 
-                <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
+                <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
                 <!--<h1>You're minutes away from your 3 FREE Credit Scores.</h1>-->
                 <div class=" full_width gray">
                     eConsent Terms
