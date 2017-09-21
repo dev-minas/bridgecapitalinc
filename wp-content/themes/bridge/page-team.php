@@ -77,7 +77,7 @@
         <p class="team_bio_cont"></p>
     </div>
 
-    <div class="bg_home_2">
+    <div class="bg_home_2 team_contact">
         <a class="team_a separator" href="/contact">CONTACT US</a><a class="team_a" href="/careers">CAREERS</a>
     </div>
 

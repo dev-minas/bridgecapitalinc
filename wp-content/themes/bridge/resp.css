@@ -130,6 +130,14 @@
     .menu_close {
         margin: 3% 16.3% 15% 0;
     }
+
+    .team_block {
+        width: 47%;
+    }
+
+    .team_contact {
+        display: none;
+    }
 }
 
 @media only screen and ( max-width: 650px) {
@@ -296,6 +304,10 @@
 
     .menu_close img {
         width: 47%;
+    }
+
+    .team_block {
+        width: 100%;
     }
 }
 
