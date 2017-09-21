@@ -326,6 +326,10 @@
     .bg_team h1 {
         font-size: 30px;
     }
+
+    .contact_right span {
+        font-size: 15px;
+    }
 }
 
 @media only screen and ( max-width: 380px) {
