@@ -76,6 +76,46 @@
     }
 }
 
+@media only screen and ( max-width: 700px) {
+
+    .bg_home_2 h1 {
+        font-size: 40px;
+    }
+
+    p.sub_title {
+        font-size: 18px;
+    }
+
+    .bg_home_2 h2 {
+        font-size: 30px;
+    }
+
+    .bg_home_2 p {
+        font-size: 16px;
+    }
+
+    .bg_home_2_half {
+        width: auto;
+        height: auto;
+    }
+
+    .bg4 p {
+        width: auto;
+    }
+
+    .bg4 {
+        background-image: none;
+    }
+
+    .mcalc > .form_element{
+        width: 100%;
+    }
+
+    .mcalc > h2 {
+        font-size: 22px;
+    }
+}
+
 @media only screen and ( max-width: 650px) {
     .ql-icon {
         left: -22px;
@@ -156,6 +196,41 @@
 
     .bg_contact h1 {
         font-size: 18px;
+    }
+}
+
+@media only screen and ( max-width: 480px) {
+    p.sub_title {
+        font-size: 16px;
+    }
+
+    .bg1 {
+        padding: 5% 0!important;
+    }
+
+    .bg_home_2 {
+        width: auto!important;
+    }
+
+    .bg_home_2 h2 {
+        font-size: 25px;
+    }
+
+    .bg_home_2 p {
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .bg3 ul li, .bg_home_2, .btn_qp, .bg_home_2_half {
+        font-size: 14px;
+    }
+
+    .bg_home_2 h2 {
+        font-size: 20px;
+    }
+
+    .bg_home_2 p.secondary_title {
+        text-align: center;
     }
 }
 
