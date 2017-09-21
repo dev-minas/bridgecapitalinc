@@ -620,7 +620,7 @@ hr {
     width: 92%;
     text-align: center;
 }
-.form_left .full_width input, .form_left .full_width span {
+.form_left .full_width input, .form_left .full_width select, .form_left .full_width span {
     float: none;
 }
 .blue {

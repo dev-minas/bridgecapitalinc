@@ -277,7 +277,12 @@ function property_type_change(obj) {
 }
 
 function diff_maddress_click(obj) {
-    obj.parent().parent().find(".number_of_units").removeClass("hidden");
-    obj.parent().parent().find(".number_of_stories").addClass("hidden");
+
+    if (obj.val() == 'Yes') {
+        obj.parent().parent().find(".my_mailing_address").removeClass("hidden");
+    }
+    else {
+        obj.parent().parent().find(".my_mailing_address").addClass("hidden");
+    }
 }
 
