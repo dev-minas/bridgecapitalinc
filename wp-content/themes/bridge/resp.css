@@ -122,6 +122,14 @@
     .div_logo {
         margin: 2.5% 0 2.5% 0;
     }
+
+    .div_mmenu a, .div_mmenu a:visited, .div_mmenu a:hover {
+        font-size: 2.5vw;
+    }
+
+    .menu_close {
+        margin: 3% 16.3% 15% 0;
+    }
 }
 
 @media only screen and ( max-width: 650px) {
@@ -256,6 +264,29 @@
 
     .menu_hide {
         display: none;
+    }
+
+    .bg_home_t {
+        padding: 10px 0;
+    }
+
+    .div_logo {
+        display: inline-block;
+        width: 60%;
+        margin-left: 25px;
+    }
+
+    .div_mob_menu img {
+        width: 30%;
+        cursor: pointer;
+    }
+
+    .div_mob_menu {
+        cursor: default;
+    }
+
+    .div_mmenu a, .div_mmenu a:visited, .div_mmenu a:hover {
+        font-size: 3.5vw;
     }
 }
 
