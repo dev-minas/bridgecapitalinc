@@ -124,7 +124,7 @@
     }
 
     .div_mmenu a, .div_mmenu a:visited, .div_mmenu a:hover {
-        font-size: 2.5vw;
+        font-size: 18px;
     }
 
     .menu_close {
@@ -277,16 +277,25 @@
     }
 
     .div_mob_menu img {
-        width: 30%;
+        width: 47%;
         cursor: pointer;
     }
 
     .div_mob_menu {
         cursor: default;
+        margin: 3% 10px 0 0;
     }
 
     .div_mmenu a, .div_mmenu a:visited, .div_mmenu a:hover {
-        font-size: 3.5vw;
+        font-size: 16px;
+    }
+
+    .menu_close {
+        margin: 5% 6.3% 15% 0;
+    }
+
+    .menu_close img {
+        width: 47%;
     }
 }
 

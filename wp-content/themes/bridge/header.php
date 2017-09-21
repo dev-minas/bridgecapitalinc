@@ -35,7 +35,7 @@
 
     <div class="div_mmenu">
         <div class="menu_close close">
-            MENU <img src="<?php bloginfo('template_url'); ?>/img/close.png" id="mob_img" /></a>
+            <span class="menu_hide">MENU</span> <img src="<?php bloginfo('template_url'); ?>/img/close.png" id="mob_img" /></a>
         </div>
         <a href="">About Us</a>
         <a href="/#mission" class="close">Mission Statement</a>
