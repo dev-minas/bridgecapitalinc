@@ -124,7 +124,6 @@ function validate_req(obj) {
 
             ret = false;
             blink_input(elem);
-            // elem.css('border-color', 'red');
         }
     });
 
