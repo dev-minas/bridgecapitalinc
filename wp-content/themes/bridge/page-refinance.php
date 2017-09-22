@@ -83,7 +83,8 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="3" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="1" class="continue" type="submit" value="BACK" />
+                        <input data-index="3" class="continue" type="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
 
@@ -175,6 +176,7 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
+                        <input data-index="2" class="continue" type="submit" value="BACK" />
                         <input data-index="4" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
@@ -230,6 +232,7 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
+                        <input data-index="3" class="continue" type="submit" value="BACK" />
                         <input data-index="5" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
@@ -315,6 +318,7 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
+                        <input data-index="4" class="continue" type="submit" value="BACK" />
                         <input data-index="6" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
@@ -423,6 +427,7 @@ get_header(); ?>
                 </div>
                 <div class="form_element full_width" id="tab4_save_btn">
                     <label> &nbsp; </label>
+                    <input data-index="5" class="continue" type="submit" value="BACK" />
                     <input data-index="7" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                 </div>
 

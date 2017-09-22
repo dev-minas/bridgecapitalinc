@@ -641,7 +641,8 @@ hr {
 }
 .form_left .form_element input[type=submit] {
     float: none;
-    width: 50%;
+    width: 30%;
+    margin: 1%;
 }
 .form_left .form_element input:hover[type=submit] {
     color: #eee;
