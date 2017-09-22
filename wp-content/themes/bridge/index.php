@@ -56,10 +56,6 @@
     <div class="bg_home_2 bg5 mcalc">
     </div>
 
-    <div class="bg_home_2 bg6">
-        <img src="<?php bloginfo('template_url'); ?>/img/banner.png" />
-    </div>
-
     <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
 
     <script>

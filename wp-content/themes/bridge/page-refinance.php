@@ -19,7 +19,7 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label>Email</label>
-                        <input name="My Email" />
+                        <input name="My Email" class="req" />
                     </div>
                     <div class="form_element">
                         <label>Middle Name</label>
@@ -161,6 +161,7 @@ get_header(); ?>
                             <option>2</option>
                             <option>3</option>
                             <option>4</option>
+                            <option>5+</option>
                         </select>
                     </div>
 
@@ -192,7 +193,7 @@ get_header(); ?>
                     </div>
 
                     <div class="form_element full_width">
-                        <label>Mailing Address Different</label>
+                        <label>Is Mailing Address Different?</label>
                         <input type="radio" name="Different Mailing Address" value="Yes" class="diff_maddress" />
                         <span>Yes</span>
                         <input type="radio" name="Different Mailing Address" value="No" class="diff_maddress" />
@@ -220,7 +221,7 @@ get_header(); ?>
                     </div>
 
                     <div class="form_element full_width">
-                        <label>Does <b class="cb_name"></b> have a different current address?</label>
+                        <label>Does <b class="cb_name"></b> have a different current address? </label>
                         <input type="radio" name="CB Mailing Address Different" class="cb_ma_diff" value="Yes" />
                         <span>Yes</span>
                         <input type="radio" name="CB Mailing Address Different" class="cb_ma_diff" value="No" />
@@ -284,7 +285,7 @@ get_header(); ?>
                     </div>
 
                     <div class="form_element full_width">
-                        <label>Mailing Address Different</label>
+                        <label>Is Mailing Address Different?</label>
                         <input type="radio" name="Different Mailing Address" value="Yes" class="cb_diff_maddress" />
                         <span>Yes</span>
                         <input type="radio" name="Different Mailing Address" value="No" class="cb_diff_maddress" />
