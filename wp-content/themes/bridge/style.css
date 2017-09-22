@@ -904,8 +904,13 @@ hr {
     margin: auto;
 }
 
+ul {
+
+}
 li {
     list-style-type: none;
+    display: inline-block;
+    padding-right: 20px;
 }
 
 .ql-list {
