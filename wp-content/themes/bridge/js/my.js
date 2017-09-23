@@ -53,13 +53,36 @@ $(document).ready(function () {
         emp_type_change($(this));
     });
 
+    $(".branch_select").live('change', function() {
+
+        var index = $(".branch_select").index(this);
+        $(".emp_name").eq(index).text( this.value );
+    });
+
+    $(".company_name_input").live('keyup', function() {
+
+        var index = $(".company_name_input").index(this);
+        var obj = $(".emp_name").eq(index).text(this.value);
+    });
+
+    $(".total_income_input").live('keyup', function() {
+
+        var index = $(".total_income_input").index(this);
+        $(".income_numb").eq(index).text( this.value );
+    });
+
     $('.property_type').live('change', function() {
 
         property_type_change($(this));
     });
 
-    $('.diff_maddress').click(function() {
-        diff_maddress_click($(this));
+    $('.cb_own_or_rent').live('change', function() {
+
+        cb_own_rent_change($(this));
+    });
+
+    $('.cb_diff_maddress').click(function() {
+        cb_diff_maddress_click($(this));
     });
 
     $("#btnadd").click(function(){
@@ -67,27 +90,12 @@ $(document).ready(function () {
         //$("#repeat").append("<strong>Lorem ipsum.</strong>");
         $("#tab6_form").children().hide();
         $("#tab6_form").append($("#cei_toclone").html());
-
+        $(".cei_rows_conteiner").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td></tr>');
     });
 
     $("#cb_name").change(function() {
 
         $('.cb_name').text($(this).val());
-    });
-
-    $(".company-name-input").keyup(function() {
-
-        $(".emp_name").text( this.value );
-    });
-
-    $(".total_income_input").keyup(function() {
-
-        $(".income_numb").text( this.value );
-    });
-
-    $(".branch_select").change(function() {
-
-        $(".emp_name").text( this.value );
     });
 
     $(".main_form").submit(function (event) {
@@ -119,7 +127,7 @@ $(document).ready(function () {
             if (index == 2 && !$("#co_borrower").is(':checked')) {
                 index = 3;
             }
-            if (index == 5 && !$("#co_borrower").is(':checked')) {
+            if (index == 5 && $(".cb_ma_diff:checked").val() == 'No') {
                 index = 6;
             }
 
@@ -284,6 +292,18 @@ function property_type_change(obj) {
     }
 }
 
+function cb_own_rent_change(obj) {
+
+    if (obj.val() == 'Rent') {
+        obj.parent().parent().find(".cb_monthly_rent").removeClass("hidden");
+        obj.parent().parent().find(".cb_monthly_rent_place").addClass("hidden");
+    }
+    else {
+        obj.parent().parent().find(".cb_monthly_rent_place").removeClass("hidden");
+        obj.parent().parent().find(".cb_monthly_rent").addClass("hidden");
+    }
+}
+
 function diff_maddress_click(obj) {
 
     if (obj.val() == 'Yes') {
@@ -294,3 +314,12 @@ function diff_maddress_click(obj) {
     }
 }
 
+function cb_diff_maddress_click(obj) {
+
+    if (obj.val() == 'Yes') {
+        obj.parent().parent().find(".cb_mailing_address").removeClass("hidden");
+    }
+    else {
+        obj.parent().parent().find(".cb_mailing_address").addClass("hidden");
+    }
+}
