@@ -296,7 +296,6 @@ p.sub_title {
 .bg_home_f {
     float: left; width: 100%;
     text-align: center;
-    /*padding: 2% 20% 4% 20%;*/
     color: #9fa4af;
 	background-image: url('img/bg_footer.png');
 	background-repeat: no-repeat;
@@ -905,9 +904,6 @@ hr {
     margin: auto;
 }
 
-ul {
-
-}
 li {
     list-style-type: none;
     display: inline-block;
@@ -920,7 +916,6 @@ li {
 }
 
 .ql-list:first-of-type {
-    /*padding-bottom: 139px;*/
     float: left;
     margin-bottom: -30px;
     right: 34px;
@@ -938,13 +933,6 @@ li {
 .ql-top-pic {
     display: inline-block;
 }
-
-/*.ql-list:first-of-type:after, .ql-list:first-of-type:before {
-   !* position: relative;*!
-    content: url("/img/ProcessBig-01.svg")!important;
-    width: 100px;
-    height: 100px;
-}*/
 
 .ql-circle {
     width: 82px;
