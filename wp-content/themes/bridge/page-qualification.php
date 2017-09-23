@@ -5,7 +5,7 @@
 get_header(); ?>
 
     <div class="bg_home_2 bg_contact ql_content">
-        <h1>THE LOAN PROCESS</h1>
+        <h1>THE LOAN PROCESSING</h1>
     </div>
     <div class="bg_home_2 ql_content">
         <ul class="ql_content_ul">
