@@ -883,13 +883,13 @@ hr {
 /*qualification*/
 .ql-icon {
     display: inline-block;
-    padding: 2%;
+    padding: 15px;
     border: 4px solid #aaa;
     border-radius: 28px;
     float: left;
     position: absolute;
-    left: -12px;
-    bottom: 16px;
+    left: -11px;
+    bottom: 15px;
 }
 
 .ql-icon:after {
@@ -919,6 +919,13 @@ li {
     margin-bottom: 92px;
 }
 
+.ql-list:first-of-type {
+    /*padding-bottom: 139px;*/
+    float: left;
+    margin-bottom: -30px;
+    right: 34px;
+}
+
 .ql-list:after, .ql-list:before {
     position: absolute;
     top: 127px;
@@ -927,6 +934,17 @@ li {
     content: "";
     height: 100%;
 }
+
+.ql-top-pic {
+    display: inline-block;
+}
+
+/*.ql-list:first-of-type:after, .ql-list:first-of-type:before {
+   !* position: relative;*!
+    content: url("/img/ProcessBig-01.svg")!important;
+    width: 100px;
+    height: 100px;
+}*/
 
 .ql-circle {
     width: 82px;
@@ -962,11 +980,7 @@ li {
     text-align: left;
 }
 
-.ql-list:first-of-type {
-    padding-bottom: 139px;
-}
-
-.ql-list:last-of-type:before {
+.ql-list:last-of-type:before, .ql-list:first-of-type:before, .ql-list:first-of-type:after {
     display: none;
 }
 

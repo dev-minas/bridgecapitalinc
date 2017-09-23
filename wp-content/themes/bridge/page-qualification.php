@@ -10,12 +10,16 @@ get_header(); ?>
     <div class="bg_home_2 ql_content">
         <ul class="ql_content_ul">
             <li class="ql-list">
-                <span class="ql-icon">
-                <img src="<?php bloginfo('template_url'); ?>/img/Process.svg" alt="" width="69">
+                <span class="ql-top-pic">
+                <img src="<?php bloginfo('template_url'); ?>/img/ProcessBig-01.svg" alt="" width="150">
                 </span>
-                <span class="ql-small-circle"></span>
+               <!-- <span class="ql-small-circle"></span>-->
+                <!--<span style="display: inline-block;">
+                    <img src="/img/ProcessBig-01.svg" alt="" width="69">
+                </span>-->
                 <span class="clear-both"></span>
             </li>
+            <!--<span class="clear-both"></span>-->
             
             <!--ql-->
             <li class="ql-list">
