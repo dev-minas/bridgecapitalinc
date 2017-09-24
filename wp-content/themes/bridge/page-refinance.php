@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab hidden">
+            <div id="tab1" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -171,7 +171,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab3" class="tab ">
+            <div id="tab3" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Current Address Information</h1>
 
