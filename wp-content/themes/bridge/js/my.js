@@ -81,15 +81,27 @@ $(document).ready(function () {
         cb_own_rent_change($(this));
     });
 
+    $('.diff_maddress').click(function() {
+        diff_maddress_click($(this));
+    });
+
+    $('.cb_diff_caddrecc').click(function() {
+        diff_cb_caddress_click($(this));
+    });
+
     $('.cb_diff_maddress').click(function() {
         cb_diff_maddress_click($(this));
+    });
+
+    $('#co_borrower').change(function() {
+        co_borrower_click();
     });
 
     $("#btnadd").click(function(){
 
         //$("#repeat").append("<strong>Lorem ipsum.</strong>");
-        $("#tab6_form").children().hide();
-        $("#tab6_form").append($("#cei_toclone").html());
+        $("#tab4_form").children().hide();
+        $("#tab4_form").append($("#cei_toclone").html());
         $(".cei_rows_conteiner").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td></tr>');
     });
 
@@ -124,13 +136,6 @@ $(document).ready(function () {
 
             var index = $(this).data('index');
 
-            if (index == 2 && !$("#co_borrower").is(':checked')) {
-                index = 3;
-            }
-            if (index == 5 && $(".cb_ma_diff:checked").val() == 'No') {
-                index = 6;
-            }
-
             $(".tab").hide();
             $("#tab" + index).show();
             $("#tab" + index + " h1")[0].scrollIntoView();
@@ -145,7 +150,7 @@ $(document).ready(function () {
 
 function validate_req(obj) {
     var ret = true;
-    var req_elem = obj.parent().parent().find(".req");
+    var req_elem = obj.parent().parent().find(".req").not(".hidden .req");
     var form_div;
     req_elem.each(function() {
 
@@ -185,6 +190,16 @@ function blink_input (obj) {
             }
         }
     }, 300);
+}
+
+function co_borrower_click() {
+
+    if ($("#co_borrower").is(':checked')) {
+        $(".co-borrower").removeClass("hidden");
+    }
+    else {
+        $(".co-borrower").addClass("hidden");
+    }
 }
 
 function emp_type_change(obj) {
@@ -311,6 +326,16 @@ function diff_maddress_click(obj) {
     }
     else {
         obj.parent().parent().find(".my_mailing_address").addClass("hidden");
+    }
+}
+
+function diff_cb_caddress_click(obj) {
+
+    if (obj.val() == 'Yes') {
+        obj.parent().parent().find(".cb_current_address").removeClass("hidden");
+    }
+    else {
+        obj.parent().parent().find(".cb_current_address").addClass("hidden");
     }
 }
 

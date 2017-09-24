@@ -8,11 +8,12 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab ">
+            <div id="tab1" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
                 <div class="form_left">
+
                     <div class="form_element">
                         <label>First Name</label>
                         <input name="My First Name" class="req" />
@@ -47,6 +48,29 @@ get_header(); ?>
                         <input type="checkbox" name="Co-Borrower" id="co_borrower" value="Yes" />
                     </div>
 
+                    <h3 class="hidden co-borrower">Co-Borrower Information</h3>
+
+                    <div class="form_element hidden co-borrower">
+                        <label>First Name</label>
+                        <input name="CB First Name" id="cb_name" class="req" />
+                    </div>
+                    <div class="form_element hidden co-borrower">
+                        <label>Email</label>
+                        <input name="CB Email" class="req" />
+                    </div>
+                    <div class="form_element hidden co-borrower">
+                        <label>Middle Name</label>
+                        <input name="CB Middle Name" />
+                    </div>
+                    <div class="form_element hidden co-borrower">
+                        <label>Phone</label>
+                        <input name="CB Phone hidden co-borrower" />
+                    </div>
+                    <div class="form_element hidden co-borrower">
+                        <label>Last Name</label>
+                        <input name="CB Last Name" />
+                    </div>
+
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
                         <input data-index="2" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
@@ -56,41 +80,6 @@ get_header(); ?>
             </div>
 
             <div id="tab2" class="tab hidden">
-                <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
-                <h1>Co-Borrower Information</h1>
-
-                <div class="form_left">
-                    <div class="form_element">
-                        <label>First Name</label>
-                        <input name="CB First Name" id="cb_name" class="req" />
-                    </div>
-                    <div class="form_element">
-                        <label>Email</label>
-                        <input name="CB Email" class="req" />
-                    </div>
-                    <div class="form_element">
-                        <label>Middle Name</label>
-                        <input name="CB Middle Name" />
-                    </div>
-                    <div class="form_element">
-                        <label>Phone</label>
-                        <input name="CB Phone" />
-                    </div>
-                    <div class="form_element">
-                        <label>Last Name</label>
-                        <input name="CB Last Name" />
-                    </div>
-
-                    <div class="form_element full_width">
-                        <label> &nbsp; </label>
-                        <input data-index="1" class="continue" type="submit" value="BACK" />
-                        <input data-index="3" class="continue" type="submit" value="SAVE & CONTINUE" />
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="tab3" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Property Information</h1>
                 <div class="form_left">
@@ -176,13 +165,13 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="2" class="continue" type="submit" value="BACK" />
-                        <input data-index="4" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="1" class="continue" type="submit" value="BACK" />
+                        <input data-index="3" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
             </div>
 
-            <div id="tab4" class="tab hidden">
+            <div id="tab3" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Current Address Information</h1>
 
@@ -224,31 +213,19 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label>Does <b class="cb_name"></b> have a different current address? </label>
-                        <input type="radio" name="CB Mailing Address Different" class="cb_ma_diff" value="Yes" />
+                        <input type="radio" name="CB Mailing Address Different" class="cb_diff_caddrecc" value="Yes" />
                         <span>Yes</span>
-                        <input type="radio" name="CB Mailing Address Different" class="cb_ma_diff" value="No" />
+                        <input type="radio" name="CB Mailing Address Different" class="cb_diff_caddrecc" value="No" />
                         <span>No</span>
                     </div>
 
-                    <div class="form_element full_width">
-                        <label> &nbsp; </label>
-                        <input data-index="3" class="continue" type="submit" value="BACK" />
-                        <input data-index="5" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
-                    </div>
-                </div>
-            </div>
+                    <h3 class="hidden cb_current_address"><b class="cb_name"></b> Current Address Information</h3>
 
-            <div id="tab5" class="tab hidden">
-                <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
-                <h1><b class="cb_name"></b> Current Address Information</h1>
-
-                <div class="form_left">
-
-                    <div class="form_element">
+                    <div class="form_element hidden cb_current_address">
                         <label for="name">Street</label>
                         <input name="CB Street" value="" />
                     </div>
-                    <div class="form_element">
+                    <div class="form_element hidden cb_current_address">
                         <label for="email">Do you own or rent?</label>
                         <select name="CB Own_or_Rent" class="cb_own_or_rent">
                             <option value="" selected="selected" disabled="">Select One</option>
@@ -258,7 +235,7 @@ get_header(); ?>
                         </select>
                     </div>
 
-                    <div class="form_element">
+                    <div class="form_element hidden cb_current_address">
                         <label>Zip / State</label>
                         <input class="half_width half_width_margin" name="CB Zip" />
                         <select class="half_width" name="CB State">
@@ -266,28 +243,28 @@ get_header(); ?>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
                     </div>
 
-                    <div class="form_element cb_monthly_rent_place">
+                    <div class="form_element cb_monthly_rent_place hidden cb_current_address">
                     </div>
-                    <div class="form_element hidden cb_monthly_rent">
+                    <div class="form_element cb_monthly_rent hidden cb_current_address">
                         <label>What is your monthly rent?</label>
                         <input name="CB Monthly Rent" value="" />
                     </div>
 
-                    <div class="form_element">
+                    <div class="form_element hidden cb_current_address">
                         <label for="message">What is your monthly rent?</label>
                         <input name="CB Rent" />
                     </div>
-                    <div class="form_element">
+                    <div class="form_element hidden cb_current_address">
                         <label for="message">City</label>
                         <input name="CB City" />
                     </div>
-                    <div class="form_element">
+                    <div class="form_element hidden cb_current_address">
                         <label for="message">Time at Current Address</label>
                         <input class="half_width half_width_margin" name="CB Years" />
                         <input class="half_width" name="CB Months" />
                     </div>
 
-                    <div class="form_element full_width">
+                    <div class="form_element full_width hidden cb_current_address">
                         <label>Is Mailing Address Different?</label>
                         <input type="radio" name="Different Mailing Address" value="Yes" class="cb_diff_maddress" />
                         <span>Yes</span>
@@ -295,36 +272,38 @@ get_header(); ?>
                         <span>No</span>
                     </div>
 
-                    <h3 class="cb_mailing_address hidden"><b class="cb_name"></b> Mailing Address</h3>
+                    <div class="cb_current_address">
+                        <h3 class="cb_mailing_address hidden"><b class="cb_name"></b> Mailing Address</h3>
 
-                    <div class="form_element full_width hidden cb_mailing_address">
-                        <label for="name">Street</label>
-                        <input name="CB Mailing Street" value="" />
-                    </div>
+                        <div class="form_element full_width hidden cb_mailing_address">
+                            <label for="name">Street</label>
+                            <input name="CB Mailing Street" value="" />
+                        </div>
 
-                    <div class="form_element full_width hidden cb_mailing_address">
-                        <label>Zip / State</label>
-                        <input class="half_width half_width_margin" name="CB Zip" />
-                        <select class="half_width" name="CB Mailing State">
-                            <option value="" selected="selected" disabled="">State</option>
-                            <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option>
-                        </select>
-                    </div>
+                        <div class="form_element full_width hidden cb_mailing_address">
+                            <label>Zip / State</label>
+                            <input class="half_width half_width_margin" name="CB Zip" />
+                            <select class="half_width" name="CB Mailing State">
+                                <option value="" selected="selected" disabled="">State</option>
+                                <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option>
+                            </select>
+                        </div>
 
-                    <div class="form_element full_width hidden cb_mailing_address">
-                        <label for="message">City</label>
-                        <input name="Mailing City" />
+                        <div class="form_element full_width hidden cb_mailing_address">
+                            <label for="message">City</label>
+                            <input name="Mailing City" />
+                        </div>
                     </div>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
-                        <input data-index="4" class="continue" type="submit" value="BACK" />
-                        <input data-index="6" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                        <input data-index="2" class="continue" type="submit" value="BACK" />
+                        <input data-index="4" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                     </div>
                 </div>
             </div>
 
-            <div id="tab6" class="tab hidden">
+            <div id="tab4" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form3.png" />
                 <h1>Current Employer Information</h1>
 
@@ -339,7 +318,7 @@ get_header(); ?>
                     </table>
                 </div>
 
-                <div id="tab6_form">
+                <div id="tab4_form">
                     <div class="form_left">
                         <div class="form_element">
                             <label for="email">Employment Type</label>
@@ -427,8 +406,8 @@ get_header(); ?>
                 </div>
                 <div class="form_element full_width" id="tab4_save_btn">
                     <label> &nbsp; </label>
-                    <input data-index="5" class="continue" type="submit" value="BACK" />
-                    <input data-index="7" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    <input data-index="3" class="continue" type="submit" value="BACK" />
+                    <input data-index="5" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
                 </div>
 
             </div>
