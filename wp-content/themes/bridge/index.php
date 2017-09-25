@@ -4,7 +4,7 @@
         <h1>Welcome</h1>
         <p class="sub_title secondary_title">We look forward to putting our <br> mortgage services to work for you!</p>
         <a class="btn btn_applay" href="/refinance-or-purchase">Applay now</a>
-        <a class="btn btn_loan" href="#">Find a loan Originator</a>
+        <a class="btn btn_loan" href="/team">Find a loan Originator</a>
     </div>
 
     <a class="scrl_menu" name="mission"></a>
