@@ -546,6 +546,15 @@ a.separator, a.separator:visited, a.separator:hover {
     font-family: 'Lato Black', sans-serif;
 }
 
+.bg_about {
+    background-image: url("img/bg_about.jpg");
+    background-size: cover;
+    color: #fff;
+}
+.bg_about h1 {
+    color: #fff;
+}
+
 .bg_contact {
     background-color: #f5f6f8;
     padding: 5% 20%;

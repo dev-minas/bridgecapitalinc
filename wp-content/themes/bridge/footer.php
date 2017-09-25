@@ -3,7 +3,7 @@
         <div class="bg_home_f_q">
             <h3>ABOUT US</h3>
             <div class="bloker"><?=get_post(37)->post_content?></div>
-            <a href="about">read more</a>
+            <a href="/about">read more</a>
         </div>
         <div class="bg_home_f_q">
             <h3>GET IN TOUCH</h3>

@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab hidden">
+            <div id="tab1" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -781,7 +781,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab9" class="tab ">
+            <div id="tab9" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
                 <h1>You're nearly to the finish line.</h1>
                 <div class=" full_width gray">
@@ -812,14 +812,14 @@ get_header(); ?>
                     <div class="form_element full_width" id="declarations_list">
                         <label>b. Have you been declared bankrupt within the past 7 years?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -829,14 +829,14 @@ get_header(); ?>
                     <div class="form_element full_width" id="declarations_list">
                         <label>c. Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -846,14 +846,14 @@ get_header(); ?>
                     <div class="form_element full_width" id="declarations_list">
                         <label>d. Are you a party to a lawsuit?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -863,14 +863,14 @@ get_header(); ?>
                     <div class="form_element full_width" id="declarations_list">
                         <label>e. Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer in title in lieu of foreclosure, or judgment?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -880,14 +880,14 @@ get_header(); ?>
                     <div class="form_element full_width" id="declarations_list">
                         <label>f. Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -897,14 +897,14 @@ get_header(); ?>
                     <div class="form_element full_width" id="declarations_list">
                         <label>g. Are you obligated to pay alimony, child support, or separate maintenance?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -914,14 +914,14 @@ get_header(); ?>
                     <div class="form_element full_width" id="declarations_list">
                         <label>h. Is any part of the down payment borrowed?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -931,14 +931,14 @@ get_header(); ?>
                     <div class="form_element full_width" id="declarations_list">
                         <label>i. Are you a co-maker or endorser on a note?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -948,14 +948,14 @@ get_header(); ?>
                     <div class="form_element full_width"  id="declarations_list">
                         <label>j. Are you a U.S. Citizen?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -965,14 +965,14 @@ get_header(); ?>
                     <div class="form_element full_width"  id="declarations_list">
                         <label>k. Are you a permanent Resident Alien?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -982,14 +982,14 @@ get_header(); ?>
                     <div class="form_element full_width"  id="declarations_list">
                         <label>l. Do you intend to occupy the property as your Primary Residence?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -999,14 +999,14 @@ get_header(); ?>
                     <div class="form_element full_width"  id="declarations_list">
                         <label>m. Have you had an ownership interest in a property in the last three years?</label>
                         <div>
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="my_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations">dxdxdx ffgcfcfc</span>
+                            <span class="declarations"><b class="cb_name"></b></span>
                             <input type="radio" name="Declarations" value="Yes" />
                             <span>Yes</span>
                             <input type="radio" name="Declarations" value="No" />
@@ -1016,7 +1016,7 @@ get_header(); ?>
                     <div class="form_element full_width"  id="declarations_list">
                         <label>n. What type of property did you own?</label>
                         <div>
-                            <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
+                            <span class="declarations" id="declarations-txt"><b class="my_name"></b></span>
                             <select name="Own_or_Rent" id="declarations-select">
                                 <option value="" selected="selected" disabled="">Select One</option>
                                 <option>Primary Residence</option>
@@ -1025,7 +1025,7 @@ get_header(); ?>
                             </select>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
+                            <span class="declarations" id="declarations-txt"><b class="cb_name"></b></span>
                             <select name="Own_or_Rent" id="declarations-select">
                                 <option value="" selected="selected" disabled="">Select One</option>
                                 <option>Primary Residence</option>
@@ -1037,7 +1037,7 @@ get_header(); ?>
                     <div class="form_element full_width"  id="declarations_list">
                         <label>o. How did you hold title to the home?</label>
                         <div>
-                            <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
+                            <span class="declarations" id="declarations-txt"><b class="my_name"></b></span>
                             <select name="Own_or_Rent" id="declarations-select">
                                 <option value="" selected="selected" disabled="">Select One</option>
                                 <option>Solely by yourself</option>
@@ -1046,8 +1046,7 @@ get_header(); ?>
                             </select>
                         </div>
                         <div class="cb_tab9 hidden">
-                            <label>o. How did you hold title to the home?</label>
-                            <span class="declarations" id="declarations-txt">dxdxdx ffgcfcfc</span>
+                            <span class="declarations" id="declarations-txt"><b class="cb_name"></b></span>
                             <select name="Own_or_Rent" id="declarations-select">
                                 <option value="" selected="selected" disabled="">Select One</option>
                                 <option>Solely by yourself</option>
@@ -1064,104 +1063,6 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-
-            <!--<div id="tab8" class="tab hidden">
-                <img src="<?php /*bloginfo('template_url'); */?>/img/form2.png" />
-                <h1>You're minutes away from your 3 FREE Credit Scores.</h1>
-                <div class=" full_width gray">
-                    With these last tidbits of info we'll give you your FREE credit scores.
-                </div>
-
-                <div class="form_left">
-                    <div class="full_width gray">
-                        <strong>My Credit Information</strong>
-                    </div>
-
-                    <div class="fill-form-list">
-                        <span class="gray information-txt">dxdxdx ffgcfcfc</span>
-                        <div class="fill-form-inner">
-                            <label for="">Social Security #</label>
-                            <input type="text">
-                        </div>
-                        <div class="fill-form-inner">
-                            <label for="">Confirm Social Security #</label>
-                            <input type="password">
-                        </div>
-                        <div class="fill-form-inner">
-                            <label for="">Birthday</label>
-                            <input type="text">
-                        </div>
-
-                    </div>
-
-                    <div class="info-checkbox fill-form-checkbox">
-                        <input type="checkbox">
-                        <label for="">
-                            I / We (dxdxdx ffgcfcfc) authorize lender or its designated representatives to obtain a credit report from the national credit reporting agencies in connection with my/our home loan application.
-                        </label>
-                    </div>
-
-                    <div class="form_element full_width">
-                        <label> &nbsp; </label>
-                        <input data-index="9" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
-                    </div>
-
-                </div>
-
-            </div>-->
-
-            <!--<div id="tab9" class="tab hidden">
-                <img src="<?php /*bloginfo('template_url'); */?>/img/form2.png" />
-                <h1>You're minutes away from your 3 FREE Credit Scores.</h1>
-                <div class=" full_width gray">
-                    You can do this by either creating a new account or signing in.
-                </div>
-                <div class="form_left">
-
-                    <div class="fill-form-list">
-                        <div class="fill-form-inner">
-                            <label for="">Email</label>
-                            <input type="text">
-                        </div>
-                        <div class="fill-form-inner">
-                            <label for="">New Password</label>
-                            <input type="password">
-                        </div>
-                        <div class="fill-form-inner">
-                            <label for="">Confirm Password</label>
-                            <input type="text">
-                        </div>
-                        <div class="fill-form-inner">
-                            <label for="">Confirm Password</label>
-                            <select name="">
-                                <option value="" selected="selected" disabled="">Select One</option>
-                                <option>What is your favorite hobby?</option>
-                                <option>What was your favorite teacher</option>
-                                <option>what is the name of your favorite pet?</option>
-                                <option>In what year was your mother born?</option>
-                                <option>What is the name of the model of your first car?</option>
-                            </select>
-                        </div>
-
-                        <div class="fill-form-inner">
-                            <label for="">Security Answer</label>
-                            <input type="text">
-                        </div>
-
-                    </div>
-
-                    <div class="form_element full_width">
-                        <label> &nbsp; </label>
-                        <input data-index="10" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
-                    </div>
-                    <div class="fill-form-inner">
-                        <a href="#">Already have an account? Sign In</a>
-                    </div>
-
-                </div>
-
-
-            </div>-->
 
             <div id="tab10" class="tab hidden">
 
@@ -1250,6 +1151,104 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
+
+            <!--<div id="tab8" class="tab hidden">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/form2.png" />
+                <h1>You're minutes away from your 3 FREE Credit Scores.</h1>
+                <div class=" full_width gray">
+                    With these last tidbits of info we'll give you your FREE credit scores.
+                </div>
+
+                <div class="form_left">
+                    <div class="full_width gray">
+                        <strong>My Credit Information</strong>
+                    </div>
+
+                    <div class="fill-form-list">
+                        <span class="gray information-txt">dxdxdx ffgcfcfc</span>
+                        <div class="fill-form-inner">
+                            <label for="">Social Security #</label>
+                            <input type="text">
+                        </div>
+                        <div class="fill-form-inner">
+                            <label for="">Confirm Social Security #</label>
+                            <input type="password">
+                        </div>
+                        <div class="fill-form-inner">
+                            <label for="">Birthday</label>
+                            <input type="text">
+                        </div>
+
+                    </div>
+
+                    <div class="info-checkbox fill-form-checkbox">
+                        <input type="checkbox">
+                        <label for="">
+                            I / We (dxdxdx ffgcfcfc) authorize lender or its designated representatives to obtain a credit report from the national credit reporting agencies in connection with my/our home loan application.
+                        </label>
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="9" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+
+                </div>
+
+            </div>-->
+            <!--<div id="tab9" class="tab hidden">
+                <img src="<?php /*bloginfo('template_url'); */?>/img/form2.png" />
+                <h1>You're minutes away from your 3 FREE Credit Scores.</h1>
+                <div class=" full_width gray">
+                    You can do this by either creating a new account or signing in.
+                </div>
+                <div class="form_left">
+
+                    <div class="fill-form-list">
+                        <div class="fill-form-inner">
+                            <label for="">Email</label>
+                            <input type="text">
+                        </div>
+                        <div class="fill-form-inner">
+                            <label for="">New Password</label>
+                            <input type="password">
+                        </div>
+                        <div class="fill-form-inner">
+                            <label for="">Confirm Password</label>
+                            <input type="text">
+                        </div>
+                        <div class="fill-form-inner">
+                            <label for="">Confirm Password</label>
+                            <select name="">
+                                <option value="" selected="selected" disabled="">Select One</option>
+                                <option>What is your favorite hobby?</option>
+                                <option>What was your favorite teacher</option>
+                                <option>what is the name of your favorite pet?</option>
+                                <option>In what year was your mother born?</option>
+                                <option>What is the name of the model of your first car?</option>
+                            </select>
+                        </div>
+
+                        <div class="fill-form-inner">
+                            <label for="">Security Answer</label>
+                            <input type="text">
+                        </div>
+
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="10" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+                    <div class="fill-form-inner">
+                        <a href="#">Already have an account? Sign In</a>
+                    </div>
+
+                </div>
+
+
+            </div>-->
+
 
         </form>
 

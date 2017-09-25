@@ -23,20 +23,28 @@
     <div class="bg_home_2 pd5">
         <h2>Loan Types</h2>
         <div class="bg_home_2_half first">
-            <h3>FIXED RATE</h3>
+            <h3><?=get_post(25)->post_title?></h3>
             <?=get_post(25)->post_content?>
         </div>
         <div class="bg_home_2_half">
-            <h3>ADJUSTABLE RATE (ARM)</h3>
+            <h3><?=get_post(27)->post_title?></h3>
             <?=get_post(27)->post_content?>
         </div>
         <div class="bg_home_2_half">
-            <h3>HYBRID ARM</h3>
+            <h3><?=get_post(29)->post_title?></h3>
             <?=get_post(29)->post_content?>
         </div>
         <div class="bg_home_2_half">
-            <h3>OTHER</h3>
+            <h3><?=get_post(31)->post_title?></h3>
             <?=get_post(31)->post_content?>
+        </div>
+        <div class="bg_home_2_half">
+            <h3><?=get_post(69)->post_title?></h3>
+            <?=get_post(69)->post_content?>
+        </div>
+        <div class="bg_home_2_half">
+            <h3><?=get_post(71)->post_title?></h3>
+            <?=get_post(71)->post_content?>
         </div>
     </div>
 
@@ -54,10 +62,6 @@
     </div>
 
     <div class="bg_home_2 bg5 mcalc">
-    </div>
-
-    <div class="bg_home_2 bg6">
-        <img src="<?php bloginfo('template_url'); ?>/img/banner.png" />
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>

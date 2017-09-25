@@ -197,6 +197,7 @@ function validate_req(obj) {
 
             ret = false;
             blink_input(elem);
+            elem.focus();
             form_div = elem.parent().parent();
         }
         if (!ret) {
@@ -233,9 +234,11 @@ function co_borrower_click() {
 
     if ($("#co_borrower").is(':checked')) {
         $(".co-borrower").removeClass("hidden");
+        $(".cb_tab9").removeClass("hidden");
     }
     else {
         $(".co-borrower").addClass("hidden");
+        $(".cb_tab9").addClass("hidden");
     }
 }
 
