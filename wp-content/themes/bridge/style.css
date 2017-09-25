@@ -1039,13 +1039,13 @@ li {
 .ql_box_top {
     position: absolute;
     top: -148px; left: -74px;
-    display: block; width: 120px; height: 120px;
-    padding: 10px;
+    display: block; width: 110px; height: 110px;
+    padding: 15px;
     border: 4px solid #aaa;
     border-radius: 40px;
 }
 .ql_box_top img {
-    width: 120px;
+    width: 110px;
 }
 
 .ql_box_item {
