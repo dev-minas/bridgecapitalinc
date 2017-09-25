@@ -1029,3 +1029,51 @@ li {
 #myBtn:hover {
     background-color: #005691; /* Add a dark-grey background on hover */
 }
+
+.ql_box {
+    position: relative;
+    border-left: 4px solid #aaa;
+    margin: 200px 0 0 74px;
+    padding-top: 100px;
+}
+.ql_box_top {
+    position: absolute;
+    top: -148px; left: -74px;
+    display: block; width: 120px; height: 120px;
+    padding: 10px;
+    border: 4px solid #aaa;
+    border-radius: 20px;
+}
+.ql_box_top img {
+    width: 120px;
+}
+
+.ql_box_item {
+    margin-left: -50px;
+    margin-bottom: 100px;
+}
+.ql_box_item_number {
+    display: block; float: left;
+    width: 82px; height: 82px;
+    background-color: #0066a1;
+    border-radius: 100%;
+    border: 7px solid #fff;
+    font-weight: bold;
+    color: #fff;
+    font-size: 38px;
+    line-height: 82px;
+    margin: 4px 50px 4px 0;
+}
+.ql_box_item_text {
+    display: block;
+    font-size: 19px;
+    text-align: left;
+
+}
+.ql_box_item_text h3 {
+    font-size: 32px;
+    text-align: left;
+    color: #0066a1;
+    font-weight: bold;
+    margin: 0 0 0 0;
+}
