@@ -259,6 +259,22 @@
     .bg_contact h1 {
         font-size: 18px;
     }
+
+    .ql_box {
+        border: none;
+        margin: 0;
+        padding-top: 0;
+    }
+    .ql_box_top {
+        display: none;
+    }
+    .ql_box_item {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    .ql_box_item_number {
+        display: none;
+    }
 }
 
 @media only screen and ( max-width: 480px) {

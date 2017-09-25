@@ -1042,7 +1042,7 @@ li {
     display: block; width: 120px; height: 120px;
     padding: 10px;
     border: 4px solid #aaa;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 .ql_box_top img {
     width: 120px;
@@ -1050,7 +1050,7 @@ li {
 
 .ql_box_item {
     margin-left: -50px;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 .ql_box_item_number {
     display: block; float: left;
@@ -1062,7 +1062,7 @@ li {
     color: #fff;
     font-size: 38px;
     line-height: 82px;
-    margin: 4px 50px 4px 0;
+    margin: 0 50px 100px 0;
 }
 .ql_box_item_text {
     display: block;
