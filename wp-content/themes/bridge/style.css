@@ -207,16 +207,24 @@ p.sub_title {
 }
 
 .bg_home_2_half {
-    float: left; width: 40%; height: 290px;
-    padding: 4%;
+    float: left; width: 44%; height: 360px;
+    padding: 2%;
     margin: 1%;
-    font-size: 16px;
+    font-size: 15px;
     background-color: #f5f6f8;
     color: #46494e;
+    display: table;
+}
+.bg_home_2_half div {
+    height: 360px;
+    display: table-cell;
     vertical-align: middle;
 }
 .bg_home_2_half:hover {
     background-color: #b2d1e3;
+}
+.bg_home_2_half h3 {
+    margin: 0;
 }
 
 /*.form_left > .form_element > .form_element_checkbox, .form_element_label {

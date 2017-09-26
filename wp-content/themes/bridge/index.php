@@ -23,28 +23,40 @@
     <div class="bg_home_2 pd5">
         <h2>Loan Types</h2>
         <div class="bg_home_2_half first">
-            <h3><?=get_post(25)->post_title?></h3>
-            <?=get_post(25)->post_content?>
+            <div>
+                <h3><?=get_post(25)->post_title?></h3>
+                <?=get_post(25)->post_content?>
+            </div>
         </div>
         <div class="bg_home_2_half">
-            <h3><?=get_post(27)->post_title?></h3>
-            <?=get_post(27)->post_content?>
+            <div>
+                <h3><?=get_post(27)->post_title?></h3>
+                <?=get_post(27)->post_content?>
+            </div>
         </div>
         <div class="bg_home_2_half">
-            <h3><?=get_post(29)->post_title?></h3>
-            <?=get_post(29)->post_content?>
+            <div>
+                <h3><?=get_post(29)->post_title?></h3>
+                <?=get_post(29)->post_content?>
+            </div>
         </div>
         <div class="bg_home_2_half">
-            <h3><?=get_post(31)->post_title?></h3>
-            <?=get_post(31)->post_content?>
+            <div>
+                <h3><?=get_post(31)->post_title?></h3>
+                <?=get_post(31)->post_content?>
+            </div>
         </div>
         <div class="bg_home_2_half">
-            <h3><?=get_post(69)->post_title?></h3>
-            <?=get_post(69)->post_content?>
+            <div>
+                <h3><?=get_post(69)->post_title?></h3>
+                <?=get_post(69)->post_content?>
+            </div>
         </div>
         <div class="bg_home_2_half">
-            <h3><?=get_post(71)->post_title?></h3>
-            <?=get_post(71)->post_content?>
+            <div>
+                <h3><?=get_post(71)->post_title?></h3>
+                <?=get_post(71)->post_content?>
+            </div>
         </div>
     </div>
 
