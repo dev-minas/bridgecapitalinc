@@ -39,7 +39,7 @@
         </div>
 
         <div class="team_block">
-            <div class="team_img"><img src="<?php bloginfo('template_url'); ?>/img/Vahe.jpg" /></div>
+            <div class="team_img"><img src="<?php bloginfo('template_url'); ?>/img/Ani.jpg" /></div>
             <div class="team_name">Ani<br/><span>Mehrabi</span></div>
             <div class="team_position hidden">Sr. Transaction<br />Coordinator</div>
             <div class="team_bio">

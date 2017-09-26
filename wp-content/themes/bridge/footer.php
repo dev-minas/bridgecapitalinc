@@ -26,7 +26,7 @@
             <a href=""><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
             <a href=""><i class="icon fa fa-map-marker" aria-hidden="true"></i></a>
             <br />
-            Copyright 2017 Bridge Capital
+            Copyright © 2017 Bridge Capital Inc.
         </div>
     </div>
 </div>
