@@ -81,21 +81,60 @@ $(document).ready(function () {
         cb_own_rent_change($(this));
     });
 
+    $('.diff_maddress').click(function() {
+        diff_maddress_click($(this));
+    });
+
+    $('.cb_diff_caddrecc').click(function() {
+        diff_cb_caddress_click($(this));
+    });
+
     $('.cb_diff_maddress').click(function() {
         cb_diff_maddress_click($(this));
     });
 
+    $('#co_borrower').change(function() {
+        co_borrower_click();
+    });
+
     $("#btnadd").click(function(){
 
-        //$("#repeat").append("<strong>Lorem ipsum.</strong>");
-        $("#tab6_form").children().hide();
-        $("#tab6_form").append($("#cei_toclone").html());
+        $("#tab4_form").children().hide();
+        $("#tab4_form").append($("#cei_toclone").html());
         $(".cei_rows_conteiner").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td></tr>');
+    });
+
+    $("#btnadd_cb").click(function(){
+
+        $("#tab5_form").children().hide();
+        $("#tab5_form").append($("#cei_toclone").html());
+        $(".cei_rows_conteiner_cb").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td></tr>');
     });
 
     $("#cb_name").change(function() {
 
         $('.cb_name').text($(this).val());
+    });
+
+    $("#my_name").change(function() {
+
+        $('.my_name').text($(this).val());
+    });
+
+    $(".do_not_want_all_chkb").change(function() {
+        do_not_want_all_click($(this));
+    });
+
+    $(".do_not_want_left_chkb").change(function() {
+        do_not_want_left_click($(this));
+    });
+
+    $(".do_not_want_right_chkb").change(function() {
+        do_not_want_right_click($(this));
+    });
+
+    $(".do_not_want_right2_chkb").change(function() {
+        do_not_want_right2_click($(this));
     });
 
     $(".main_form").submit(function (event) {
@@ -123,16 +162,19 @@ $(document).ready(function () {
         if (validate_req($(this))) {
 
             var index = $(this).data('index');
+            var bnt_val = $(this).val();
 
-            if (index == 2 && !$("#co_borrower").is(':checked')) {
-                index = 3;
+            if ( index == 5 && !$("#co_borrower").is(':checked')) {
+                if (bnt_val == 'BACK') index = 4;
+                else index = 6;
             }
-            if (index == 5 && $(".cb_ma_diff:checked").val() == 'No') {
-                index = 6;
+            if ( index == 8 && !$("#co_borrower").is(':checked')) {
+                if (bnt_val == 'BACK') index = 7;
+                else index = 9;
             }
 
-            $(".tab").hide();
-            $("#tab" + index).show();
+            $(".tab").addClass("hidden");
+            $("#tab" + index).removeClass("hidden");
             $("#tab" + index + " h1")[0].scrollIntoView();
         }
     });
@@ -145,7 +187,7 @@ $(document).ready(function () {
 
 function validate_req(obj) {
     var ret = true;
-    var req_elem = obj.parent().parent().find(".req");
+    var req_elem = obj.parent().parent().find(".req").not(".hidden .req");
     var form_div;
     req_elem.each(function() {
 
@@ -155,6 +197,7 @@ function validate_req(obj) {
 
             ret = false;
             blink_input(elem);
+            elem.focus();
             form_div = elem.parent().parent();
         }
         if (!ret) {
@@ -185,6 +228,58 @@ function blink_input (obj) {
             }
         }
     }, 300);
+}
+
+function co_borrower_click() {
+
+    if ($("#co_borrower").is(':checked')) {
+        $(".co-borrower").removeClass("hidden");
+        $(".cb_tab9").removeClass("hidden");
+    }
+    else {
+        $(".co-borrower").addClass("hidden");
+        $(".cb_tab9").addClass("hidden");
+    }
+}
+
+function do_not_want_all_click(obj) {
+
+    if (obj.is(':checked')) {
+        obj.parent().parent().find(".do_not_want_all").addClass("hidden");
+    }
+    else {
+        obj.parent().parent().find(".do_not_want_all").removeClass("hidden");
+    }
+}
+
+function do_not_want_left_click(obj) {
+
+    if (obj.is(':checked')) {
+        obj.parent().parent().find(".do_not_want_left").addClass("hidden");
+    }
+    else {
+        obj.parent().parent().find(".do_not_want_left").removeClass("hidden");
+    }
+}
+
+function do_not_want_right_click(obj) {
+
+    if (obj.is(':checked')) {
+        obj.parent().parent().find(".do_not_want_right").addClass("hidden");
+    }
+    else {
+        obj.parent().parent().find(".do_not_want_right").removeClass("hidden");
+    }
+}
+
+function do_not_want_right2_click(obj) {
+
+    if (obj.is(':checked')) {
+        obj.parent().parent().find(".do_not_want_right2").addClass("hidden");
+    }
+    else {
+        obj.parent().parent().find(".do_not_want_right2").removeClass("hidden");
+    }
 }
 
 function emp_type_change(obj) {
@@ -311,6 +406,16 @@ function diff_maddress_click(obj) {
     }
     else {
         obj.parent().parent().find(".my_mailing_address").addClass("hidden");
+    }
+}
+
+function diff_cb_caddress_click(obj) {
+
+    if (obj.val() == 'Yes') {
+        obj.parent().parent().find(".cb_current_address").removeClass("hidden");
+    }
+    else {
+        obj.parent().parent().find(".cb_current_address").addClass("hidden");
     }
 }
 

@@ -99,7 +99,7 @@ p.sub_title {
 }
 
 .btn {
-	display: inline-block; width: 190px;
+	display: inline-block; width: 205px;
     font-family: 'Lato Bold', sans-serif;
     color: #fff;
     border-radius: 15px;
@@ -207,16 +207,24 @@ p.sub_title {
 }
 
 .bg_home_2_half {
-    float: left; width: 40%; height: 290px;
-    padding: 4%;
+    float: left; width: 44%; height: 360px;
+    padding: 2%;
     margin: 1%;
-    font-size: 16px;
+    font-size: 15px;
     background-color: #f5f6f8;
     color: #46494e;
+    display: table;
+}
+.bg_home_2_half div {
+    height: 360px;
+    display: table-cell;
     vertical-align: middle;
 }
 .bg_home_2_half:hover {
     background-color: #b2d1e3;
+}
+.bg_home_2_half h3 {
+    margin: 0;
 }
 
 /*.form_left > .form_element > .form_element_checkbox, .form_element_label {
@@ -546,6 +554,15 @@ a.separator, a.separator:visited, a.separator:hover {
     font-family: 'Lato Black', sans-serif;
 }
 
+.bg_about {
+    background-image: url("img/bg_about.jpg");
+    background-size: cover;
+    color: #fff;
+}
+.bg_about h2 {
+    color: #fff;
+}
+
 .bg_contact {
     background-color: #f5f6f8;
     padding: 5% 20%;
@@ -715,10 +732,6 @@ hr {
 
 }
 
-#add_btn {
-    width: 50%!important;
-}
-
 #add_btn input[type=text] {
     border-radius: 18px;
     padding: 12px;
@@ -866,18 +879,6 @@ hr {
     /*width: 50%;*/
 }
 
- #tab4_save_btn, #add_btn {
-    display: block!important;
-     margin: 0 auto;
-}
-
-#tab4_save_btn {
-    width: 50%!important;
-}
-
-#tab4_save_btn input[type=submit]{
-    width: 94%!important;
-}
 
 /*qualification*/
 .ql-icon {
@@ -1028,4 +1029,52 @@ li {
 
 #myBtn:hover {
     background-color: #005691; /* Add a dark-grey background on hover */
+}
+
+.ql_box {
+    position: relative;
+    border-left: 4px solid #aaa;
+    margin: 200px 0 0 74px;
+    padding-top: 100px;
+}
+.ql_box_top {
+    position: absolute;
+    top: -148px; left: -74px;
+    display: block; width: 110px; height: 110px;
+    padding: 15px;
+    border: 4px solid #aaa;
+    border-radius: 40px;
+}
+.ql_box_top img {
+    width: 110px;
+}
+
+.ql_box_item {
+    margin-left: -50px;
+    margin-bottom: 130px;
+}
+.ql_box_item_number {
+    display: block; float: left;
+    width: 82px; height: 82px;
+    background-color: #0066a1;
+    border-radius: 100%;
+    border: 7px solid #fff;
+    font-weight: bold;
+    color: #fff;
+    font-size: 38px;
+    line-height: 82px;
+    margin: 0 50px 100px 0;
+}
+.ql_box_item_text {
+    display: block;
+    font-size: 19px;
+    text-align: left;
+
+}
+.ql_box_item_text h3 {
+    font-size: 32px;
+    text-align: left;
+    color: #0066a1;
+    font-weight: bold;
+    margin: 0 0 0 0;
 }
