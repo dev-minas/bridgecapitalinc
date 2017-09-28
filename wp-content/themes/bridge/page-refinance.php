@@ -581,8 +581,8 @@ get_header(); ?>
                                 </div>
                                 <div class="do_not_want_left">
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">American Indian or Alaska Native</label>
+                                        <input id="wiyr" type="checkbox" name="What is your race" value="American Indian or Alaska Native">
+                                        <label for="wiyr">American Indian or Alaska Native</label>
                                     </div>
                                     <div class="info-checkbox">
                                         <input type="checkbox">
@@ -796,16 +796,16 @@ get_header(); ?>
                         <label>a. Are there any outstanding judgments against you?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Are there any outstanding judgments against you" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Are there any outstanding judgments against you" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Are there any outstanding judgments against you" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Are there any outstanding judgments against you" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -813,16 +813,16 @@ get_header(); ?>
                         <label>b. Have you been declared bankrupt within the past 7 years?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Have you been declared bankrupt within the past 7 years" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Have you been declared bankrupt within the past 7 years" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Have you been declared bankrupt within the past 7 years" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Have you been declared bankrupt within the past 7 years" value="No" />
                             <span>No</span>
                         </div>
                     </div>
