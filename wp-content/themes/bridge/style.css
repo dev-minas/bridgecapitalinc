@@ -524,7 +524,7 @@ a.separator, a.separator:visited, a.separator:hover {
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     margin: 70px 1% 35px;
-    padding: 1% 9% 22% 9%;
+    padding: 1% 7% 15% 7%;
 }
 .bg_reforpur a:hover {
     border: 1px solid #0066a1;
@@ -533,7 +533,7 @@ a.separator, a.separator:visited, a.separator:hover {
 .bg_reforpur a.a_ref {
     background-image: url('img/refin.png');
     background-repeat: no-repeat;
-    background-position: center 80%;
+    background-position: center 76%;
     background-size: 25%;
 }
 .bg_reforpur a.a_ref:hover {
