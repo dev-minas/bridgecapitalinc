@@ -109,6 +109,11 @@ p.sub_title {
 	text-transform: uppercase;
     font-size: 15px; color: #fff;
 }
+.bg4 .btn {
+    text-align: center;
+    margin: 20px 10px 25px 0;
+
+}
 
 .btn_applay {
     background-color: #0066a1;

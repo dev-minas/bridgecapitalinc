@@ -71,6 +71,8 @@
     <div class="bg_home_2 bg4">
         <h2>Buying a Home</h2>
         <p><?=get_post(35)->post_content?></p>
+        <a class="btn btn_applay" href="/refinance-or-purchase">Applay now</a>
+        <a class="btn btn_loan" href="/team">Find a loan Originator</a>
     </div>
 
     <div class="bg_home_2 bg5 mcalc">
