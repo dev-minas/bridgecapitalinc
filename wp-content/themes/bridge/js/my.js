@@ -71,6 +71,24 @@ $(document).ready(function () {
         $(".income_numb").eq(index).text( this.value );
     });
 
+    $('.other_income_bt').live('change', function() {
+
+        var index = $(".other_income_bt").index(this);
+        $(".b_to_name").eq(index).text( this.value );
+    });
+
+    $('.other_income_type').live('change', function() {
+
+        var index = $(".other_income_type").index(this);
+        $(".inc_type").eq(index).text( this.value );
+    });
+
+    $(".other_income_amount").live('keyup', function() {
+
+        var index = $(".other_income_amount").index(this);
+        $(".inc_amount").eq(index).text( this.value );
+    });
+
     $('.property_type').live('change', function() {
 
         property_type_change($(this));
@@ -101,14 +119,31 @@ $(document).ready(function () {
 
         $("#tab4_form").children().hide();
         $("#tab4_form").append($("#cei_toclone").html());
-        $(".cei_rows_conteiner").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td></tr>');
+        $("#tab4 .rem_emp").text('del');
+        $(".cei_rows_conteiner").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td><td class="rem_emp"></td></tr>');
     });
 
     $("#btnadd_cb").click(function(){
 
         $("#tab5_form").children().hide();
         $("#tab5_form").append($("#cei_toclone").html());
-        $(".cei_rows_conteiner_cb").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td></tr>');
+        $("#tab5 .rem_emp").text('del');
+        $(".cei_rows_conteiner_cb").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td><td class="rem_emp"></td></tr>');
+    });
+
+    $("#btnadd_oi").click(function(){
+
+        $("#tab6_form").children().hide();
+        $("#tab6_form").append($("#oti_toclone").html());
+        $("#tab6 .rem_emp").text('del');
+        $(".oei_rows_conteiner").append('<tr><td><span class="b_to_name"></span></td><td><span class="inc_type">Income Type</span></td><td>$<span class="inc_amount">0</span></td><td class="rem_emp"></td></tr>');
+    });
+
+    $(".rem_emp").live('click', function() {
+
+        var index = $(".rem_emp").index(this);
+        $(".cei_rows_conteiner tr").eq(index).remove();
+        $("#tab4_form .form_left").eq(index).remove();
     });
 
     $("#cb_name").change(function() {
@@ -284,6 +319,8 @@ function do_not_want_right2_click(obj) {
 
 function emp_type_change(obj) {
 
+    var index = obj.index(obj); alert(index);
+
     if (obj.val() == 'Active Military Duty') {
 
         obj.parents().find(".rank").first().removeClass("hidden");
@@ -299,6 +336,8 @@ function emp_type_change(obj) {
         obj.parents().find(".position").first().addClass("hidden");
         obj.parents().find(".company-name").first().addClass("hidden");
         obj.parents().find(".type-of-business").first().addClass("hidden");
+
+        // $(".emp_name").eq(index).text('Air Force');
     }
     if (obj.val() == 'Employed') {
 
@@ -316,6 +355,8 @@ function emp_type_change(obj) {
         obj.parents().find(".company-zip-state").first().removeClass("hidden");
         obj.parents().find(".company-city").first().removeClass("hidden");
         obj.parents().find(".retirement-date").first().addClass("hidden");
+
+        // $(".emp_name").eq(index).text($(".company_name_input").eq(index).val());
     }
     if (obj.val() == 'Self Employed') {
 
@@ -333,6 +374,8 @@ function emp_type_change(obj) {
         obj.parents().find(".company-zip-state").first().removeClass("hidden");
         obj.parents().find(".company-city").first().removeClass("hidden");
         obj.parents().find(".retirement-date").first().addClass("hidden");
+
+        // $(".emp_name").eq(index).text($(".company_name_input").eq(index).val());
     }
     if (obj.val() == 'Retired') {
 
@@ -349,6 +392,8 @@ function emp_type_change(obj) {
         obj.parents().find(".position").first().addClass("hidden");
         obj.parents().find(".type-of-business").first().addClass("hidden");
         obj.parents().find(".company-name").first().addClass("hidden");
+
+        // $(".emp_name").eq(index).text('Retired');
     }
     if (obj.val() == 'Other/Unemployed') {
 
@@ -365,6 +410,8 @@ function emp_type_change(obj) {
         obj.parents().find(".position").first().addClass("hidden");
         obj.parents().find(".type-of-business").first().addClass("hidden");
         obj.parents().find(".company-name").first().addClass("hidden");
+
+        // $(".emp_name").eq(index).text('Other/Unemployed');
     }
 }
 

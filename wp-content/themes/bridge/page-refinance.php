@@ -70,6 +70,8 @@ get_header(); ?>
                         <label>Last Name</label>
                         <input name="CB Last Name" />
                     </div>
+                    <div class="form_element hidden co-borrower">
+                    </div>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
@@ -91,6 +93,15 @@ get_header(); ?>
                         <label>Estimated Value</label>
                         <input name="Estimated Value" value="" />
                     </div>
+
+                    <div class="form_element">
+                        <label>City</label>
+                        <input name="City" />
+                    </div>
+                    <div class="form_element">
+                        <label>Loan Amount</label>
+                        <input name="Loan Amount" />
+                    </div>
                     <div class="form_element">
                         <label>Zip / State</label>
                         <input class="half_width half_width_margin" name="Zip" />
@@ -98,14 +109,6 @@ get_header(); ?>
                             <option value="" selected="selected" disabled="">State</option>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option>
                         </select>
-                    </div>
-                    <div class="form_element">
-                        <label>Loan Amount</label>
-                        <input name="Loan Amount" />
-                    </div>
-                    <div class="form_element">
-                        <label>City</label>
-                        <input name="City" />
                     </div>
                     <div class="form_element">
                         <label>Orig Purchase Price</label>
@@ -199,16 +202,16 @@ get_header(); ?>
                     </div>
 
                     <div class="form_element full_width hidden my_mailing_address">
+                        <label for="message">City</label>
+                        <input name="Mailing City" />
+                    </div>
+
+                    <div class="form_element full_width hidden my_mailing_address">
                         <label>Zip / State</label>
                         <input class="half_width half_width_margin" name="Zip" />
                         <select class="half_width" name="Mailing State">
                             <option value="" selected="selected" disabled="">State</option>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
-                    </div>
-
-                    <div class="form_element full_width hidden my_mailing_address">
-                        <label for="message">City</label>
-                        <input name="Mailing City" />
                     </div>
 
                     <div class="form_element full_width">
@@ -225,6 +228,7 @@ get_header(); ?>
                         <label for="name">Street</label>
                         <input name="CB Street" class="req" />
                     </div>
+
                     <div class="form_element hidden cb_current_address">
                         <label for="email">Do you own or rent?</label>
                         <select name="CB Own_or_Rent" class="cb_own_or_rent">
@@ -236,6 +240,16 @@ get_header(); ?>
                     </div>
 
                     <div class="form_element hidden cb_current_address">
+                        <label for="message">City</label>
+                        <input name="CB City" />
+                    </div>
+
+                    <div class="form_element cb_monthly_rent hidden">
+                        <label>What is your monthly rent?</label>
+                        <input name="CB Monthly Rent" value="" />
+                    </div>
+
+                    <div class="form_element hidden cb_current_address">
                         <label>Zip / State</label>
                         <input class="half_width half_width_margin" name="CB Zip" />
                         <select class="half_width" name="CB State">
@@ -243,21 +257,6 @@ get_header(); ?>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option></select>
                     </div>
 
-                    <div class="form_element cb_monthly_rent_place hidden cb_current_address">
-                    </div>
-                    <div class="form_element cb_monthly_rent hidden cb_current_address">
-                        <label>What is your monthly rent?</label>
-                        <input name="CB Monthly Rent" value="" />
-                    </div>
-
-                    <div class="form_element hidden cb_current_address">
-                        <label for="message">What is your monthly rent?</label>
-                        <input name="CB Rent" />
-                    </div>
-                    <div class="form_element hidden cb_current_address">
-                        <label for="message">City</label>
-                        <input name="CB City" />
-                    </div>
                     <div class="form_element hidden cb_current_address">
                         <label for="message">Time at Current Address</label>
                         <input class="half_width half_width_margin" name="CB Years" />
@@ -281,6 +280,11 @@ get_header(); ?>
                         </div>
 
                         <div class="form_element full_width hidden cb_mailing_address">
+                            <label for="message">City</label>
+                            <input name="Mailing City" />
+                        </div>
+
+                        <div class="form_element full_width hidden cb_mailing_address">
                             <label>Zip / State</label>
                             <input class="half_width half_width_margin" name="CB Zip" />
                             <select class="half_width" name="CB Mailing State">
@@ -289,10 +293,6 @@ get_header(); ?>
                             </select>
                         </div>
 
-                        <div class="form_element full_width hidden cb_mailing_address">
-                            <label for="message">City</label>
-                            <input name="Mailing City" />
-                        </div>
                     </div>
 
                     <div class="form_element full_width">
@@ -309,12 +309,13 @@ get_header(); ?>
 
                 <h3><b class="my_name"></b> Employers</h3>
 
-                <div id="repeat">
+                <div class="repeat">
                     <table>
                         <tbody class="cei_rows_conteiner">
                         <tr>
                             <td><span class="emp_name">Company Name</span></td>
                             <td>$<span class="income_numb">0</span></td>
+                            <td class="rem_emp"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -421,12 +422,13 @@ get_header(); ?>
 
                 <h3><b class="cb_name"></b> Employers</h3>
 
-                <div id="repeat">
+                <div class="repeat">
                     <table>
                         <tbody class="cei_rows_conteiner_cb">
                         <tr>
                             <td><span class="emp_name">Company Name</span></td>
                             <td>$<span class="income_numb">0</span></td>
+                            <td class="rem_emp"></td>
                         </tr>
                         </tbody>
                     </table>
@@ -529,19 +531,22 @@ get_header(); ?>
 
             <div id="tab6" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form4.png" />
-                <h1>You're halfway to the finish line.</h1>
-                <p>What does your other income look like?</p>
+                <h1>Do you receive any other type of income?</h1>
 
-                <div>
-                    <h3>Do you receive any other type of income?</h3>
-                    <p>such as dividends, alimony, social security or retirement</p>
+                <div class="repeat">
+                    <table>
+                        <tbody class="oei_rows_conteiner">
+                        </tbody>
+                    </table>
                 </div>
+
+                <div id="tab6_form"></div>
 
                 <div class="form_left">
 
                     <div class="form_element full_width" id="add_btn">
                         <label> &nbsp; </label>
-                        <input type="text" #id="btn_add" value="Add a Current Employer" style="text-align: center;cursor: pointer;" />
+                        <input type="text" id="btnadd_oi" value="+ Add more Other Income" style="text-align: center;cursor: pointer;" />
                     </div>
 
                     <div class="form_element full_width">
@@ -783,14 +788,12 @@ get_header(); ?>
 
             <div id="tab9" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
-                <h1>You're nearly to the finish line.</h1>
-                <div class=" full_width gray">
+                <h1>Declarations</h1>
+                <div class="full_width gray">
                     We just have a few questions the government requires us to ask.
                 </div>
 
                 <div class="form_left">
-
-                    <h3>Declarations</h3>
 
                     <div class="form_element full_width" id="declarations_list">
                         <label>a. Are there any outstanding judgments against you?</label>
@@ -1249,7 +1252,6 @@ get_header(); ?>
 
             </div>-->
 
-
         </form>
 
     </div>
@@ -1335,6 +1337,37 @@ get_header(); ?>
                 </select>
             </div>
         </div>
+    </div>
+
+    <div id="oti_toclone" class="hidden">
+
+        <div class="form_left">
+
+            <div class="form_element full_width">
+                <label for="message">Belongs To</label>
+                <select class="other_income_bt" name="Other Income Belongs To[]">
+                    <option value="" selected disabled>select</option>
+                    <option class="ny_name">Armen</option>
+                    <option class="ny_name">Armen</option>
+                </select>
+            </div>
+            <div class="form_element full_width">
+                <label for="message">Income Type</label>
+                <select class="other_income_type" name="Other Income Type[]">
+                    <option>Dividends/Interest</option><option>Other</option><option>Trust Income</option><option>Alimony/Child Support Income</option><option>Automobile/Expense Account Income</option><option>Foster Care</option><option>Notes Receivable/Installment</option><option>Social Security</option><option>Disability Income</option><option>Retirement/Pension Income</option><option>Unemployment</option><option>VABenefitsNonEducational</option><option>Boarder Income</option><option>Capital Gains</option><option>Mortgage Credit Certificate (MCC)</option><option>Real Estate/Mortgage Differential</option><option>Royalty Payment</option><option>Tip Income</option><option>Misc Business Income</option>
+                </select>
+            </div>
+            <div class="form_element full_width">
+                <label for="message">Amount</label>
+                <input class="other_income_amount half_width half_width_margin" name="Amount[]">
+                <select class="half_width" name="Amount period[]">
+                    <option>Annual</option>
+                    <option>Monthly</option>
+                </select>
+            </div>
+
+        </div>
+
     </div>
 
 <?php get_footer(); ?>

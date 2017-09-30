@@ -737,6 +737,13 @@ hr {
 
 }
 
+.rem_emp {
+    cursor: hand;
+    cursor: pointer;
+    color: red;
+    font-size: smaller;
+}
+
 #add_btn input[type=text] {
     border-radius: 18px;
     padding: 12px;
@@ -870,7 +877,7 @@ hr {
     margin-right: 5%!important;
 }
 
-#repeat table {
+.repeat table {
     width: 50%;
     border: 1px solid;
     border-radius: 5px;
@@ -879,7 +886,7 @@ hr {
     margin: 0 auto;
 }
 
-#repeat table tr  td {
+.repeat table tr  td {
 
     /*width: 50%;*/
 }
