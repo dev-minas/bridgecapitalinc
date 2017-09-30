@@ -103,12 +103,13 @@ get_header(); ?>
                         <input name="Loan Amount" />
                     </div>
                     <div class="form_element">
-                        <label>Zip / State</label>
+                        <label><span>Zip</span><span class="state_list">State</span></label>
                         <input class="half_width half_width_margin" name="Zip" />
                         <select class="half_width" name="State">
                             <option value="" selected="selected" disabled="">State</option>
                             <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option label="CA" value="string:CA">CA</option><option label="CO" value="string:CO">CO</option><option label="CT" value="string:CT">CT</option><option label="DC" value="string:DC">DC</option><option label="DE" value="string:DE">DE</option><option label="FL" value="string:FL">FL</option><option label="GA" value="string:GA">GA</option><option label="HI" value="string:HI">HI</option><option label="ID" value="string:ID">ID</option><option label="IL" value="string:IL">IL</option><option label="IN" value="string:IN">IN</option><option label="IA" value="string:IA">IA</option><option label="KS" value="string:KS">KS</option><option label="KY" value="string:KY">KY</option><option label="LA" value="string:LA">LA</option><option label="ME" value="string:ME">ME</option><option label="MD" value="string:MD">MD</option><option label="MA" value="string:MA">MA</option><option label="MI" value="string:MI">MI</option><option label="MN" value="string:MN">MN</option><option label="MS" value="string:MS">MS</option><option label="MO" value="string:MO">MO</option><option label="MT" value="string:MT">MT</option><option label="NE" value="string:NE">NE</option><option label="NV" value="string:NV">NV</option><option label="NH" value="string:NH">NH</option><option label="NJ" value="string:NJ">NJ</option><option label="NM" value="string:NM">NM</option><option label="NY" value="string:NY">NY</option><option label="NC" value="string:NC">NC</option><option label="ND" value="string:ND">ND</option><option label="OH" value="string:OH">OH</option><option label="OK" value="string:OK">OK</option><option label="OR" value="string:OR">OR</option><option label="PA" value="string:PA">PA</option><option label="RI" value="string:RI">RI</option><option label="SC" value="string:SC">SC</option><option label="SD" value="string:SD">SD</option><option label="TN" value="string:TN">TN</option><option label="TX" value="string:TX">TX</option><option label="UT" value="string:UT">UT</option><option label="VT" value="string:VT">VT</option><option label="VA" value="string:VA">VA</option><option label="WA" value="string:WA">WA</option><option label="WV" value="string:WV">WV</option><option label="WI" value="string:WI">WI</option><option label="WY" value="string:WY">WY</option>
                         </select>
+
                     </div>
                     <div class="form_element">
                         <label>Orig Purchase Price</label>
@@ -789,7 +790,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab9" class="tab ">
+            <div id="tab9" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
                 <h1>Declarations</h1>
                 <div class="full_width gray">
@@ -836,16 +837,16 @@ get_header(); ?>
                         <label>c. Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Have you had property foreclosed upon or given title or deed in lieu thereof in the last 7 years" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -853,16 +854,16 @@ get_header(); ?>
                         <label>d. Are you a party to a lawsuit?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Are you a party to a lawsuit" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Are you a party to a lawsuit" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Are you a party to a lawsuit" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Are you a party to a lawsuit" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -870,16 +871,16 @@ get_header(); ?>
                         <label>e. Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer in title in lieu of foreclosure, or judgment?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer in title in lieu of foreclosure, or judgment" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer in title in lieu of foreclosure, or judgment" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer in title in lieu of foreclosure, or judgment" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Have you directly or indirectly been obligated on any loan which resulted in foreclosure, transfer in title in lieu of foreclosure, or judgment" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -887,16 +888,16 @@ get_header(); ?>
                         <label>f. Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Are you presently delinquent or in default on any Federal debt or any other loan, mortgage, financial obligation, bond, or loan guarantee" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -904,16 +905,16 @@ get_header(); ?>
                         <label>g. Are you obligated to pay alimony, child support, or separate maintenance?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Are you obligated to pay alimony, child support, or separate maintenance" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Are you obligated to pay alimony, child support, or separate maintenance" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Are you obligated to pay alimony, child support, or separate maintenance" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Are you obligated to pay alimony, child support, or separate maintenance" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -921,16 +922,16 @@ get_header(); ?>
                         <label>h. Is any part of the down payment borrowed?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Is any part of the down payment borrowed" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Is any part of the down payment borrowed" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Is any part of the down payment borrowed" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Is any part of the down payment borrowed" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -938,16 +939,16 @@ get_header(); ?>
                         <label>i. Are you a co-maker or endorser on a note?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Are you a co-maker or endorser on a note" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Are you a co-maker or endorser on a note" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Are you a co-maker or endorser on a note" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Are you a co-maker or endorser on a note" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -955,16 +956,16 @@ get_header(); ?>
                         <label>j. Are you a U.S. Citizen?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Are you a U.S. Citizen" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Are you a U.S. Citizen" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Are you a U.S. Citizen" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Are you a U.S. Citizen" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -972,16 +973,16 @@ get_header(); ?>
                         <label>k. Are you a permanent Resident Alien?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Are you a permanent Resident Alien" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Are you a permanent Resident Alien" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Are you a permanent Resident Alien" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Are you a permanent Resident Alien" value="No" />
                             <span>No</span>
                         </div>
                     </div>

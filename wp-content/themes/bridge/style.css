@@ -731,6 +731,10 @@ hr {
 
 }
 
+.state_list {
+    margin-left: 185px;
+}
+
 .info-checkbox label, .info-radio {
     vertical-align: top;
     text-align: left!important;
