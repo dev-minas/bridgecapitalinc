@@ -1,4 +1,39 @@
 <?php get_header(); ?>
+<?php
+
+// reed ress
+$feed_url = "https://www.cnbc.com/id/10000664/device/rss/rss.html";
+
+$rss = new DOMDocument();
+$rss->load($feed_url);
+$feed = array();
+$feed_html = '';
+
+foreach ($rss->getElementsByTagName('item') as $node) {
+    $item = array (
+        'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
+        'desc' => $node->getElementsByTagName('description')->item(0)->nodeValue,
+        'link' => $node->getElementsByTagName('link')->item(0)->nodeValue,
+        'date' => $node->getElementsByTagName('pubDate')->item(0)->nodeValue,
+    );
+    array_push($feed, $item);
+}
+
+// echo "<pre>"; print_r($feed); exit();
+
+$limit = 3;
+for($x=0;$x<$limit;$x++) {
+    $title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
+    $link = $feed[$x]['link'];
+    $description = $feed[$x]['desc'];
+    $date = date('l F d, Y', strtotime($feed[$x]['date']));
+
+    $feed_html .= '<p><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />';
+    $feed_html .= '<small><em>Posted on '.$date.'</em></small></p>';
+    $feed_html .= '<p>'.$description.'</p>';
+}
+
+?>
 
     <div class="bg_home_2 bg1">
         <h1>Welcome</h1>
@@ -77,6 +112,11 @@
 
     <div class="bg_home_2 bg5 mcalc">
     </div>
+
+    <div class="bg_home_2">
+        <?=$feed_html?>
+    </div>
+
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
 
