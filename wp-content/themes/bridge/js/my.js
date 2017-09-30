@@ -127,16 +127,16 @@ $(document).ready(function () {
 
         $("#tab5_form").children().hide();
         $("#tab5_form").append($("#cei_toclone").html());
-        $("#tab5 .rem_emp").text('del');
-        $(".cei_rows_conteiner_cb").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td><td class="rem_emp"></td></tr>');
+        $("#tab5 .rem_emp_cb").text('del');
+        $(".cei_rows_conteiner_cb").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td><td class="rem_emp_cb"></td></tr>');
     });
 
     $("#btnadd_oi").click(function(){
 
         $("#tab6_form").children().hide();
         $("#tab6_form").append($("#oti_toclone").html());
-        $("#tab6 .rem_emp").text('del');
-        $(".oei_rows_conteiner").append('<tr><td><span class="b_to_name"></span></td><td><span class="inc_type">Income Type</span></td><td>$<span class="inc_amount">0</span></td><td class="rem_emp"></td></tr>');
+        $("#tab6 .rem_emp_oi").text('del');
+        $(".oei_rows_conteiner").append('<tr><td><span class="b_to_name"></span></td><td><span class="inc_type">Income Type</span></td><td>$<span class="inc_amount">0</span></td><td class="rem_emp_oi"></td></tr>');
     });
 
     $(".rem_emp").live('click', function() {
@@ -144,6 +144,20 @@ $(document).ready(function () {
         var index = $(".rem_emp").index(this);
         $(".cei_rows_conteiner tr").eq(index).remove();
         $("#tab4_form .form_left").eq(index).remove();
+    });
+
+    $(".rem_emp_cb").live('click', function() {
+
+        var index = $(".rem_emp_cb").index(this);
+        $(".cei_rows_conteiner_cb tr").eq(index).remove();
+        $("#tab5_form .form_left").eq(index).remove();
+    });
+
+    $(".rem_emp_oi").live('click', function() {
+
+        var index = $(".rem_emp_oi").index(this);
+        $(".oei_rows_conteiner tr").eq(index).remove();
+        $("#tab6_form .form_left").eq(index).remove();
     });
 
     $("#cb_name").change(function() {
@@ -319,7 +333,7 @@ function do_not_want_right2_click(obj) {
 
 function emp_type_change(obj) {
 
-    var index = obj.index(obj); alert(index);
+    var index = obj.index(obj);
 
     if (obj.val() == 'Active Military Duty') {
 
@@ -438,10 +452,8 @@ function cb_own_rent_change(obj) {
 
     if (obj.val() == 'Rent') {
         obj.parent().parent().find(".cb_monthly_rent").removeClass("hidden");
-        obj.parent().parent().find(".cb_monthly_rent_place").addClass("hidden");
     }
     else {
-        obj.parent().parent().find(".cb_monthly_rent_place").removeClass("hidden");
         obj.parent().parent().find(".cb_monthly_rent").addClass("hidden");
     }
 }

@@ -737,7 +737,7 @@ hr {
 
 }
 
-.rem_emp {
+.rem_emp, .rem_emp_cb, .rem_emp_oi {
     cursor: hand;
     cursor: pointer;
     color: red;

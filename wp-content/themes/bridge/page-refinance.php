@@ -45,7 +45,7 @@ get_header(); ?>
                     </div>
                     <div class="form_element full_width">
                         <label>Add a Co-Borrower? </label>
-                        <input type="checkbox" name="Co-Borrower" id="co_borrower" value="Yes" />
+                        <input type="checkbox" name="Co-Borrower" id="co_borrower" value="Yes" checked />
                     </div>
 
                     <h3 class="hidden co-borrower">Co-Borrower Information</h3>
@@ -244,9 +244,12 @@ get_header(); ?>
                         <input name="CB City" />
                     </div>
 
-                    <div class="form_element cb_monthly_rent hidden">
-                        <label>What is your monthly rent?</label>
-                        <input name="CB Monthly Rent" value="" />
+
+                    <div class="form_element">
+                        <div class="cb_monthly_rent hidden cb_current_address">
+                            <label>What is your monthly rent?</label>
+                            <input name="CB Monthly Rent" value="" />
+                        </div>
                     </div>
 
                     <div class="form_element hidden cb_current_address">
@@ -303,7 +306,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab4" class="tab hidden">
+            <div id="tab4" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form3.png" />
                 <h1>Current Employer Information</h1>
 
@@ -428,7 +431,7 @@ get_header(); ?>
                         <tr>
                             <td><span class="emp_name">Company Name</span></td>
                             <td>$<span class="income_numb">0</span></td>
-                            <td class="rem_emp"></td>
+                            <td class="rem_emp_cb"></td>
                         </tr>
                         </tbody>
                     </table>
