@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab hidden">
+            <div id="tab1" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -307,7 +307,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab4" class="tab ">
+            <div id="tab4" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form3.png" />
                 <h1>Current Employer Information</h1>
 
@@ -990,16 +990,16 @@ get_header(); ?>
                         <label>l. Do you intend to occupy the property as your Primary Residence?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Do you intend to occupy the property as your Primary Residence" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Do you intend to occupy the property as your Primary Residence" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Do you intend to occupy the property as your Primary Residence" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Do you intend to occupy the property as your Primary Residence" value="No" />
                             <span>No</span>
                         </div>
                     </div>
@@ -1007,16 +1007,16 @@ get_header(); ?>
                         <label>m. Have you had an ownership interest in a property in the last three years?</label>
                         <div>
                             <span class="declarations"><b class="my_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="Have you had an ownership interest in a property in the last three years" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="Have you had an ownership interest in a property in the last three years" value="No" />
                             <span>No</span>
                         </div>
                         <div class="cb_tab9 hidden">
                             <span class="declarations"><b class="cb_name"></b></span>
-                            <input type="radio" name="Declarations" value="Yes" />
+                            <input type="radio" name="CB Have you had an ownership interest in a property in the last three years" value="Yes" />
                             <span>Yes</span>
-                            <input type="radio" name="Declarations" value="No" />
+                            <input type="radio" name="CB Have you had an ownership interest in a property in the last three years" value="No" />
                             <span>No</span>
                         </div>
                     </div>
