@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab ">
+            <div id="tab1" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -712,8 +712,8 @@ get_header(); ?>
                                         <label for="americanrace">Black or African American</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="radio" id="nhopi" name="What is your race" value="Native Hawaiian or Other Pacific Islander">
-                                        <label for="nhopi">Native Hawaiian or Other Pacific Islander</label>
+                                        <input type="radio" id="nativerace" name="What is your race" value="Native Hawaiian or Other Pacific Islander">
+                                        <label for="nativerace" >Native Hawaiian or Other Pacific Islander</label>
                                     </div>
                                     <div class="info-checkbox">
                                         <input type="radio" id="whiterace" name="What is your race" value="White">
@@ -738,16 +738,16 @@ get_header(); ?>
                                 </div>
                                 <div class="do_not_want_right">
                                     <div class="info-radio">
-                                        <input type="radio" name="ethnicity">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="hl" name="What is your ethnicity" value="Hispanic or Latino">
+                                        <label for="hl">Hispanic or Latino</label>
                                     </div>
                                     <div class="info-radio">
-                                        <input type="radio" name="ethnicity">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="nhl"  name="What is your ethnicity" value="Not Hispanic or Latino">
+                                        <label for="nhl">Not Hispanic or Latino</label>
                                     </div>
                                     <div class="info-radio">
-                                        <input type="radio" name="ethnicity">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="noprovideinfo"  name="What is your ethnicity" value="I do not wish to provide this information">
+                                        <label for="noprovideinfo">I do not wish to provide this information</label>
                                     </div>
                                 </div>
 
@@ -761,16 +761,16 @@ get_header(); ?>
 
                                 <div class="do_not_want_right2">
                                     <div class="info-radio">
-                                        <input type="radio" name="gender">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="gendermale" name="What is your gender" value="Male">
+                                        <label for="gendermale">Male</label>
                                     </div>
                                     <div class="info-radio">
-                                        <input type="radio" name="gender">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="genderfemale" name="What is your gender" value="Female">
+                                        <label for="genderfemale">Female</label>
                                     </div>
                                     <div class="info-radio">
-                                        <input type="radio" name="gender">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="infonotprovide" name="What is your gender" value="I do not wish to provide this information">
+                                        <label for="infonotprovide">I do not wish to provide this information</label>
                                     </div>
                                 </div>
                             </div>
@@ -786,7 +786,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab9" class="tab hidden">
+            <div id="tab9" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
                 <h1>Declarations</h1>
                 <div class="full_width gray">

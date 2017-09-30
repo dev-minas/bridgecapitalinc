@@ -721,8 +721,6 @@ hr {
 }
 
 .info-checkbox input[type=checkbox],.info-radio input[type=radio] {
-    height: 18px;
-    width: 18px;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 8px;
@@ -730,10 +728,12 @@ hr {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     color: #848994;
+
 }
 
 .info-checkbox label, .info-radio {
     vertical-align: top;
+    text-align: left!important;
 
 }
 
