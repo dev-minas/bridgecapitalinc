@@ -581,8 +581,8 @@ get_header(); ?>
                             </div>
                             <div class="info-block-inner-left">
                                 <div class="info-checkbox">
-                                    <input type="checkbox" class="do_not_want_left_chkb">
-                                    <label for="">I do not wish to furnish this information</label>
+                                    <input id="furnish" type="checkbox" class="do_not_want_left_chkb">
+                                    <label for="furnish">I do not wish to furnish this information</label>
                                 </div>
                                 <div class="do_not_want_left">
                                     <div class="info-checkbox">
@@ -590,24 +590,24 @@ get_header(); ?>
                                         <label for="wiyr">American Indian or Alaska Native</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Asian</label>
+                                        <input id="asian" type="checkbox">
+                                        <label for="asian">Asian</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Black or African American</label>
+                                        <input id="boaa" type="checkbox">
+                                        <label for="boaa">Black or African American</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Native Hawaiian or Other Pacific Islander</label>
+                                        <input id="nhopi" type="checkbox">
+                                        <label for="nhopi">Native Hawaiian or Other Pacific Islander</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">White</label>
+                                        <input id="white" type="checkbox">
+                                        <label for="white">White</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Not Applicable</label>
+                                        <input id="applicable" type="checkbox">
+                                        <label for="applicable">Not Applicable</label>
                                     </div>
                                 </div>
                             </div>
@@ -695,33 +695,33 @@ get_header(); ?>
                             </div>
                             <div class="info-block-inner-left">
                                 <div class="info-checkbox">
-                                    <input type="checkbox" class="do_not_want_left_chkb">
-                                    <label for="">I do not wish to furnish this information</label>
+                                    <input type="checkbox" class="do_not_want_left_chkb" id="furnish">
+                                    <label for="furnish">I do not wish to furnish this information</label>
                                 </div>
                                 <div class="do_not_want_left">
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">American Indian or Alaska Native</label>
+                                        <input id="aian" type="radio" name="What is your race" value="American Indian or Alaska Native">
+                                        <label for="aian">American Indian or Alaska Native</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Asian</label>
+                                        <input type="radio" id="asianrace" name="What is your race" value="Asian">
+                                        <label for="asianrace">Asian</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Black or African American</label>
+                                        <input type="radio" id="americanrace" name="What is your race" value="Black or African American">
+                                        <label for="americanrace">Black or African American</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Native Hawaiian or Other Pacific Islander</label>
+                                        <input type="radio" id="nhopi" name="What is your race" value="Native Hawaiian or Other Pacific Islander">
+                                        <label for="nhopi">Native Hawaiian or Other Pacific Islander</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">White</label>
+                                        <input type="radio" id="whiterace" name="What is your race" value="White">
+                                        <label for="whiterace">White</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input type="checkbox">
-                                        <label for="">Not Applicable</label>
+                                        <input type="radio" id="notapplicable" name="What is your race" value="Not Applicable">
+                                        <label for="notapplicable">Not Applicable</label>
                                     </div>
                                 </div>
                             </div>
