@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+    rss_slider();
+
     $(".div_mob_menu").click(function () {
         $(".div_mmenu").animate({top: 0}, 400);
     });
@@ -495,4 +497,17 @@ function cb_diff_maddress_click(obj) {
     else {
         obj.parent().parent().find(".cb_mailing_address").addClass("hidden");
     }
+}
+
+function rss_slider() {
+
+    var i = 1;
+
+    setInterval(function(){
+
+        $(".slider_" + i).hide();
+        i++; if (i == 6) i = 1;
+        $(".slider_" + i).show();
+
+    }, 5000);
 }

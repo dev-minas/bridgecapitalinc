@@ -1114,3 +1114,10 @@ li {
     font-weight: bold;
     margin: 0 0 0 0;
 }
+
+.slider {
+    display: none;
+}
+.slider:first-of-type {
+    display: block;
+}

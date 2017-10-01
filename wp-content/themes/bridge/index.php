@@ -21,16 +21,19 @@ foreach ($rss->getElementsByTagName('item') as $node) {
 
 // echo "<pre>"; print_r($feed); exit();
 
-$limit = 3;
-for($x=0;$x<$limit;$x++) {
+$limit = 5;
+for($x=1;$x<=$limit;$x++) {
     $title = str_replace(' & ', ' &amp; ', $feed[$x]['title']);
     $link = $feed[$x]['link'];
     $description = $feed[$x]['desc'];
     $date = date('l F d, Y', strtotime($feed[$x]['date']));
 
-    $feed_html .= '<p><strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />';
-    $feed_html .= '<small><em>Posted on '.$date.'</em></small></p>';
-    $feed_html .= '<p>'.$description.'</p>';
+    $feed_html .= '<div class="slider slider_'.$x.'">
+<strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />
+<small><em>Posted on '.$date.'</em></small>
+<p>'.$description.'</p>
+</div>';
+
 }
 
 ?>
