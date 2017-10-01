@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab ">
+            <div id="tab1" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -45,7 +45,7 @@ get_header(); ?>
                     </div>
                     <div class="form_element full_width">
                         <label>Add a Co-Borrower? </label>
-                        <input type="checkbox" name="Co-Borrower" id="co_borrower" value="Yes" checked />
+                        <input type="checkbox" name="Co-Borrower" id="co_borrower" value="Yes" />
                     </div>
 
                     <h3 class="hidden co-borrower">Co-Borrower Information</h3>
@@ -81,7 +81,7 @@ get_header(); ?>
 
             </div>
 
-            <div id="tab2" class="tab hidden">
+            <div id="tab2" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form2.png" />
                 <h1>Property Information</h1>
                 <div class="form_left">
@@ -91,7 +91,7 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label>Estimated Value</label>
-                        <input name="Estimated Value" value="" />
+                        <span class="sign">$</span><input name="Estimated Value" class="mask_dollar" />
                     </div>
 
                     <div class="form_element">
@@ -100,10 +100,10 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label>Loan Amount</label>
-                        <input name="Loan Amount" />
+                        <span class="sign">$</span><input name="Loan Amount" class="mask_dollar" />
                     </div>
                     <div class="form_element">
-                        <label><span>Zip</span><span class="state_list">State</span></label>
+                        <label><span class="label_zip">Zip</span><span class="label_state">State</span></label>
                         <input class="half_width half_width_margin" name="Zip" />
                         <select class="half_width" name="State">
                             <option value="" selected="selected" disabled="">State</option>
@@ -254,7 +254,7 @@ get_header(); ?>
                     </div>
 
                     <div class="form_element hidden cb_current_address">
-                        <label>Zip / State</label>
+                        <label><span class="label_zip">Zip</span><span class="label_state">State</span></label>
                         <input class="half_width half_width_margin" name="CB Zip" />
                         <select class="half_width" name="CB State">
                             <option value="" selected="selected" disabled="">State</option>
@@ -381,7 +381,7 @@ get_header(); ?>
                             <input name="Em Time Period[]" />
                         </div>
                         <div class="form_element company-zip-state">
-                            <label>Company Zip / State</label>
+                            <label><span class="label_zip">Zip</span><span class="label_state">State</span></label>
                             <input class="half_width half_width_margin mr5" name="Em Zip[]" />
                             <select class="half_width" name="Em State[]">
                                 <option value="" selected="selected" disabled="">State</option>
@@ -494,7 +494,7 @@ get_header(); ?>
                             <input name="Em Time Period[]" />
                         </div>
                         <div class="form_element company-zip-state">
-                            <label>Company Zip / State</label>
+                            <label><span class="label_zip">Zip</span><span class="label_state">State</span></label>
                             <input class="half_width half_width_margin mr5" name="Em Zip[]" />
                             <select class="half_width" name="Em State[]">
                                 <option value="" selected="selected" disabled="">State</option>
@@ -1381,7 +1381,7 @@ get_header(); ?>
                 <input name="Em Time Period[]" />
             </div>
             <div class="form_element company-zip-state">
-                <label>Company Zip / State</label>
+                <label><span class="label_zip">Zip</span><span class="label_state">State</span></label>
                 <input class="half_width half_width_margin mr5" name="Em Zip[]" />
                 <select class="half_width" name="Em State[]">
                     <option value="" selected="selected" disabled="">State</option>

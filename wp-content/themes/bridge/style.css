@@ -239,6 +239,7 @@ p.sub_title {
 }*/
 
 .form_element {
+    position: relative;
     display: inline-block;
     width: 30%;
     padding: 0.7% 2%; margin: 0;
@@ -731,8 +732,27 @@ hr {
 
 }
 
-.state_list {
-    margin-left: 185px;
+.sign {
+    position: absolute;
+    bottom: 10px; left: 15px;
+}
+input.mask_dollar {
+    width: 91%;
+    padding-left: 6%;
+}
+
+.label_zip {
+    width: 42%;
+    margin-right: 3%;
+}
+.full_width .label_zip {
+    width: auto; margin: 0;
+}
+.label_state {
+    width: 42%;
+}
+.full_width.label_state {
+    width: auto; margin: 0;
 }
 
 .info-checkbox label, .info-radio {
