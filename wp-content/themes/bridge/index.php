@@ -29,7 +29,7 @@ for($x=1;$x<=$limit;$x++) {
     $date = date('l F d, Y', strtotime($feed[$x]['date']));
 
     $feed_html .= '<div class="slider slider_'.$x.'">
-<strong><a href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />
+<strong><a target="_blank" href="'.$link.'" title="'.$title.'">'.$title.'</a></strong><br />
 <small><em>Posted on '.$date.'</em></small>
 <p>'.$description.'</p>
 </div>';

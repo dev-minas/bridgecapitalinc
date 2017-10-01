@@ -505,9 +505,10 @@ function rss_slider() {
 
     setInterval(function(){
 
-        $(".slider_" + i).hide();
-        i++; if (i == 6) i = 1;
-        $(".slider_" + i).show();
+        $(".slider_" + i).fadeOut("slow", function() {
+            i++; if (i == 6) i = 1;
+            $(".slider_" + i).show();
+        });
 
     }, 5000);
 }
