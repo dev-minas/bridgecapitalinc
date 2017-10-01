@@ -48,6 +48,15 @@ $(document).ready(function () {
         });
     });
 
+    $(".goto").click(function () {
+
+        var index = $(this).data('tab');
+
+        $(".tab").addClass("hidden");
+        $("#tab" + index).removeClass("hidden");
+        $("#tab" + index + " h1")[0].scrollIntoView();
+    });
+
     $('.employment_type').live('change', function() {
 
         emp_type_change($(this));

@@ -581,37 +581,37 @@ get_header(); ?>
                     <div class="info-block-inner do_not_want_all">
                         <div class="info-block-inner-left">
                             <div class="info-block-inner-title">
-                                <p>What is your race?</p>
+                                <p>What is your race? asd</p>
                             </div>
                             <div class="info-block-inner-left">
                                 <div class="info-checkbox">
-                                    <input id="furnish" type="checkbox" class="do_not_want_left_chkb">
+                                    <input type="checkbox" class="do_not_want_left_chkb" id="furnish">
                                     <label for="furnish">I do not wish to furnish this information</label>
                                 </div>
                                 <div class="do_not_want_left">
                                     <div class="info-checkbox">
-                                        <input id="wiyr" type="checkbox" name="What is your race" value="American Indian or Alaska Native">
-                                        <label for="wiyr">American Indian or Alaska Native</label>
+                                        <input type="radio" id="aian" name="What is your race" value="American Indian or Alaska Native">
+                                        <label for="aian">American Indian or Alaska Native</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input id="asian" type="checkbox">
-                                        <label for="asian">Asian</label>
+                                        <input type="radio" id="asianrace" name="What is your race" value="Asian">
+                                        <label for="asianrace">Asian</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input id="boaa" type="checkbox">
-                                        <label for="boaa">Black or African American</label>
+                                        <input type="radio" id="americanrace" name="What is your race" value="Black or African American">
+                                        <label for="americanrace">Black or African American</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input id="nhopi" type="checkbox">
-                                        <label for="nhopi">Native Hawaiian or Other Pacific Islander</label>
+                                        <input type="radio" id="nativerace" name="What is your race" value="Native Hawaiian or Other Pacific Islander">
+                                        <label for="nativerace" >Native Hawaiian or Other Pacific Islander</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input id="white" type="checkbox">
-                                        <label for="white">White</label>
+                                        <input type="radio" id="whiterace" name="What is your race" value="White">
+                                        <label for="whiterace">White</label>
                                     </div>
                                     <div class="info-checkbox">
-                                        <input id="applicable" type="checkbox">
-                                        <label for="applicable">Not Applicable</label>
+                                        <input type="radio" id="notapplicable" name="What is your race" value="Not Applicable">
+                                        <label for="notapplicable">Not Applicable</label>
                                     </div>
                                 </div>
                             </div>
@@ -628,16 +628,16 @@ get_header(); ?>
                                 </div>
                                 <div class="do_not_want_right">
                                     <div class="info-radio">
-                                        <input type="radio" name="ethnicity">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="hl" name="What is your ethnicity" value="Hispanic or Latino">
+                                        <label for="hl">Hispanic or Latino</label>
                                     </div>
                                     <div class="info-radio">
-                                        <input type="radio" name="ethnicity">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="nhl"  name="What is your ethnicity" value="Not Hispanic or Latino">
+                                        <label for="nhl">Not Hispanic or Latino</label>
                                     </div>
                                     <div class="info-radio">
-                                        <input type="radio" name="ethnicity">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="noprovideinfo"  name="What is your ethnicity" value="I do not wish to provide this information">
+                                        <label for="noprovideinfo">I do not wish to provide this information</label>
                                     </div>
                                 </div>
 
@@ -651,16 +651,16 @@ get_header(); ?>
 
                                 <div class="do_not_want_right2">
                                     <div class="info-radio">
-                                        <input type="radio" name="gender">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="gendermale" name="What is your gender" value="Male">
+                                        <label for="gendermale">Male</label>
                                     </div>
                                     <div class="info-radio">
-                                        <input type="radio" name="gender">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="genderfemale" name="What is your gender" value="Female">
+                                        <label for="genderfemale">Female</label>
                                     </div>
                                     <div class="info-radio">
-                                        <input type="radio" name="gender">
-                                        <label for="">I do not wish to furnish this information</label>
+                                        <input type="radio" id="infonotprovide" name="What is your gender" value="I do not wish to provide this information">
+                                        <label for="infonotprovide">I do not wish to provide this information</label>
                                     </div>
                                 </div>
                             </div>
@@ -1074,6 +1074,70 @@ get_header(); ?>
             <div id="tab10" class="tab hidden">
 
                 <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
+
+
+                <div class="form_left">
+
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>Personal Information</label>
+                        <div>
+                            <a href="javascript: void(0);" class="goto" data-tab="1">Check / Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>Property Information</label>
+                        <div>
+                            <a href="javascript: void(0);" class="goto" data-tab="2">Check / Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>Address Information</label>
+                        <div>
+                            <a href="javascript: void(0);" class="goto" data-tab="3">Check / Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>Employers Information</label>
+                        <div>
+                            <a href="javascript: void(0);" class="goto" data-tab="4">Check / Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>Other Income Information</label>
+                        <div>
+                            <a href="javascript: void(0);" class="goto" data-tab="6">Check / Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>Questions the Government Requires Us to Ask</label>
+                        <div>
+                            <a href="javascript: void(0);" class="goto" data-tab="7">Check / Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="form_element full_width" id="declarations_list">
+                        <label>Declarations</label>
+                        <div>
+                            <a href="javascript: void(0);" class="goto" data-tab="9">Check / Edit</a>
+                        </div>
+                    </div>
+
+                    <div class="form_element full_width">
+                        <label> &nbsp; </label>
+                        <input data-index="9" class="continue" type="submit" value="BACK" />
+                        <input data-index="11" class="continue" type="submit" name="submit" value="SAVE & CONTINUE" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab11" class="tab hidden">
+
+                <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
                 <!--<h1>You're minutes away from your 3 FREE Credit Scores.</h1>-->
                 <div class=" full_width gray">
                     eConsent Terms
@@ -1154,6 +1218,7 @@ get_header(); ?>
 
                     <div class="form_element full_width">
                         <label> &nbsp; </label>
+                        <input data-index="9" class="continue" type="submit" value="BACK" />
                         <input type="submit" name="submit" value="SUBMIT" />
                     </div>
                 </div>
@@ -1259,7 +1324,6 @@ get_header(); ?>
         </form>
 
     </div>
-
 
     <div id="cei_toclone" class="hidden">
         <div class="form_left">
