@@ -695,7 +695,7 @@ get_header(); ?>
                     <div class="info-block-inner do_not_want_all">
                         <div class="info-block-inner-left">
                             <div class="info-block-inner-title">
-                                <p>What is your race?</p>
+                                <p>What is your race? asd</p>
                             </div>
                             <div class="info-block-inner-left">
                                 <div class="info-checkbox">
@@ -704,7 +704,7 @@ get_header(); ?>
                                 </div>
                                 <div class="do_not_want_left">
                                     <div class="info-checkbox">
-                                        <input id="aian" type="radio" name="What is your race" value="American Indian or Alaska Native">
+                                        <input type="radio" id="aian" name="What is your race" value="American Indian or Alaska Native">
                                         <label for="aian">American Indian or Alaska Native</label>
                                     </div>
                                     <div class="info-checkbox">
