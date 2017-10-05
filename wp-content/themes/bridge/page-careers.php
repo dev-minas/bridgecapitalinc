@@ -7,10 +7,12 @@ get_header(); ?>
     <div class="bg_home_2 bg_careers bg_contact_small">
         <h2>CAREERS</h2>
 
-        Bridge Capital Inc. offer variety of career paths. We are always searching for the next talent to hire. The key characteristic traits that we are looking to in our potential candidates are Enthusiasm, Energy, Intelligence and Integrity.  We offer complete training and all the tools to elevate you to success. Apply now and become part of something great.
+        <p class="careers_txt">
+            Bridge Capital Inc. offer variety of career paths. We are always searching for the next talent to hire. The key characteristic traits that we are looking to in our potential candidates are Enthusiasm, Energy, Intelligence and Integrity.  We offer complete training and all the tools to elevate you to success. Apply now and become part of something great.
+        </p>
     </div>
 
-    <div class="bg_home_2">
+    <div class="bg_home_2 av_pos_list">
 
         <h2>Available Positions</h2>
 

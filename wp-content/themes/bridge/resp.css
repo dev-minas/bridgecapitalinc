@@ -167,6 +167,15 @@
     .bg_home_f {
         background-size: 100%;
     }
+
+    .av_pos_list {
+        width: 100%;
+        padding: 5% 0!important;
+    }
+
+    .careers_txt {
+        padding: 0 15px;
+    }
 }
 
 @media only screen and ( max-width: 650px) {
@@ -400,6 +409,23 @@
 
     .div_mmenu a, .div_mmenu a:visited, .div_mmenu a:hover {
         padding-bottom: 10px;
+    }
+
+    .careers_block {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .av_pos_list {
+        float: none;
+    }
+
+    .careers_block button {
+        margin-top: 0;
+    }
+
+    .careers_block {
+        display: inline-block;
     }
 }
 
