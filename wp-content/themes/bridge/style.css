@@ -569,6 +569,11 @@ a.separator, a.separator:visited, a.separator:hover {
     color: #fff;
 }
 
+.bg_careers {
+    background-image: url("img/bg_careers.jpg");
+    background-size: cover;
+}
+
 .bg_contact {
     background-color: #f5f6f8;
     padding: 5% 20%;
@@ -1120,4 +1125,24 @@ li {
 }
 .slider:first-of-type {
     display: block;
+}
+
+.careers_block {
+    display: block;
+    width: 75%; margin: 5px auto;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    background-color: #f5f6f8;
+    color: #75777a;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.careers_block button {
+    float: right;
+    background-color: #0066a1;
+    color: #fff;
+    padding: 5px 20px;
+    margin-top: 5px;
+    border-radius: 7px;
+    border: none;
 }

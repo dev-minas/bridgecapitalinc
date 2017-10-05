@@ -1,48 +1,74 @@
-<?php get_header(); ?>
+<?php
 
-    <div class="bg_home_2 bg_team">
-    <h1>THE TEAM</h1>
+// send mail
 
-    <div class="team_block">
-        <div class="team_img"><img src="<?php bloginfo('template_url'); ?>/img/team_member.jpg" /></div>
-        <div class="team_name">Vahe<br/><span>Hayrapetyan</span></div>
-        <div class="team_bio">Vahe Hayrapetian has been in the mortgage industry in 2007.  He started his career as a Loan Office at GMAC Mortgage. Vahe’s hard work, dedication and high ethics helped him to be named as one of GMAC's top 10 mortgage originators for multiple years. His success awarded him the position of Associate District Manager at the Pasadena branch. When GMAC exited retail mortgage channel in 2008, Vahe moved to Countrywide as Sales Manager. Countrywide was the largest originator of single-family mortgages in the country before merging with Bank of America. After the financial meltdown of 2008/09, Vahe continued his career at Skyline Home Loans. Being a visionary and an entrepreneur, he has always worked towards creating an independent mortgage firm.  In January 2017, Vahe Hayrapetian and his business partner Spartak Hovakimyan have lunched Bridge Capital Home Loans.</div>
+get_header(); ?>
+
+    <div class="bg_home_2 bg_careers bg_contact_small">
+        <h2>CAREERS</h2>
+
+        Bridge Capital Inc. offer variety of career paths. We are always searching for the next talent to hire. The key characteristic traits that we are looking to in our potential candidates are Enthusiasm, Energy, Intelligence and Integrity.  We offer complete training and all the tools to elevate you to success. Apply now and become part of something great.
     </div>
 
-    <div class="team_block">
-        <div class="team_img"><img src="<?php bloginfo('template_url'); ?>/img/team_member.jpg" /></div>
-        <div class="team_name">Vahe<br/><span>Hayrapetyan</span></div>
-        <div class="team_bio">Vahe Hayrapetian has been in the mortgage industry in 2007.  He started his career as a Loan Office at GMAC Mortgage. Vahe’s hard work, dedication and high ethics helped him to be named as one of GMAC's top 10 mortgage originators for multiple years. His success awarded him the position of Associate District Manager at the Pasadena branch. When GMAC exited retail mortgage channel in 2008, Vahe moved to Countrywide as Sales Manager. Countrywide was the largest originator of single-family mortgages in the country before merging with Bank of America. After the financial meltdown of 2008/09, Vahe continued his career at Skyline Home Loans. Being a visionary and an entrepreneur, he has always worked towards creating an independent mortgage firm.  In January 2017, Vahe Hayrapetian and his business partner Spartak Hovakimyan have lunched Bridge Capital Home Loans.</div>
+    <div class="bg_home_2">
+
+        <div class="careers_block">
+            Asistant
+            <button>Applay</button>
+        </div>
+
+        <div class="careers_block">
+            Sr. Loan Originator
+            <button>Applay</button>
+        </div>
+
+        <div class="careers_block">
+            Jr. Loan Originator
+            <button>Applay</button>
+        </div>
+
+        <div class="careers_block">
+            Marketing Director
+            <button>Applay</button>
+        </div>
+
+        <div class="careers_block">
+            Processor
+            <button>Applay</button>
+        </div>
+
+        <div class="careers_block">
+            Transaction Coordinator
+            <button>Applay</button>
+        </div>
+
     </div>
 
-    <div class="team_block">
-        <div class="team_img"><img src="<?php bloginfo('template_url'); ?>/img/team_member.jpg" /></div>
-        <div class="team_name">Vahe<br/><span>Hayrapetyan</span></div>
-        <div class="team_bio">Vahe Hayrapetian has been in the mortgage industry in 2007.  He started his career as a Loan Office at GMAC Mortgage. Vahe’s hard work, dedication and high ethics helped him to be named as one of GMAC's top 10 mortgage originators for multiple years. His success awarded him the position of Associate District Manager at the Pasadena branch. When GMAC exited retail mortgage channel in 2008, Vahe moved to Countrywide as Sales Manager. Countrywide was the largest originator of single-family mortgages in the country before merging with Bank of America. After the financial meltdown of 2008/09, Vahe continued his career at Skyline Home Loans. Being a visionary and an entrepreneur, he has always worked towards creating an independent mortgage firm.  In January 2017, Vahe Hayrapetian and his business partner Spartak Hovakimyan have lunched Bridge Capital Home Loans.</div>
+    <div class="bg_home_2 bg_contact">
+        <div class="contact_left" style="margin-top: 0;">
+            <form method="post" class="main_form">
+                <div class="form_element">
+                    <label for="name">Your Name*</label>
+                    <input type="text" name="Name" value="" />
+                </div>
+                <div class="form_element">
+                    <label for="email">Your Email*</label>
+                    <input type="text" name="Email" value="" />
+                </div>
+                <div class="form_element">
+                    <label for="price">Subject</label>
+                    <input type="text" name="Subject" value="" />
+                </div>
+                <div class="form_element">
+                    <label for="message">Yout Message</label>
+                    <textarea rows="7" name="Message"></textarea>
+                </div>
+                <div class="form_element">
+                    <label> &nbsp; </label>
+                    <input class="submit" type="submit" name="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div class="team_block">
-        <div class="team_img"><img src="<?php bloginfo('template_url'); ?>/img/team_member.jpg" /></div>
-        <div class="team_name">Vahe<br/><span>Hayrapetyan</span></div>
-        <div class="team_bio">Vahe Hayrapetian has been in the mortgage industry in 2007.  He started his career as a Loan Office at GMAC Mortgage. Vahe’s hard work, dedication and high ethics helped him to be named as one of GMAC's top 10 mortgage originators for multiple years. His success awarded him the position of Associate District Manager at the Pasadena branch. When GMAC exited retail mortgage channel in 2008, Vahe moved to Countrywide as Sales Manager. Countrywide was the largest originator of single-family mortgages in the country before merging with Bank of America. After the financial meltdown of 2008/09, Vahe continued his career at Skyline Home Loans. Being a visionary and an entrepreneur, he has always worked towards creating an independent mortgage firm.  In January 2017, Vahe Hayrapetian and his business partner Spartak Hovakimyan have lunched Bridge Capital Home Loans.</div>
-    </div>
-
-    <div class="team_block">
-        <div class="team_img"><img src="<?php bloginfo('template_url'); ?>/img/team_member.jpg" /></div>
-        <div class="team_name">Vahe<br/><span>Hayrapetyan</span></div>
-        <div class="team_bio">Vahe Hayrapetian has been in the mortgage industry in 2007.  He started his career as a Loan Office at GMAC Mortgage. Vahe’s hard work, dedication and high ethics helped him to be named as one of GMAC's top 10 mortgage originators for multiple years. His success awarded him the position of Associate District Manager at the Pasadena branch. When GMAC exited retail mortgage channel in 2008, Vahe moved to Countrywide as Sales Manager. Countrywide was the largest originator of single-family mortgages in the country before merging with Bank of America. After the financial meltdown of 2008/09, Vahe continued his career at Skyline Home Loans. Being a visionary and an entrepreneur, he has always worked towards creating an independent mortgage firm.  In January 2017, Vahe Hayrapetian and his business partner Spartak Hovakimyan have lunched Bridge Capital Home Loans.</div>
-    </div>
-
-</div>
-
-<div class="team_bio">
-    <p class="team_bio_cont"></p>
-</div>
-
-<div class="bg_home_2">
-    <a class="team_a separator" href="/contact">CONTACT US</a>
-    <a class="team_a" href="/careers">CAREERS</a>
-</div>
-
 
 <?php get_footer(); ?>
