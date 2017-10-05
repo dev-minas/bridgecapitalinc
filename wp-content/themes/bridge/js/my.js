@@ -1,6 +1,14 @@
 $(document).ready(function () {
 
     rss_slider();
+    
+    $(".careers_block button").click(function () {
+        $("#input_position").val($(this).parent().find("span").text());
+
+        $('html, body').animate({
+            scrollTop: $(".careers_form").offset().top
+        }, 300);
+    });
 
     $(".div_mob_menu").click(function () {
         $(".div_mmenu").animate({top: 0}, 400);

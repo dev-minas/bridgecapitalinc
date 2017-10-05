@@ -1145,4 +1145,6 @@ li {
     margin-top: 5px;
     border-radius: 7px;
     border: none;
+    cursor: pointer;
+    cursor: hand;
 }

@@ -12,33 +12,35 @@ get_header(); ?>
 
     <div class="bg_home_2">
 
+        <h2>Available Positions</h2>
+
         <div class="careers_block">
-            Asistant
+            <span>Asistant</span>
             <button>Applay</button>
         </div>
 
         <div class="careers_block">
-            Sr. Loan Originator
+            <span>Sr. Loan Originator</span>
             <button>Applay</button>
         </div>
 
         <div class="careers_block">
-            Jr. Loan Originator
+            <span>Jr. Loan Originator</span>
             <button>Applay</button>
         </div>
 
         <div class="careers_block">
-            Marketing Director
+            <span>Marketing Director</span>
             <button>Applay</button>
         </div>
 
         <div class="careers_block">
-            Processor
+            <span>Processor</span>
             <button>Applay</button>
         </div>
 
         <div class="careers_block">
-            Transaction Coordinator
+            <span>Transaction Coordinator</span>
             <button>Applay</button>
         </div>
 
@@ -46,22 +48,30 @@ get_header(); ?>
 
     <div class="bg_home_2 bg_contact">
         <div class="contact_left" style="margin-top: 0;">
-            <form method="post" class="main_form">
+            <form method="post" class="careers_form" enctype="multipart/form-data">
+                <div class="form_element">
+                    <label for="name">Position*</label>
+                    <input type="text" name="Position" id="input_position" />
+                </div>
                 <div class="form_element">
                     <label for="name">Your Name*</label>
-                    <input type="text" name="Name" value="" />
+                    <input type="text" name="Name" />
                 </div>
                 <div class="form_element">
                     <label for="email">Your Email*</label>
-                    <input type="text" name="Email" value="" />
+                    <input type="text" name="Email" />
                 </div>
                 <div class="form_element">
                     <label for="price">Subject</label>
-                    <input type="text" name="Subject" value="" />
+                    <input type="text" name="Subject" />
                 </div>
                 <div class="form_element">
                     <label for="message">Yout Message</label>
                     <textarea rows="7" name="Message"></textarea>
+                </div>
+                <div class="form_element">
+                    <label for="message">Attachment (CV)</label>
+                    <input type="file" name="Attachment" />
                 </div>
                 <div class="form_element">
                     <label> &nbsp; </label>
