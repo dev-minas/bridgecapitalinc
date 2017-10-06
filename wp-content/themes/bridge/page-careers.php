@@ -77,6 +77,7 @@ get_header(); ?>
                 </div>
                 <div class="form_element">
                     <label> &nbsp; </label>
+                    <input type="hidden" name="Subject" value="Careers Form Submited" />
                     <input class="submit" type="submit" name="submit" value="Submit" />
                 </div>
             </form>

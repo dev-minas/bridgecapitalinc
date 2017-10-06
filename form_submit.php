@@ -2,34 +2,40 @@
 
 // echo "<pre>"; print_r($_POST); exit();
 
-$to = "info@bridgecapitalinc.com";
-$to = "armen.musaelyan@gmail.com, arsendes@gmail.com";
-$from = "form@bridgecapitalinc.com";
-$domain = "bridgecapitalinc.com";
-$subject = "Refinance contact form submit.";
+require_once('PHPMailer/src/PHPMailer.php');
 
-$message = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-</head>
-<body>';
-foreach ($_POST as $k => $v) {
+$email = new PHPMailer();
+$email->From      = 'form@bridgecapitalinc.com';
+$email->FromName  = 'bridgecapitalinc';
+$email->Subject   = $_POST["Subject"];
+// $email->AddAddress( 'info@bridgecapitalinc.com' );
+$email->AddAddress( 'armen.musaelyan@gmail.com' );
+$email->AddAddress( 'arsendes@gmail.com' );
 
-    $message .= "<b>" . ucwords(str_replace("_", " ", $k)) . "</b>: " . (is_array($v) ? implode("", $v) : $v) . "<br /><br /> \r\n";
+$bodytext = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>';
+foreach ($_POST as $k => $v) if ($v) {
+    $bodytext .= "<b>" . ucwords(str_replace("_", " ", $k)) . "</b>: "
+        . (is_array($v) ? implode("", $v) : $v)
+        . "<br /><br /> \r\n";
 }
-$message .= '</body>
-</html>';
+$bodytext .= '</body></html>';
 
-$headers = "";
-$headers .= 'MIME-Version: 1.0' . "\r\n";
-$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+$email->Body = $bodytext;
 
-$headers .= "From: " . $from . "\r\n";
-$headers .= "Reply-To: " . $from . "\r\n";
-$headers .= "Return-Path: <" . $from . ">\r\n";
-$headers .= "Message-ID: <" . time() . rand(1, 1000) . "@" . $domain . ">\r\n";
+if (isset($_FILES['Attachment']['name'])) {
 
-if (@mail($to, $subject, $message, $headers))
+    $tmp_path = $_FILES["uploaded_file"]["tmp_name"];
+    $file_name = $_FILES['uploaded_file']['name']);
+
+    $type_of_uploaded_file = substr($file_name, strrpos($file_name, '.') + 1);
+
+    $email->AddAttachment( $tmp_path , $file_name );
+}
+
+
+$result = $email->Send();
+
+if ($result)
     echo "success";
 else
     echo "fail";
