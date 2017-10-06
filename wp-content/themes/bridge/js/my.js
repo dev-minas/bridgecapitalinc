@@ -15,7 +15,7 @@ $(document).ready(function () {
             success: function( response ) {
                 if (response == 'success') {
                     alert("Thank you. Your request has been sent. You will redirected to homepage.");
-                    window.setTimeout(location.href = '/', 3000);
+                    window.setTimeout(location.href = '/', 2000);
                 }
                 else {
                     alert("Something went wrong. Please try later.");

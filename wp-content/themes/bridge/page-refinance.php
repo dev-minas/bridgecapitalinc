@@ -550,7 +550,7 @@ get_header(); ?>
 
                     <div class="form_element full_width" id="add_btn">
                         <label> &nbsp; </label>
-                        <input type="text" id="btnadd_oi" value="+ Add more Other Income" style="text-align: center;cursor: pointer;" />
+                        <input type="text" id="btnadd_oi" value="+ Add more Other Income" style="text-align: center; cursor: pointer;" />
                     </div>
 
                     <div class="form_element full_width">
