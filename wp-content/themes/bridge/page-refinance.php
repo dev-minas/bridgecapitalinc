@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab hidden">
+            <div id="tab1" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -307,7 +307,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab4" class="tab ">
+            <div id="tab4" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form3.png" />
                 <h1>Current Employer Information</h1>
 
@@ -1073,58 +1073,50 @@ get_header(); ?>
 
             <div id="tab10" class="tab hidden">
 
+                <h1>Summary</h1>
+
                 <img src="<?php bloginfo('template_url'); ?>/img/form5.png" />
 
 
                 <div class="form_left">
 
                     <div class="form_element full_width" id="declarations_list">
-                        <label>Personal Information</label>
-                        <div>
-                            <a href="javascript: void(0);" class="goto" data-tab="1">Check / Edit</a>
-                        </div>
+                    </div>
+
+
+                    <div class="form_element full_width" id="declarations_list">
+                        Personal Information
+                        <a href="javascript: void(0);" class="goto" data-tab="1">Check / Edit</a>
                     </div>
 
                     <div class="form_element full_width" id="declarations_list">
-                        <label>Property Information</label>
-                        <div>
-                            <a href="javascript: void(0);" class="goto" data-tab="2">Check / Edit</a>
-                        </div>
+                        Property Information
+                        <a href="javascript: void(0);" class="goto" data-tab="2">Check / Edit</a>
                     </div>
 
                     <div class="form_element full_width" id="declarations_list">
-                        <label>Address Information</label>
-                        <div>
-                            <a href="javascript: void(0);" class="goto" data-tab="3">Check / Edit</a>
-                        </div>
+                        Address Information
+                        <a href="javascript: void(0);" class="goto" data-tab="3">Check / Edit</a>
                     </div>
 
                     <div class="form_element full_width" id="declarations_list">
-                        <label>Employers Information</label>
-                        <div>
-                            <a href="javascript: void(0);" class="goto" data-tab="4">Check / Edit</a>
-                        </div>
+                        Employers Information
+                        <a href="javascript: void(0);" class="goto" data-tab="4">Check / Edit</a>
                     </div>
 
                     <div class="form_element full_width" id="declarations_list">
-                        <label>Other Income Information</label>
-                        <div>
-                            <a href="javascript: void(0);" class="goto" data-tab="6">Check / Edit</a>
-                        </div>
+                        Other Income Information
+                        <a href="javascript: void(0);" class="goto" data-tab="6">Check / Edit</a>
                     </div>
 
                     <div class="form_element full_width" id="declarations_list">
-                        <label>Questions the Government Requires Us to Ask</label>
-                        <div>
-                            <a href="javascript: void(0);" class="goto" data-tab="7">Check / Edit</a>
-                        </div>
+                        Questions the Government Requires Us to Ask
+                        <a href="javascript: void(0);" class="goto" data-tab="7">Check / Edit</a>
                     </div>
 
                     <div class="form_element full_width" id="declarations_list">
-                        <label>Declarations</label>
-                        <div>
-                            <a href="javascript: void(0);" class="goto" data-tab="9">Check / Edit</a>
-                        </div>
+                        Declarations
+                        <a href="javascript: void(0);" class="goto" data-tab="9">Check / Edit</a>
                     </div>
 
                     <div class="form_element full_width">
