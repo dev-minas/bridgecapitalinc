@@ -9,7 +9,7 @@ $email->isHTML(true);
 $email->From      = 'form@bridgecapitalinc.com';
 $email->FromName  = 'bridgecapitalinc';
 $email->Subject   = $_POST["Subj"];
-// $email->AddAddress( 'info@bridgecapitalinc.com' );
+$email->AddAddress( 'info@bridgecapitalinc.com' );
 $email->AddAddress( 'armen.musaelyan@gmail.com' );
 $email->AddAddress( 'arsendes@gmail.com' );
 
@@ -35,7 +35,7 @@ $email->Body = $bodytext;
 if (isset($_FILES['Attachment']['name'])) {
 
     // check extension
-    $allowed =  array('txt','doc','pdf','jpg','png');
+    $allowed =  array('txt','doc','docx','pdf','jpg','png','xls','xlsx');
 
     $tmp_path = $_FILES["Attachment"]["tmp_name"];
     $file_name = $_FILES['Attachment']['name'];

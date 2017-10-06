@@ -117,6 +117,7 @@ for($x=1;$x<=$limit;$x++) {
     </div>
 
     <div class="bg_home_2">
+        <h2>CNBC News Feed</h2>
         <?=$feed_html?>
     </div>
 

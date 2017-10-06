@@ -8,7 +8,7 @@ get_header(); ?>
         <h1>FOR REALTORS</h1>
     </div>
     <div class="bg_home_2 ql_content">
-        coming soon
+        <h3>coming soon</h3>
     </div>
 
 <?php get_footer(); ?>
