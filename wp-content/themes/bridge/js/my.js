@@ -87,8 +87,16 @@ $(document).ready(function () {
     $(".total_income_input").live('keyup', function() {
 
         var index = $(".total_income_input").index(this);
-        $(".income_numb").eq(index).text( this.value );
+        $(".income_numb").eq(index).text( $(this).val() + '/' + $(this).next().val() );
     });
+
+    $(".total_income_period").live('change', function() {
+
+        var index = $(".total_income_period").index(this);
+        $(".income_numb").eq(index).text( $(this).prev().val() + '/' + $(this).val() );
+    });
+
+
 
     $('.other_income_bt').live('change', function() {
 
@@ -138,7 +146,7 @@ $(document).ready(function () {
 
         $("#tab4_form").children().hide();
         $("#tab4_form").append($("#cei_toclone").html());
-        $("#tab4 .rem_emp").text('del');
+        $("#tab4 .rem_emp").html('<i class="fa fa-minus-circle"></i>');
         $(".cei_rows_conteiner").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td><td class="rem_emp"></td></tr>');
     });
 
@@ -146,7 +154,7 @@ $(document).ready(function () {
 
         $("#tab5_form").children().hide();
         $("#tab5_form").append($("#cei_toclone").html());
-        $("#tab5 .rem_emp_cb").text('del');
+        $("#tab5 .rem_emp_cb").html('<i class="fa fa-minus-circle"></i>');
         $(".cei_rows_conteiner_cb").append('<tr><td><span class="emp_name">Company Name</span></td><td>$<span class="income_numb">0</span></td><td class="rem_emp_cb"></td></tr>');
     });
 
@@ -154,7 +162,7 @@ $(document).ready(function () {
 
         $("#tab6_form").children().hide();
         $("#tab6_form").append($("#oti_toclone").html());
-        $("#tab6 .rem_emp_oi").text('del');
+        $("#tab6 .rem_emp_oi").html('<i class="fa fa-minus-circle"></i>');
         $(".oei_rows_conteiner").append('<tr><td><span class="b_to_name"></span></td><td><span class="inc_type">Income Type</span></td><td>$<span class="inc_amount">0</span></td><td class="rem_emp_oi"></td></tr>');
     });
 

@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="main_form">
 
-            <div id="tab1" class="tab ">
+            <div id="tab1" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -113,7 +113,7 @@ get_header(); ?>
                     </div>
                     <div class="form_element">
                         <label>Orig Purchase Price</label>
-                        <input name="Orig Purchase Price" />
+                        <span class="sign">$</span><input name="Orig Purchase Price" class="mask_dollar" />
                     </div>
 
                     <div class="form_element">
@@ -307,7 +307,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab4" class="tab hidden">
+            <div id="tab4" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form3.png" />
                 <h1>Current Employer Information</h1>
 
@@ -378,7 +378,7 @@ get_header(); ?>
                         </div>
                         <div class="form_element time-period">
                             <label for="name">Time Period</label>
-                            <input name="Em Time Period[]" />
+                            <input name="Em Time Period[]" placeholder="__/__/____   to  Current" />
                         </div>
                         <div class="form_element company-zip-state">
                             <label><span class="label_zip">Zip</span><span class="label_state">State</span></label>
@@ -399,9 +399,9 @@ get_header(); ?>
                         <div class="form_element total-income">
                             <label>Total Income</label>
                             <input name="Em Total Income[]" class="half_width half_width_margin mr5 total_income_input" />
-                            <select class="half_width" name="Total Income Type[]">
-                                <option selected="selected">Monthly</option>
-                                <option>Annual</option>
+                            <select class="half_width total_income_period" name="Total Income Type[]">
+                                <option value="mo" selected="selected">Monthly</option>
+                                <option value="yr">Annual</option>
                             </select>
                         </div>
                     </div>
@@ -491,7 +491,7 @@ get_header(); ?>
                         </div>
                         <div class="form_element time-period">
                             <label for="name">Time Period</label>
-                            <input name="Em Time Period[]" />
+                            <input name="Em Time Period[]" placeholder="__/__/____   to  Current" />
                         </div>
                         <div class="form_element company-zip-state">
                             <label><span class="label_zip">Zip</span><span class="label_state">State</span></label>
@@ -512,9 +512,9 @@ get_header(); ?>
                         <div class="form_element total-income">
                             <label>Total Income</label>
                             <input name="Em Total Income[]" class="half_width half_width_margin mr5 total_income_input" />
-                            <select class="half_width" name="Total Income Type[]">
-                                <option selected="selected">Monthly</option>
-                                <option>Annual</option>
+                            <select class="half_width total_income_period" name="Total Income Type[]">
+                                <option value="mo" selected="selected">Monthly</option>
+                                <option value="yr">Annual</option>
                             </select>
                         </div>
                     </div>
@@ -1236,7 +1236,7 @@ get_header(); ?>
             </div>
             <div class="form_element time-period">
                 <label for="name">Time Period</label>
-                <input name="Em Time Period[]" />
+                <input name="Em Time Period[]" placeholder="__/__/____   to  Current" />
             </div>
             <div class="form_element company-zip-state">
                 <label><span class="label_zip">Zip</span><span class="label_state">State</span></label>
@@ -1257,9 +1257,9 @@ get_header(); ?>
             <div class="form_element total-income">
                 <label>Total Income</label>
                 <input name="Em Total Income[]" class="half_width half_width_margin mr5 total_income_input" />
-                <select class="half_width" name="Total Income Type[]">
-                    <option selected="selected">Monthly</option>
-                    <option>Annual</option>
+                <select class="half_width total_income_period" name="Total Income Type[]">
+                    <option value="mo" selected="selected">Monthly</option>
+                    <option value="yr">Annual</option>
                 </select>
             </div>
         </div>
