@@ -13,7 +13,13 @@ $(document).ready(function () {
             url: '/form_submit.php',
             data: $(".mail_form").serialize(),
             success: function( response ) {
-                console.log(response)
+                if (response == 'success') {
+                    alert("Thank you. Your request has been sent. You will redirected to homepage.");
+                    window.setTimeout(location.href = '/', 3000);
+                }
+                else {
+                    alert("Something went wrong. Please try later.");
+                }
                 $(".submit").val('Submit');
             }
         });

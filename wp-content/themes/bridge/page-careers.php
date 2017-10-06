@@ -50,7 +50,7 @@ get_header(); ?>
 
     <div class="bg_home_2 bg_contact">
         <div class="contact_left" style="margin-top: 0;">
-            <form method="post" action="/form_submit.php" class="maill_form" enctype="multipart/form-data">
+            <form method="post" class="mail_form" enctype="multipart/form-data">
                 <div class="form_element">
                     <label for="name">Position*</label>
                     <input type="text" name="Position" id="input_position" />

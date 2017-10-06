@@ -5,6 +5,7 @@
 require_once('PHPMailer/src/PHPMailer.php');
 
 $email = new PHPMailer();
+$email->isHTML(true);
 $email->From      = 'form@bridgecapitalinc.com';
 $email->FromName  = 'bridgecapitalinc';
 $email->Subject   = $_POST["Subject"];
@@ -24,20 +25,22 @@ $email->Body = $bodytext;
 
 if (isset($_FILES['Attachment']['name'])) {
 
+    // check extension
+    $allowed =  array('txt','doc','pdf','jpg','png');
+
     $tmp_path = $_FILES["Attachment"]["tmp_name"];
     $file_name = $_FILES['Attachment']['name'];
 
-    $type_of_uploaded_file = substr($file_name, strrpos($file_name, '.') + 1);
+    $ext = pathinfo($file_name, PATHINFO_EXTENSION);
+    if(in_array($ext,$allowed) ) {
 
-    $email->AddAttachment( $tmp_path , $file_name );
+        $email->AddAttachment( $tmp_path , $file_name );
+    }
 }
-
 
 $result = $email->Send();
 
-echo "<pre>"; print_r($result); exit();
-
 if ($result)
-    echo $result;
+    echo "success";
 else
     echo "fail";
