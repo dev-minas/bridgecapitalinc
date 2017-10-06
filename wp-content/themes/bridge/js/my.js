@@ -13,7 +13,7 @@ $(document).ready(function () {
             url: '/form_submit.php',
             data: $(".mail_form").serialize(),
             success: function( response ) {
-                alert(response);
+                console.log(response)
                 $(".submit").val('Submit');
             }
         });
@@ -24,7 +24,7 @@ $(document).ready(function () {
         $("#input_position").val($(this).parent().find("span").text());
 
         $('html, body').animate({
-            scrollTop: $(".careers_form").offset().top
+            scrollTop: $(".mail_form").offset().top
         }, 300);
     });
 

@@ -24,8 +24,8 @@ $email->Body = $bodytext;
 
 if (isset($_FILES['Attachment']['name'])) {
 
-    $tmp_path = $_FILES["uploaded_file"]["tmp_name"];
-    $file_name = $_FILES['uploaded_file']['name']);
+    $tmp_path = $_FILES["Attachment"]["tmp_name"];
+    $file_name = $_FILES['Attachment']['name'];
 
     $type_of_uploaded_file = substr($file_name, strrpos($file_name, '.') + 1);
 
@@ -34,6 +34,8 @@ if (isset($_FILES['Attachment']['name'])) {
 
 
 $result = $email->Send();
+
+echo "<pre>"; print_r($result); exit();
 
 if ($result)
     echo $result;
