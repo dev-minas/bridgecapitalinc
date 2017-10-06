@@ -8,7 +8,7 @@ get_header(); ?>
         <h1>CONTACT US</h1>
 
         <div class="contact_left">
-            <form method="post" class="main_form">
+            <form method="post" class="mail_form">
                 <div class="form_element">
                     <label for="name">Your Name*</label>
                     <input type="text" name="Name" value="" />

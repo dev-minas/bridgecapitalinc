@@ -1,6 +1,24 @@
 $(document).ready(function () {
 
     rss_slider();
+
+    $(".mail_form").submit(function (event) {
+
+        event.preventDefault();
+
+        $(".submit").val('Processing');
+
+        $.ajax( {
+            type: "POST",
+            url: '/form_submit.php',
+            data: $(".mail_form").serialize(),
+            success: function( response ) {
+                alert(response);
+                $(".submit").val('Submit');
+            }
+        });
+
+    });
     
     $(".careers_block button").click(function () {
         $("#input_position").val($(this).parent().find("span").text());
@@ -95,8 +113,6 @@ $(document).ready(function () {
         var index = $(".total_income_period").index(this);
         $(".income_numb").eq(index).text( $(this).prev().val() + '/' + $(this).val() );
     });
-
-
 
     $('.other_income_bt').live('change', function() {
 
@@ -211,24 +227,6 @@ $(document).ready(function () {
 
     $(".do_not_want_right2_chkb").change(function() {
         do_not_want_right2_click($(this));
-    });
-
-    $(".main_form").submit(function (event) {
-
-        event.preventDefault();
-
-        $(".submit").val('Processing');
-
-        $.ajax( {
-            type: "POST",
-            url: '/form_submit.php',
-            data: $(".main_form").serialize(),
-            success: function( response ) {
-                alert(response);
-                $(".submit").val('Submit');
-            }
-        });
-
     });
 
     $(".continue").click(function (event) {

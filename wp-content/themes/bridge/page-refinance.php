@@ -6,7 +6,7 @@ get_header(); ?>
 
     <div class="bg_home_2 bg_form">
 
-        <form method="post" class="main_form">
+        <form method="post" class="mail_form">
 
             <div id="tab1" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />

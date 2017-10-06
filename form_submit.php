@@ -36,6 +36,6 @@ if (isset($_FILES['Attachment']['name'])) {
 $result = $email->Send();
 
 if ($result)
-    echo "success";
+    echo $result;
 else
     echo "fail";
