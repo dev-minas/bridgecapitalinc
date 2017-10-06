@@ -11,7 +11,9 @@ $(document).ready(function () {
         $.ajax( {
             type: "POST",
             url: '/form_submit.php',
-            data: $(".mail_form").serialize(),
+            data: new FormData($(".mail_form")[0]),
+            processData: false,
+            contentType: false,
             success: function( response ) {
                 if (response == 'success') {
                     alert("Thank you. Your request has been sent. You will redirected to homepage.");

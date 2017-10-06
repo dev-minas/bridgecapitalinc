@@ -8,21 +8,21 @@ $email = new PHPMailer();
 $email->isHTML(true);
 $email->From      = 'form@bridgecapitalinc.com';
 $email->FromName  = 'bridgecapitalinc';
-$email->Subject   = $_POST["Subject"];
+$email->Subject   = $_POST["Subj"];
 // $email->AddAddress( 'info@bridgecapitalinc.com' );
 $email->AddAddress( 'armen.musaelyan@gmail.com' );
 $email->AddAddress( 'arsendes@gmail.com' );
 
 $bodytext = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head></head><body>';
-foreach ($_POST as $k => $v) if ($v) {
+foreach ($_POST as $k => $v) if ($v and $k != "Subj") {
 
-    if ($k == 'My First Name') $bodytext .= "<b>Personal Information</b><hr>";
-    if ($k == 'Street') $bodytext .= "<b>Property Information</b><hr>";
-    if ($k == 'Years at Current Address') $bodytext .= "<b>Address Information</b><hr>";
-    if ($k == 'Employment Type') $bodytext .= "<b>Employers Information</b><hr>";
-    if ($k == 'Other Income Belongs To') $bodytext .= "<b>Other Income Information</b><hr>";
-    if ($k == 'What is your race') $bodytext .= "<b>Questions the Government Requires Us to Ask</b><hr>";
-    if ($k == 'Are there any outstanding judgments against you') $bodytext .= "<b>Declarations</b><hr>";
+    if ($k == 'My_First_Name') $bodytext .= "<br /><h2>Personal Information</h2><hr>";
+    if ($k == 'Street') $bodytext .= "<br /><h2>Property Information</h2><hr>";
+    if ($k == 'Years_at_Current_Address') $bodytext .= "<br /><h2>Address Information</h2><hr>";
+    if ($k == 'Employment_Type') $bodytext .= "<br /><h2>Employers Information</h2><hr>";
+    if ($k == 'Other_Income_Belongs_To') $bodytext .= "<br /><h2>Other Income Information</h2><hr>";
+    if ($k == 'What_is_your_race') $bodytext .= "<br /><h2>Questions the Government Requires Us to Ask</h2><hr>";
+    if ($k == 'Are_there_any_outstanding_judgments_against_you') $bodytext .= "<br /><h2>Declarations</h2><hr>";
 
     $bodytext .= "<b>" . ucwords(str_replace("_", " ", $k)) . "</b>: "
         . (is_array($v) ? implode("", $v) : $v)
