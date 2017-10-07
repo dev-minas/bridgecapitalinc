@@ -1166,3 +1166,10 @@ li {
     font-size: 14px;
 }
 
+.news_border {
+    border: 1px solid #333;
+    padding: 25px;
+}
+.news_border a, .news_border a:visited, .news_border a:hover {
+    color: #0066a1;
+}

@@ -49,7 +49,7 @@ get_header(); ?>
     </div>
 
     <div class="bg_home_2 bg_contact">
-        <div class="contact_left" style="margin-top: 0;">
+        <div class="contact_left" style="display: none; margin-top: 0;">
             <form method="post" class="mail_form" enctype="multipart/form-data">
                 <div class="form_element">
                     <label for="name">Position*</label>

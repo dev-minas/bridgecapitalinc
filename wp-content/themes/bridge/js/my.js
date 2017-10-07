@@ -31,6 +31,8 @@ $(document).ready(function () {
     $(".careers_block button").click(function () {
         $("#input_position").val($(this).parent().find("span").text());
 
+        $(".contact_left").show();
+
         $('html, body').animate({
             scrollTop: $(".mail_form").offset().top
         }, 300);
