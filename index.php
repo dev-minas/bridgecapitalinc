@@ -1,9 +1,9 @@
 <?php
 
-if (!in_array($_SERVER['REMOTE_ADDR'], array('::1','127.0.0.1','46.71.0.36','46.71.239.91','46.70.216.68','71.80.180.230'))) {
-    include "home.html";
-    exit();
-}
+//if (!in_array($_SERVER['REMOTE_ADDR'], array('::1','127.0.0.1','46.71.0.36','46.71.239.91','46.70.216.68','71.80.180.230'))) {
+//    include "home.html";
+//    exit();
+//}
 
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads

@@ -22,7 +22,7 @@
             Monday – Friday: 9 am to 5 pm <br />
             Saturday, Sunday: Closed <br />
             <a href=""><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-            <a href=""><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://web.facebook.com/bridgecapitalhomeloans/"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>
             <a href=""><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
             <a href=""><i class="icon fa fa-map-marker" aria-hidden="true"></i></a>
             <br />

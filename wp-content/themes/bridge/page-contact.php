@@ -53,7 +53,7 @@ get_header(); ?>
             Saturday, Sunday: Closed
             <br /><br />
             <a href=""><img src="<?php bloginfo('template_url'); ?>/img/c_icon_tw.png" /></a>
-            <a href=""><img src="<?php bloginfo('template_url'); ?>/img/c_icon_fb.png" /></a>
+            <a href="https://web.facebook.com/bridgecapitalhomeloans/"><img src="<?php bloginfo('template_url'); ?>/img/c_icon_fb.png" /></a>
             <a href=""><img src="<?php bloginfo('template_url'); ?>/img/c_icon_in.png" /></a>
             <a href=""><img src="<?php bloginfo('template_url'); ?>/img/c_icon_p.png" /></a>
             <br /><br />
