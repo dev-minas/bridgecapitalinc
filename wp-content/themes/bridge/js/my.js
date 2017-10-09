@@ -34,7 +34,7 @@ $(document).ready(function () {
         $(".bg_contact").show();
 
         $('html, body').animate({
-            scrollTop: $(".mail_form").offset().top
+            scrollTop: $(".bg_contact").offset().top
         }, 300);
     });
 
@@ -190,6 +190,8 @@ $(document).ready(function () {
         $("#tab6_form").append($("#oti_toclone").html());
         $("#tab6 .rem_emp_oi").html('<i class="fa fa-minus-circle"></i>');
         $(".oei_rows_conteiner").append('<tr><td><span class="b_to_name"></span></td><td><span class="inc_type">Income Type</span></td><td>$<span class="inc_amount">0</span></td><td class="rem_emp_oi"></td></tr>');
+
+        $(".oei_rows_conteiner").parent().css("border", "1px solid");
     });
 
     $(".rem_emp").live('click', function() {
@@ -213,14 +215,16 @@ $(document).ready(function () {
         $("#tab6_form .form_left").eq(index).remove();
     });
 
-    $("#cb_name").change(function() {
-
-        $('.cb_name').text($(this).val());
-    });
-
     $("#my_name").change(function() {
 
         $('.my_name').text($(this).val());
+        $('.other_income_bt > option:eq(0)').text($(this).val());
+    });
+
+    $("#cb_name").change(function() {
+
+        $('.cb_name').text($(this).val());
+        $('.other_income_bt > option:eq(1)').text($(this).val());
     });
 
     $(".do_not_want_all_chkb").change(function() {

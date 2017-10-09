@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="mail_form">
 
-            <div id="tab1" class="tab ">
+            <div id="tab1" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -533,12 +533,12 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab6" class="tab hidden">
+            <div id="tab6" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form4.png" />
                 <h1>Do you receive any other type of income?</h1>
 
                 <div class="repeat">
-                    <table>
+                    <table style="border: none;">
                         <tbody class="oei_rows_conteiner">
                         </tbody>
                     </table>
@@ -1265,9 +1265,8 @@ get_header(); ?>
             <div class="form_element full_width">
                 <label for="message">Belongs To</label>
                 <select class="other_income_bt" name="Other Income Belongs To[]">
-                    <option value="" selected disabled>select</option>
-                    <option class="ny_name">Armen</option>
-                    <option class="ny_name">Armen</option>
+                    <option class="ny_name"></option>
+                    <option class="ny_name"></option>
                 </select>
             </div>
             <div class="form_element full_width">
