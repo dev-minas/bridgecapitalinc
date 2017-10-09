@@ -8,7 +8,7 @@ get_header(); ?>
 
         <form method="post" class="mail_form">
 
-            <div id="tab1" class="tab hidden">
+            <div id="tab1" class="tab ">
                 <img src="<?php bloginfo('template_url'); ?>/img/form1.png" />
                 <h1>Personal Information</h1>
 
@@ -533,7 +533,7 @@ get_header(); ?>
                 </div>
             </div>
 
-            <div id="tab6" class="tab ">
+            <div id="tab6" class="tab hidden">
                 <img src="<?php bloginfo('template_url'); ?>/img/form4.png" />
                 <h1>Do you receive any other type of income?</h1>
 
