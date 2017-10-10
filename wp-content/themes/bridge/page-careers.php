@@ -13,39 +13,7 @@ get_header(); ?>
     </div>
 
     <div class="bg_home_2 av_pos_list">
-
-        <h2>Available Positions</h2>
-
-        <div class="careers_block">
-            <span>Asistant</span>
-            <button>Applay</button>
-        </div>
-
-        <div class="careers_block">
-            <span>Sr. Loan Originator</span>
-            <button>Applay</button>
-        </div>
-
-        <div class="careers_block">
-            <span>Jr. Loan Originator</span>
-            <button>Applay</button>
-        </div>
-
-        <div class="careers_block">
-            <span>Marketing Director</span>
-            <button>Applay</button>
-        </div>
-
-        <div class="careers_block">
-            <span>Processor</span>
-            <button>Applay</button>
-        </div>
-
-        <div class="careers_block">
-            <span>Transaction Coordinator</span>
-            <button>Applay</button>
-        </div>
-
+        <?=get_post(97)->post_content?>
     </div>
 
     <div class="bg_home_2 bg_contact hidden">
