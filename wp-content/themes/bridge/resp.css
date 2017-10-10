@@ -176,6 +176,60 @@
     .careers_txt {
         padding: 0 15px;
     }
+
+    .form_left .form_element,
+    .form_left .form_element input[type=submit],
+    .tab img,
+    .repeat table,
+    .form_element.full_width input,
+    #declarations-select
+    {
+        width: 90%;
+    }
+
+    #declarations-select {
+        width: 90%!important;
+    }
+
+    .form_element input.half_width,
+    .form_element select.half_width,
+    .form_element textarea.half_width {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .form_element label, .form_element {
+        margin-bottom: 5px;
+    }
+
+    .form_left .form_element input[type=submit], .repeat {
+        margin-bottom: 10px!important;
+    }
+
+    .form_element span {
+        float: none;
+    }
+
+    #declarations_list {
+        margin-bottom: 5%;
+    }
+
+    .goto {
+        margin: 10px 0;
+    }
+
+    #declarations_list > div {
+        margin-bottom: 10px;
+    }
+
+    .declarations {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    #declarations_list {
+        font-size: 15px;
+    }
 }
 
 @media only screen and ( max-width: 650px) {
