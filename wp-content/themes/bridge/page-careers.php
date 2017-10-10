@@ -8,7 +8,7 @@ get_header(); ?>
         <h2>CAREERS</h2>
 
         <p class="careers_txt">
-            Bridge Capital Inc. offer variety of career paths. We are always searching for the next talent to hire. The key characteristic traits that we are looking to in our potential candidates are Enthusiasm, Energy, Intelligence and Integrity.  We offer complete training and all the tools to elevate you to success. Apply now and become part of something great.
+        <p><?=get_post(9)->post_content?></p>
         </p>
     </div>
 
